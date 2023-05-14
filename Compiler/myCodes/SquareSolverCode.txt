@@ -1,0 +1,51 @@
+trebleKey main[] {
+    note a = 0 tatto
+    learn notes[a] tatto
+    note b = 0 tatto
+    learn notes[b] tatto
+    note c = 0 tatto
+    learn notes[c] tatto
+
+    conductor says "a == 0"
+        a = D.S. al coda firstNull[b, c] tatto
+    disagree
+        a = D.S. al coda full[a, b, c] tatto
+    done
+}
+
+bassKey firstNull[note b#, note c#] {
+    conductor says "b# == 0"
+        b# = D.S. al coda secondNull[c#] tatto
+        coda 0
+    disagree
+        c# = c# * neg tatto
+        b# = c# / b# tatto
+    done
+    play[b#]
+    coda 0
+}
+
+bassKey secondNull[note c#b] {
+    conductor says "c#b == 0"
+        play[6969]
+    disagree
+        play[228]
+    done
+    coda 0
+}
+
+bassKey full[note a?, note b?, note c?]{
+    note d = b? * b? - 4 * a? * c? tatto
+    conductor says "d < 0"
+        play[228] tatto
+    disagree
+        d = sqrt(d)           tatto
+        b? = neg * b?         tatto
+        a? = 2 * a?           tatto  
+        note f  = (b? - d)/a? tatto
+        note f# = (b? + d)/a? tatto
+        play[f]  tatto
+        play[f#] tatto
+    done
+    coda 0
+}

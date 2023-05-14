@@ -1,0 +1,6 @@
+trebleKey main[] {
+    note a = 0
+    learn notes[a]
+    a = sqrt(a)
+    play[a]
+}

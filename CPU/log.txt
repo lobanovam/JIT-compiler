@@ -1,0 +1,78 @@
+--------------------------------------------------
+log file is opened
+
+----------------------cpu started ----------------------
+lastCall created
+stk1 created
+cmd ct is 189
+
+in push, trying to push 0.000, push done
+
+in pop, trying to pop 0, pop done
+in IN, 
+in pop, trying to pop 1000, pop done
+
+in push, trying to push 0.000, push done
+
+in pop, trying to pop 0, pop done
+in IN, 
+in pop, trying to pop 1000, pop done
+
+in push, trying to push 0.000, push done
+
+in pop, trying to pop 0, pop done
+in IN, 
+in pop, trying to pop 1000, pop done
+
+in push, trying to push 1000, push done
+
+in push, trying to push 0.000, push done
+in JNE, condition is true
+
+in push, trying to push 1000, push done
+
+in push, trying to push 1000, push done
+
+in push, trying to push 1000, push done
+in call
+
+in pop, trying to pop 1000, pop done
+
+in pop, trying to pop 1000, pop done
+
+in pop, trying to pop 1000, pop done
+
+in push, trying to push 4.000, push done
+
+in push, trying to push 1000, push done
+in mul, trying to mul 1.000 * 4.000
+
+in push, trying to push 1000, push done
+in mul, trying to mul 1.000 * 4.000
+
+in push, trying to push 1000, push done
+
+in push, trying to push 1000, push done
+in mul, trying to mul 1.000 * 1.000
+in sub, trying to sub 1.000 - 4.000
+
+in pop, trying to pop -3000, pop done
+
+in push, trying to push -3000, push done
+
+in push, trying to push 0.000, push done
+in JBE, condition is false
+
+in push, trying to push 228.000, push done
+
+in jump
+
+in push, trying to push 0.000, push done
+trying to RET, ret done
+
+in pop, trying to pop 0, pop done
+in hlt
+
+
+log file is closed
+--------------------------------------------------

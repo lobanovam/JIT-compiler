@@ -1,0 +1,26 @@
+trebleKey - func, после - funcName()
+
+note - VAR
+
+переменные {
+    a
+    b
+    c
+    d
+    e
+    f
+    g
+}
+
+вызов функции - D.S. al coda
+
+if - conductor says "condition"
+else - disagree
+endif - done
+
+main[] - аргументы
+
+play[] - print
+learn notes [] - scanf
+reprise"condition"
+done

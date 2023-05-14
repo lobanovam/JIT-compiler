@@ -1,0 +1,385 @@
+{ ST
+    { FUNC
+        { "main"
+            { NIL }
+            { TYPE }
+        }
+        { ST
+            { VAR
+                { "a" }
+                { 0.0 }
+            }
+            { ST
+                { IN
+                    { PARAM
+                        { "a" }
+                        { NIL }
+                    }
+                    { NIL }
+                }
+                { ST
+                    { VAR
+                        { "b" }
+                        { 0.0 }
+                    }
+                    { ST
+                        { IN
+                            { PARAM
+                                { "b" }
+                                { NIL }
+                            }
+                            { NIL }
+                        }
+                        { ST
+                            { VAR
+                                { "c" }
+                                { 0.0 }
+                            }
+                            { ST
+                                { IN
+                                    { PARAM
+                                        { "c" }
+                                        { NIL }
+                                    }
+                                    { NIL }
+                                }
+                                { ST
+                                    { IF
+                                        { IS_EE
+                                            { "a" }
+                                            { 0.0 }
+                                        }
+                                        { ELSE
+                                            { ST
+                                                { EQ
+                                                    { "a" }
+                                                    { CALL
+                                                        { "firstNull"
+                                                            { PARAM
+                                                                { "b" }
+                                                                { PARAM
+                                                                    { "c" }
+                                                                    { NIL }
+                                                                }
+                                                            }
+                                                            { NIL }
+                                                        }
+                                                        { NIL }
+                                                    }
+                                                }
+                                                { NIL }
+                                            }
+                                            { ST
+                                                { EQ
+                                                    { "a" }
+                                                    { CALL
+                                                        { "full"
+                                                            { PARAM
+                                                                { "a" }
+                                                                { PARAM
+                                                                    { "b" }
+                                                                    { PARAM
+                                                                        { "c" }
+                                                                        { NIL }
+                                                                    }
+                                                                }
+                                                            }
+                                                            { NIL }
+                                                        }
+                                                        { NIL }
+                                                    }
+                                                }
+                                                { NIL }
+                                            }
+                                        }
+                                    }
+                                    { NIL }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    { ST
+        { FUNC
+            { "firstNull"
+                { PARAM
+                    { VAR
+                        { "b#" }
+                        { NIL }
+                    }
+                    { PARAM
+                        { VAR
+                            { "c#" }
+                            { NIL }
+                        }
+                        { NIL }
+                    }
+                }
+                { VOID }
+            }
+            { ST
+                { IF
+                    { IS_EE
+                        { "b#" }
+                        { 0.0 }
+                    }
+                    { ELSE
+                        { ST
+                            { EQ
+                                { "b#" }
+                                { CALL
+                                    { "secondNull"
+                                        { PARAM
+                                            { "c#" }
+                                            { NIL }
+                                        }
+                                        { NIL }
+                                    }
+                                    { NIL }
+                                }
+                            }
+                            { ST
+                                { RET
+                                    { 0.0 }
+                                    { NIL }
+                                }
+                                { NIL }
+                            }
+                        }
+                        { ST
+                            { EQ
+                                { "c#" }
+                                { MUL
+                                    { "c#" }
+                                    { -1.0 }
+                                }
+                            }
+                            { ST
+                                { EQ
+                                    { "b#" }
+                                    { DIV
+                                        { "c#" }
+                                        { "b#" }
+                                    }
+                                }
+                                { NIL }
+                            }
+                        }
+                    }
+                }
+                { ST
+                    { OUT
+                        { PARAM
+                            { "b#" }
+                            { NIL }
+                        }
+                        { NIL }
+                    }
+                    { ST
+                        { RET
+                            { 0.0 }
+                            { NIL }
+                        }
+                        { NIL }
+                    }
+                }
+            }
+        }
+        { ST
+            { FUNC
+                { "secondNull"
+                    { PARAM
+                        { VAR
+                            { "c#b" }
+                            { NIL }
+                        }
+                        { NIL }
+                    }
+                    { VOID }
+                }
+                { ST
+                    { IF
+                        { IS_EE
+                            { "c#b" }
+                            { 0.0 }
+                        }
+                        { ELSE
+                            { ST
+                                { OUT
+                                    { PARAM
+                                        { 6969.0 }
+                                        { NIL }
+                                    }
+                                    { NIL }
+                                }
+                                { NIL }
+                            }
+                            { ST
+                                { OUT
+                                    { PARAM
+                                        { 228.0 }
+                                        { NIL }
+                                    }
+                                    { NIL }
+                                }
+                                { NIL }
+                            }
+                        }
+                    }
+                    { ST
+                        { RET
+                            { 0.0 }
+                            { NIL }
+                        }
+                        { NIL }
+                    }
+                }
+            }
+            { ST
+                { FUNC
+                    { "full"
+                        { PARAM
+                            { VAR
+                                { "a?" }
+                                { NIL }
+                            }
+                            { PARAM
+                                { VAR
+                                    { "b?" }
+                                    { NIL }
+                                }
+                                { PARAM
+                                    { VAR
+                                        { "c?" }
+                                        { NIL }
+                                    }
+                                    { NIL }
+                                }
+                            }
+                        }
+                        { VOID }
+                    }
+                    { ST
+                        { VAR
+                            { "d" }
+                            { SUB
+                                { MUL
+                                    { "b?" }
+                                    { "b?" }
+                                }
+                                { MUL
+                                    { MUL
+                                        { 4.0 }
+                                        { "a?" }
+                                    }
+                                    { "c?" }
+                                }
+                            }
+                        }
+                        { ST
+                            { IF
+                                { IS_BT
+                                    { "d" }
+                                    { 0.0 }
+                                }
+                                { ELSE
+                                    { ST
+                                        { OUT
+                                            { PARAM
+                                                { 228.0 }
+                                                { NIL }
+                                            }
+                                            { NIL }
+                                        }
+                                        { NIL }
+                                    }
+                                    { ST
+                                        { EQ
+                                            { "d" }
+                                            { SQRT
+                                                { "d" }
+                                                { NIL }
+                                            }
+                                        }
+                                        { ST
+                                            { EQ
+                                                { "b?" }
+                                                { MUL
+                                                    { -1.0 }
+                                                    { "b?" }
+                                                }
+                                            }
+                                            { ST
+                                                { EQ
+                                                    { "a?" }
+                                                    { MUL
+                                                        { 2.0 }
+                                                        { "a?" }
+                                                    }
+                                                }
+                                                { ST
+                                                    { VAR
+                                                        { "f" }
+                                                        { DIV
+                                                            { SUB
+                                                                { "b?" }
+                                                                { "d" }
+                                                            }
+                                                            { "a?" }
+                                                        }
+                                                    }
+                                                    { ST
+                                                        { VAR
+                                                            { "f#" }
+                                                            { DIV
+                                                                { ADD
+                                                                    { "b?" }
+                                                                    { "d" }
+                                                                }
+                                                                { "a?" }
+                                                            }
+                                                        }
+                                                        { ST
+                                                            { OUT
+                                                                { PARAM
+                                                                    { "f" }
+                                                                    { NIL }
+                                                                }
+                                                                { NIL }
+                                                            }
+                                                            { ST
+                                                                { OUT
+                                                                    { PARAM
+                                                                        { "f#" }
+                                                                        { NIL }
+                                                                    }
+                                                                    { NIL }
+                                                                }
+                                                                { NIL }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            { ST
+                                { RET
+                                    { 0.0 }
+                                    { NIL }
+                                }
+                                { NIL }
+                            }
+                        }
+                    }
+                }
+                { NIL }
+            }
+        }
+    }
+}

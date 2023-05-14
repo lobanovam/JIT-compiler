@@ -1,0 +1,767 @@
+digraph {
+rankdir=LR;
+node [ shape=record ];
+struct0 [
+label = "<type>type: SPEC_TYPE|<spec>spec: FUNC", style = "filled", fillcolor = "red" 
+];
+struct1 [
+label = "<type>type: NAME_TYPE|<name>name: main", style = "filled", fillcolor = "cyan" 
+];
+struct0 -> struct1 [weight=100];
+struct2 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct1 -> struct2 [weight=100];
+struct3 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoF", style = "filled", fillcolor = "yellow" 
+];
+struct2 -> struct3 [weight=100];
+struct4 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct3 -> struct4 [weight=100];
+struct5 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct4 -> struct5 [weight=100];
+struct6 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct5 -> struct6 [weight=100];
+struct7 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct6 -> struct7 [weight=100];
+struct8 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IN", style = "filled", fillcolor = "blue" 
+];
+struct7 -> struct8 [weight=100];
+struct9 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct8 -> struct9 [weight=100];
+struct10 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct9 -> struct10 [weight=100];
+struct11 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct10 -> struct11 [weight=100];
+struct12 [
+label = "<type>type: VAR_TYPE|<var>var: b", style = "filled", fillcolor = "green" 
+];
+struct11 -> struct12 [weight=100];
+struct13 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct12 -> struct13 [weight=100];
+struct14 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct13 -> struct14 [weight=100];
+struct15 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IN", style = "filled", fillcolor = "blue" 
+];
+struct14 -> struct15 [weight=100];
+struct16 [
+label = "<type>type: VAR_TYPE|<var>var: b", style = "filled", fillcolor = "green" 
+];
+struct15 -> struct16 [weight=100];
+struct17 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct16 -> struct17 [weight=100];
+struct18 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct17 -> struct18 [weight=100];
+struct19 [
+label = "<type>type: VAR_TYPE|<var>var: c", style = "filled", fillcolor = "green" 
+];
+struct18 -> struct19 [weight=100];
+struct20 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct19 -> struct20 [weight=100];
+struct21 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct20 -> struct21 [weight=100];
+struct22 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IN", style = "filled", fillcolor = "blue" 
+];
+struct21 -> struct22 [weight=100];
+struct23 [
+label = "<type>type: VAR_TYPE|<var>var: c", style = "filled", fillcolor = "green" 
+];
+struct22 -> struct23 [weight=100];
+struct24 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct23 -> struct24 [weight=100];
+struct25 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IF", style = "filled", fillcolor = "orange" 
+];
+struct24 -> struct25 [weight=100];
+struct26 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoC", style = "filled", fillcolor = "blue" 
+];
+struct25 -> struct26 [weight=100];
+struct27 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct26 -> struct27 [weight=100];
+struct28 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IS_EE", style = "filled", fillcolor = "blue" 
+];
+struct27 -> struct28 [weight=100];
+struct29 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct28 -> struct29 [weight=100];
+struct30 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoC", style = "filled", fillcolor = "blue" 
+];
+struct29 -> struct30 [weight=100];
+struct31 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct30 -> struct31 [weight=100];
+struct32 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct31 -> struct32 [weight=100];
+struct33 [
+label = "<type>type: SPEC_TYPE|<spec>spec: CALL", style = "filled", fillcolor = "blue" 
+];
+struct32 -> struct33 [weight=100];
+struct34 [
+label = "<type>type: NAME_TYPE|<name>name: firstNull", style = "filled", fillcolor = "cyan" 
+];
+struct33 -> struct34 [weight=100];
+struct35 [
+label = "<type>type: VAR_TYPE|<var>var: b", style = "filled", fillcolor = "green" 
+];
+struct34 -> struct35 [weight=100];
+struct36 [
+label = "<type>type: VAR_TYPE|<var>var: c", style = "filled", fillcolor = "green" 
+];
+struct35 -> struct36 [weight=100];
+struct37 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct36 -> struct37 [weight=100];
+struct38 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ELSE", style = "filled", fillcolor = "orange" 
+];
+struct37 -> struct38 [weight=100];
+struct39 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct38 -> struct39 [weight=100];
+struct40 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct39 -> struct40 [weight=100];
+struct41 [
+label = "<type>type: SPEC_TYPE|<spec>spec: CALL", style = "filled", fillcolor = "blue" 
+];
+struct40 -> struct41 [weight=100];
+struct42 [
+label = "<type>type: NAME_TYPE|<name>name: full", style = "filled", fillcolor = "cyan" 
+];
+struct41 -> struct42 [weight=100];
+struct43 [
+label = "<type>type: VAR_TYPE|<var>var: a", style = "filled", fillcolor = "green" 
+];
+struct42 -> struct43 [weight=100];
+struct44 [
+label = "<type>type: VAR_TYPE|<var>var: b", style = "filled", fillcolor = "green" 
+];
+struct43 -> struct44 [weight=100];
+struct45 [
+label = "<type>type: VAR_TYPE|<var>var: c", style = "filled", fillcolor = "green" 
+];
+struct44 -> struct45 [weight=100];
+struct46 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct45 -> struct46 [weight=100];
+struct47 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ENDIF", style = "filled", fillcolor = "orange" 
+];
+struct46 -> struct47 [weight=100];
+struct48 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoF", style = "filled", fillcolor = "yellow" 
+];
+struct47 -> struct48 [weight=100];
+struct49 [
+label = "<type>type: SPEC_TYPE|<spec>spec: FUNC", style = "filled", fillcolor = "red" 
+];
+struct48 -> struct49 [weight=100];
+struct50 [
+label = "<type>type: NAME_TYPE|<name>name: firstNull", style = "filled", fillcolor = "cyan" 
+];
+struct49 -> struct50 [weight=100];
+struct51 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct50 -> struct51 [weight=100];
+struct52 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct51 -> struct52 [weight=100];
+struct53 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct52 -> struct53 [weight=100];
+struct54 [
+label = "<type>type: VAR_TYPE|<var>var: c#", style = "filled", fillcolor = "green" 
+];
+struct53 -> struct54 [weight=100];
+struct55 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct54 -> struct55 [weight=100];
+struct56 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoF", style = "filled", fillcolor = "yellow" 
+];
+struct55 -> struct56 [weight=100];
+struct57 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IF", style = "filled", fillcolor = "orange" 
+];
+struct56 -> struct57 [weight=100];
+struct58 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoC", style = "filled", fillcolor = "blue" 
+];
+struct57 -> struct58 [weight=100];
+struct59 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct58 -> struct59 [weight=100];
+struct60 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IS_EE", style = "filled", fillcolor = "blue" 
+];
+struct59 -> struct60 [weight=100];
+struct61 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct60 -> struct61 [weight=100];
+struct62 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoC", style = "filled", fillcolor = "blue" 
+];
+struct61 -> struct62 [weight=100];
+struct63 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct62 -> struct63 [weight=100];
+struct64 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct63 -> struct64 [weight=100];
+struct65 [
+label = "<type>type: SPEC_TYPE|<spec>spec: CALL", style = "filled", fillcolor = "blue" 
+];
+struct64 -> struct65 [weight=100];
+struct66 [
+label = "<type>type: NAME_TYPE|<name>name: secondNull", style = "filled", fillcolor = "cyan" 
+];
+struct65 -> struct66 [weight=100];
+struct67 [
+label = "<type>type: VAR_TYPE|<var>var: c#", style = "filled", fillcolor = "green" 
+];
+struct66 -> struct67 [weight=100];
+struct68 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct67 -> struct68 [weight=100];
+struct69 [
+label = "<type>type: SPEC_TYPE|<spec>spec: RET", style = "filled", fillcolor = "blue" 
+];
+struct68 -> struct69 [weight=100];
+struct70 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct69 -> struct70 [weight=100];
+struct71 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ELSE", style = "filled", fillcolor = "orange" 
+];
+struct70 -> struct71 [weight=100];
+struct72 [
+label = "<type>type: VAR_TYPE|<var>var: c#", style = "filled", fillcolor = "green" 
+];
+struct71 -> struct72 [weight=100];
+struct73 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct72 -> struct73 [weight=100];
+struct74 [
+label = "<type>type: VAR_TYPE|<var>var: c#", style = "filled", fillcolor = "green" 
+];
+struct73 -> struct74 [weight=100];
+struct75 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct74 -> struct75 [weight=100];
+struct76 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: -1.000000", style = "filled", fillcolor = "grey" 
+];
+struct75 -> struct76 [weight=100];
+struct77 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct76 -> struct77 [weight=100];
+struct78 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct77 -> struct78 [weight=100];
+struct79 [
+label = "<type>type: VAR_TYPE|<var>var: c#", style = "filled", fillcolor = "green" 
+];
+struct78 -> struct79 [weight=100];
+struct80 [
+label = "<type>type: SPEC_TYPE|<spec>spec: DIV", style = "filled", fillcolor = "blue" 
+];
+struct79 -> struct80 [weight=100];
+struct81 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct80 -> struct81 [weight=100];
+struct82 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ENDIF", style = "filled", fillcolor = "orange" 
+];
+struct81 -> struct82 [weight=100];
+struct83 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct82 -> struct83 [weight=100];
+struct84 [
+label = "<type>type: VAR_TYPE|<var>var: b#", style = "filled", fillcolor = "green" 
+];
+struct83 -> struct84 [weight=100];
+struct85 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct84 -> struct85 [weight=100];
+struct86 [
+label = "<type>type: SPEC_TYPE|<spec>spec: RET", style = "filled", fillcolor = "blue" 
+];
+struct85 -> struct86 [weight=100];
+struct87 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct86 -> struct87 [weight=100];
+struct88 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoF", style = "filled", fillcolor = "yellow" 
+];
+struct87 -> struct88 [weight=100];
+struct89 [
+label = "<type>type: SPEC_TYPE|<spec>spec: FUNC", style = "filled", fillcolor = "red" 
+];
+struct88 -> struct89 [weight=100];
+struct90 [
+label = "<type>type: NAME_TYPE|<name>name: secondNull", style = "filled", fillcolor = "cyan" 
+];
+struct89 -> struct90 [weight=100];
+struct91 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct90 -> struct91 [weight=100];
+struct92 [
+label = "<type>type: VAR_TYPE|<var>var: c#b", style = "filled", fillcolor = "green" 
+];
+struct91 -> struct92 [weight=100];
+struct93 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct92 -> struct93 [weight=100];
+struct94 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoF", style = "filled", fillcolor = "yellow" 
+];
+struct93 -> struct94 [weight=100];
+struct95 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IF", style = "filled", fillcolor = "orange" 
+];
+struct94 -> struct95 [weight=100];
+struct96 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoC", style = "filled", fillcolor = "blue" 
+];
+struct95 -> struct96 [weight=100];
+struct97 [
+label = "<type>type: VAR_TYPE|<var>var: c#b", style = "filled", fillcolor = "green" 
+];
+struct96 -> struct97 [weight=100];
+struct98 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IS_EE", style = "filled", fillcolor = "blue" 
+];
+struct97 -> struct98 [weight=100];
+struct99 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct98 -> struct99 [weight=100];
+struct100 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoC", style = "filled", fillcolor = "blue" 
+];
+struct99 -> struct100 [weight=100];
+struct101 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct100 -> struct101 [weight=100];
+struct102 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 6969.000000", style = "filled", fillcolor = "grey" 
+];
+struct101 -> struct102 [weight=100];
+struct103 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct102 -> struct103 [weight=100];
+struct104 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ELSE", style = "filled", fillcolor = "orange" 
+];
+struct103 -> struct104 [weight=100];
+struct105 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct104 -> struct105 [weight=100];
+struct106 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 228.000000", style = "filled", fillcolor = "grey" 
+];
+struct105 -> struct106 [weight=100];
+struct107 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct106 -> struct107 [weight=100];
+struct108 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ENDIF", style = "filled", fillcolor = "orange" 
+];
+struct107 -> struct108 [weight=100];
+struct109 [
+label = "<type>type: SPEC_TYPE|<spec>spec: RET", style = "filled", fillcolor = "blue" 
+];
+struct108 -> struct109 [weight=100];
+struct110 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct109 -> struct110 [weight=100];
+struct111 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoF", style = "filled", fillcolor = "yellow" 
+];
+struct110 -> struct111 [weight=100];
+struct112 [
+label = "<type>type: SPEC_TYPE|<spec>spec: FUNC", style = "filled", fillcolor = "red" 
+];
+struct111 -> struct112 [weight=100];
+struct113 [
+label = "<type>type: NAME_TYPE|<name>name: full", style = "filled", fillcolor = "cyan" 
+];
+struct112 -> struct113 [weight=100];
+struct114 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct113 -> struct114 [weight=100];
+struct115 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct114 -> struct115 [weight=100];
+struct116 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct115 -> struct116 [weight=100];
+struct117 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct116 -> struct117 [weight=100];
+struct118 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct117 -> struct118 [weight=100];
+struct119 [
+label = "<type>type: VAR_TYPE|<var>var: c?", style = "filled", fillcolor = "green" 
+];
+struct118 -> struct119 [weight=100];
+struct120 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct119 -> struct120 [weight=100];
+struct121 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoF", style = "filled", fillcolor = "yellow" 
+];
+struct120 -> struct121 [weight=100];
+struct122 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct121 -> struct122 [weight=100];
+struct123 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct122 -> struct123 [weight=100];
+struct124 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct123 -> struct124 [weight=100];
+struct125 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct124 -> struct125 [weight=100];
+struct126 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct125 -> struct126 [weight=100];
+struct127 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct126 -> struct127 [weight=100];
+struct128 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SUB", style = "filled", fillcolor = "blue" 
+];
+struct127 -> struct128 [weight=100];
+struct129 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 4.000000", style = "filled", fillcolor = "grey" 
+];
+struct128 -> struct129 [weight=100];
+struct130 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct129 -> struct130 [weight=100];
+struct131 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct130 -> struct131 [weight=100];
+struct132 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct131 -> struct132 [weight=100];
+struct133 [
+label = "<type>type: VAR_TYPE|<var>var: c?", style = "filled", fillcolor = "green" 
+];
+struct132 -> struct133 [weight=100];
+struct134 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IF", style = "filled", fillcolor = "orange" 
+];
+struct133 -> struct134 [weight=100];
+struct135 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SoC", style = "filled", fillcolor = "blue" 
+];
+struct134 -> struct135 [weight=100];
+struct136 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct135 -> struct136 [weight=100];
+struct137 [
+label = "<type>type: SPEC_TYPE|<spec>spec: IS_BT", style = "filled", fillcolor = "blue" 
+];
+struct136 -> struct137 [weight=100];
+struct138 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct137 -> struct138 [weight=100];
+struct139 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoC", style = "filled", fillcolor = "blue" 
+];
+struct138 -> struct139 [weight=100];
+struct140 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct139 -> struct140 [weight=100];
+struct141 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 228.000000", style = "filled", fillcolor = "grey" 
+];
+struct140 -> struct141 [weight=100];
+struct142 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct141 -> struct142 [weight=100];
+struct143 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ELSE", style = "filled", fillcolor = "orange" 
+];
+struct142 -> struct143 [weight=100];
+struct144 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct143 -> struct144 [weight=100];
+struct145 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct144 -> struct145 [weight=100];
+struct146 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SQRT", style = "filled", fillcolor = "blue" 
+];
+struct145 -> struct146 [weight=100];
+struct147 [
+label = "<type>type: SPEC_TYPE|<spec>spec: (", style = "filled", fillcolor = "blue" 
+];
+struct146 -> struct147 [weight=100];
+struct148 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct147 -> struct148 [weight=100];
+struct149 [
+label = "<type>type: SPEC_TYPE|<spec>spec: )", style = "filled", fillcolor = "blue" 
+];
+struct148 -> struct149 [weight=100];
+struct150 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct149 -> struct150 [weight=100];
+struct151 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct150 -> struct151 [weight=100];
+struct152 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: -1.000000", style = "filled", fillcolor = "grey" 
+];
+struct151 -> struct152 [weight=100];
+struct153 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct152 -> struct153 [weight=100];
+struct154 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct153 -> struct154 [weight=100];
+struct155 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct154 -> struct155 [weight=100];
+struct156 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct155 -> struct156 [weight=100];
+struct157 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 2.000000", style = "filled", fillcolor = "grey" 
+];
+struct156 -> struct157 [weight=100];
+struct158 [
+label = "<type>type: SPEC_TYPE|<spec>spec: MUL", style = "filled", fillcolor = "blue" 
+];
+struct157 -> struct158 [weight=100];
+struct159 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct158 -> struct159 [weight=100];
+struct160 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct159 -> struct160 [weight=100];
+struct161 [
+label = "<type>type: VAR_TYPE|<var>var: f", style = "filled", fillcolor = "green" 
+];
+struct160 -> struct161 [weight=100];
+struct162 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct161 -> struct162 [weight=100];
+struct163 [
+label = "<type>type: SPEC_TYPE|<spec>spec: (", style = "filled", fillcolor = "blue" 
+];
+struct162 -> struct163 [weight=100];
+struct164 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct163 -> struct164 [weight=100];
+struct165 [
+label = "<type>type: SPEC_TYPE|<spec>spec: SUB", style = "filled", fillcolor = "blue" 
+];
+struct164 -> struct165 [weight=100];
+struct166 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct165 -> struct166 [weight=100];
+struct167 [
+label = "<type>type: SPEC_TYPE|<spec>spec: )", style = "filled", fillcolor = "blue" 
+];
+struct166 -> struct167 [weight=100];
+struct168 [
+label = "<type>type: SPEC_TYPE|<spec>spec: DIV", style = "filled", fillcolor = "blue" 
+];
+struct167 -> struct168 [weight=100];
+struct169 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct168 -> struct169 [weight=100];
+struct170 [
+label = "<type>type: SPEC_TYPE|<spec>spec: VAR", style = "filled", fillcolor = "blue" 
+];
+struct169 -> struct170 [weight=100];
+struct171 [
+label = "<type>type: VAR_TYPE|<var>var: f#", style = "filled", fillcolor = "green" 
+];
+struct170 -> struct171 [weight=100];
+struct172 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EQ", style = "filled", fillcolor = "blue" 
+];
+struct171 -> struct172 [weight=100];
+struct173 [
+label = "<type>type: SPEC_TYPE|<spec>spec: (", style = "filled", fillcolor = "blue" 
+];
+struct172 -> struct173 [weight=100];
+struct174 [
+label = "<type>type: VAR_TYPE|<var>var: b?", style = "filled", fillcolor = "green" 
+];
+struct173 -> struct174 [weight=100];
+struct175 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ADD", style = "filled", fillcolor = "blue" 
+];
+struct174 -> struct175 [weight=100];
+struct176 [
+label = "<type>type: VAR_TYPE|<var>var: d", style = "filled", fillcolor = "green" 
+];
+struct175 -> struct176 [weight=100];
+struct177 [
+label = "<type>type: SPEC_TYPE|<spec>spec: )", style = "filled", fillcolor = "blue" 
+];
+struct176 -> struct177 [weight=100];
+struct178 [
+label = "<type>type: SPEC_TYPE|<spec>spec: DIV", style = "filled", fillcolor = "blue" 
+];
+struct177 -> struct178 [weight=100];
+struct179 [
+label = "<type>type: VAR_TYPE|<var>var: a?", style = "filled", fillcolor = "green" 
+];
+struct178 -> struct179 [weight=100];
+struct180 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct179 -> struct180 [weight=100];
+struct181 [
+label = "<type>type: VAR_TYPE|<var>var: f", style = "filled", fillcolor = "green" 
+];
+struct180 -> struct181 [weight=100];
+struct182 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct181 -> struct182 [weight=100];
+struct183 [
+label = "<type>type: SPEC_TYPE|<spec>spec: OUT", style = "filled", fillcolor = "blue" 
+];
+struct182 -> struct183 [weight=100];
+struct184 [
+label = "<type>type: VAR_TYPE|<var>var: f#", style = "filled", fillcolor = "green" 
+];
+struct183 -> struct184 [weight=100];
+struct185 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoPAR", style = "filled", fillcolor = "blue" 
+];
+struct184 -> struct185 [weight=100];
+struct186 [
+label = "<type>type: SPEC_TYPE|<spec>spec: ENDIF", style = "filled", fillcolor = "orange" 
+];
+struct185 -> struct186 [weight=100];
+struct187 [
+label = "<type>type: SPEC_TYPE|<spec>spec: RET", style = "filled", fillcolor = "blue" 
+];
+struct186 -> struct187 [weight=100];
+struct188 [
+label = "<type>type: VAL_TYPE|<dbl>dbl: 0.000000", style = "filled", fillcolor = "grey" 
+];
+struct187 -> struct188 [weight=100];
+struct189 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EoF", style = "filled", fillcolor = "yellow" 
+];
+struct188 -> struct189 [weight=100];
+struct190 [
+label = "<type>type: SPEC_TYPE|<spec>spec: EOT", style = "filled", fillcolor = "purple" 
+];
+struct189 -> struct190 [weight=100];
+}

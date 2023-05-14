@@ -1,0 +1,11 @@
+trebleKey main[] {
+    note a = 0 tatto
+    learn notes[a] tatto
+    note c = a tatto
+    reprise "c>1"
+        c = c - 1 tatto
+        a = a * c tatto
+    done
+    play[a]
+}
+
