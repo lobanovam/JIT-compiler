@@ -2,7 +2,7 @@ CC = g++
 IFLAGS = -I./includes/
 FLAGS = -fno-omit-frame-pointer
 
-SRC = ./src/JIT.cpp ./src/log.cpp
+SRC = ./src/JIT.cpp ./src/log.cpp ./src/translator.cpp ./src/main.cpp
 
 OBJ_TEMP = $(subst ./src/, ./src/build/, $(SRC))
 OBJ      = $(subst .cpp,.o, $(OBJ_TEMP))

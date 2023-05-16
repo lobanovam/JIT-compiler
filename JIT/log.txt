@@ -203,12 +203,10 @@ code[188] =  17
 #in SetIrCommand cmd[0] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[2] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[4] is IN
 	 IN has no args
@@ -216,17 +214,14 @@ code[188] =  17
 #in SetIrCommand cmd[5] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[7] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[9] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[11] is IN
 	 IN has no args
@@ -234,17 +229,14 @@ code[188] =  17
 #in SetIrCommand cmd[12] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[14] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[16] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[18] is IN
 	 IN has no args
@@ -252,17 +244,14 @@ code[188] =  17
 #in SetIrCommand cmd[19] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[21] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[23] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[25] is JNE
 	 JNE has args
@@ -272,12 +261,10 @@ code[188] =  17
 #in SetIrCommand cmd[27] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[29] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[31] is CALL
 	 CALL has args
@@ -287,7 +274,6 @@ code[188] =  17
 #in SetIrCommand cmd[33] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[35] is JUMP
 	 JUMP has args
@@ -297,17 +283,14 @@ code[188] =  17
 #in SetIrCommand cmd[37] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[39] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[41] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[43] is CALL
 	 CALL has args
@@ -317,7 +300,6 @@ code[188] =  17
 #in SetIrCommand cmd[45] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[47] is HLT
 	 HLT has no args
@@ -325,22 +307,18 @@ code[188] =  17
 #in SetIrCommand cmd[48] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[50] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[52] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[54] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[56] is JNE
 	 JNE has args
@@ -350,7 +328,6 @@ code[188] =  17
 #in SetIrCommand cmd[58] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[60] is CALL
 	 CALL has args
@@ -360,12 +337,10 @@ code[188] =  17
 #in SetIrCommand cmd[62] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[64] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[66] is RET
 	 RET has no args
@@ -378,12 +353,10 @@ code[188] =  17
 #in SetIrCommand cmd[69] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[71] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[73] is MUL
 	 MUL has no args
@@ -391,17 +364,14 @@ code[188] =  17
 #in SetIrCommand cmd[74] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[76] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[78] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[80] is DIV
 	 DIV has no args
@@ -409,12 +379,10 @@ code[188] =  17
 #in SetIrCommand cmd[81] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[83] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[85] is OUT
 	 OUT has no args
@@ -422,7 +390,6 @@ code[188] =  17
 #in SetIrCommand cmd[86] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[88] is RET
 	 RET has no args
@@ -430,17 +397,14 @@ code[188] =  17
 #in SetIrCommand cmd[89] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[91] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[93] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[95] is JNE
 	 JNE has args
@@ -450,7 +414,6 @@ code[188] =  17
 #in SetIrCommand cmd[97] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[99] is OUT
 	 OUT has no args
@@ -463,7 +426,6 @@ code[188] =  17
 #in SetIrCommand cmd[102] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[104] is OUT
 	 OUT has no args
@@ -471,7 +433,6 @@ code[188] =  17
 #in SetIrCommand cmd[105] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[107] is RET
 	 RET has no args
@@ -479,27 +440,22 @@ code[188] =  17
 #in SetIrCommand cmd[108] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[110] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[112] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[114] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[116] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[118] is MUL
 	 MUL has no args
@@ -507,7 +463,6 @@ code[188] =  17
 #in SetIrCommand cmd[119] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[121] is MUL
 	 MUL has no args
@@ -515,12 +470,10 @@ code[188] =  17
 #in SetIrCommand cmd[122] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[124] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[126] is MUL
 	 MUL has no args
@@ -531,17 +484,14 @@ code[188] =  17
 #in SetIrCommand cmd[128] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[130] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[132] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[134] is JBE
 	 JBE has args
@@ -551,7 +501,6 @@ code[188] =  17
 #in SetIrCommand cmd[136] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[138] is OUT
 	 OUT has no args
@@ -564,7 +513,6 @@ code[188] =  17
 #in SetIrCommand cmd[141] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[143] is SQRT
 	 SQRT has no args
@@ -572,17 +520,14 @@ code[188] =  17
 #in SetIrCommand cmd[144] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[146] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[148] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[150] is MUL
 	 MUL has no args
@@ -590,17 +535,14 @@ code[188] =  17
 #in SetIrCommand cmd[151] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[153] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[155] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[157] is MUL
 	 MUL has no args
@@ -608,22 +550,18 @@ code[188] =  17
 #in SetIrCommand cmd[158] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[160] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[162] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[164] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[166] is SUB
 	 SUB has no args
@@ -634,22 +572,18 @@ code[188] =  17
 #in SetIrCommand cmd[168] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[170] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[172] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[174] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[176] is ADD
 	 ADD has no args
@@ -660,12 +594,10 @@ code[188] =  17
 #in SetIrCommand cmd[178] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-	 	 size is 2
 
 #in SetIrCommand cmd[180] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[182] is OUT
 	 OUT has no args
@@ -673,7 +605,6 @@ code[188] =  17
 #in SetIrCommand cmd[183] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
-	 	 size is 2
 
 #in SetIrCommand cmd[185] is OUT
 	 OUT has no args
@@ -681,11 +612,36 @@ code[188] =  17
 #in SetIrCommand cmd[186] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
-	 	 size is 2
 
 #in SetIrCommand cmd[188] is RET
 	 RET has no args
 0
+#in SetJumpAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in getRelAddr
+
+#in X86_CODE_CTOR
+
 
 
 log file is closed
