@@ -81,7 +81,7 @@ DEF_CMD(OUT, 8, 0,
 {
     //printf("--------------------------------------\n");
     double a = (double)StackPop(&(cpu->stk1)) / PRECISION;
-    //printf("OUT PRINT IS %.3lf\n", a);
+    printf("OUT PRINT IS %.3lf\n", a);
     //printf("--------------------------------------\n");
 })
 

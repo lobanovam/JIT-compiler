@@ -28,9 +28,9 @@ int main() {
 
     SetIR(&IR_HEAD);
 
-    IR_Dump(&IR_HEAD);
-
     SetJumpAddr(&IR_HEAD);
+
+    IR_Dump(&IR_HEAD);
 
     X86_CODE_T X86_CODE = {};
     log("x86CmdCt is %zu\n", IR_HEAD.x86CmdCt);
@@ -59,14 +59,20 @@ void ExecuteJIT(X86_CODE_T* X86_CODE) {
     assert (OneMoreSegFault != nullptr);
 
     log("\nSTARTING!!!\n\n");
+    clock_t meanTime = 0;
 
-    clock_t start = clock();
-    for (int i = 0; i < 10000; i++) {
-        OneMoreSegFault();
+    for (int j = 0; j < 10; j++) {
+
+        clock_t start = clock();
+        for (int i = 0; i < 10000; i++) {
+            OneMoreSegFault();
+        }
+        clock_t end = clock();
+
+        meanTime += (end - start);
+
     }
-    clock_t end = clock();
-
-    printf("\ntime is %lf\n", (double)(end - start) * 1000 / (double) CLOCKS_PER_SEC);
+    printf("\ntime is %lf\n", (double)(meanTime) * 1000 / (10 *(double) CLOCKS_PER_SEC));
 
     
     log("\nDONE!!!\n\n");

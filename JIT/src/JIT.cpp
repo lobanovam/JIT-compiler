@@ -393,15 +393,15 @@ void IR_Dump(IR_HEAD_T* IR_HEAD) {
         const char* name = IR_HEAD->ir_StructArr[i].name;
 
         if (isJump(IR_HEAD->ir_StructArr[i].nativeNum)) {
-            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <size> size(native): %d | next ip: %d\", style = \"filled\", fillcolor = \"cyan\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize,  IR_HEAD->ir_StructArr[i].SpecArg.JumpInfo.nextIp);
+            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <sizeP> size(byteCode): %d | <sizeN> size(native): %d |  next ip: %d\", style = \"filled\", fillcolor = \"cyan\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, IR_HEAD->ir_StructArr[i].x86_Size ,IR_HEAD->ir_StructArr[i].SpecArg.JumpInfo.nextIp);
         }
         else if (isPushPop(IR_HEAD->ir_StructArr[i].nativeNum)) {
 
             char* argType = getArgType(IR_HEAD->ir_StructArr[i].SpecArg.argType); 
-            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <size> size(native): %d | argType: %s\", style = \"filled\", fillcolor = \"green\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, argType);
+            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <sizeP> size(byteCode): %d | <sizeN> size(native): %d | argType: %s\", style = \"filled\", fillcolor = \"green\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, IR_HEAD->ir_StructArr[i].x86_Size, argType);
         }
         else {
-            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <size> size(native): %d \", style = \"filled\", fillcolor = \"gray\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize);
+            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <sizeP> size(byteCode) : %d | <sizeN> size(native): %d | \", style = \"filled\", fillcolor = \"gray\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, IR_HEAD->ir_StructArr[i].x86_Size);
         }
         if (i == 0) continue;
 

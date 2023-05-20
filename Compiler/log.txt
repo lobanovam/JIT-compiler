@@ -3,12 +3,12 @@ log file is opened
 
     ##### in readFile() #####
 
-    buff pointer is 0x55ea39b37680
+    buff pointer is 0x55691b6b4680
 
         ##### in trimSpaces() #####
         ##### out trimSpaces() #####
 
-    lines_count is 51
+    lines_count is 11
 
     ##### out readFile() #####
 text is 
@@ -16,54 +16,14 @@ text is
 trebleKeymain[]{
 notea=0tatto
 learnnotes[a]tatto
-noteb=0tatto
-learnnotes[b]tatto
-notec=0tatto
-learnnotes[c]tatto
-
-conductorsays"a==0"
-a=D.S.alcodafirstNull[b,c]tatto
-disagree
-a=D.S.alcodafull[a,b,c]tatto
+notec=atatto
+reprise"c>1"
+c=c-1tatto
+a=a*ctatto
 done
+play[a]
 }
 
-bassKeyfirstNull[noteb#,notec#]{
-conductorsays"b#==0"
-b#=D.S.alcodasecondNull[c#]tatto
-coda0
-disagree
-c#=c#*negtatto
-b#=c#/b#tatto
-done
-play[b#]
-coda0
-}
-
-bassKeysecondNull[notec#b]{
-conductorsays"c#b==0"
-play[6969]
-disagree
-play[228]
-done
-coda0
-}
-
-bassKeyfull[notea?,noteb?,notec?]{
-noted=b?*b?-4*a?*c?tatto
-conductorsays"d<0"
-play[228]tatto
-disagree
-d=sqrt(d)tatto
-b?=neg*b?tatto
-a?=2*a?tatto
-notef=(b?-d)/a?tatto
-notef#=(b?+d)/a?tatto
-play[f]tatto
-play[f#]tatto
-done
-coda0
-}
 
 ---------------------
 
@@ -150,17 +110,17 @@ found new line
 i is 52, curCH is 110, line is 4
 found note
 cur ch is n
-in getVarName cur ch is b
-result var name is b, its len is 1
+in getVarName cur ch is c
+result var name is c, its len is 1
 
 
 i is 57, curCH is 61, line is 4
 got 1 signed operator
 
 
-i is 58, curCH is 48, line is 4
-found val
-res val is 0.000000
+i is 58, curCH is 97, line is 4
+in getVarName cur ch is a
+result var name is a, its len is 1
 
 
 i is 59, curCH is 116, line is 4
@@ -175,1193 +135,164 @@ i is 65, curCH is 10, line is 4
 found new line
 
 
-i is 66, curCH is 108, line is 5
-found IN
+i is 66, curCH is 114, line is 5
+found WHILE
 
 
-i is 77, curCH is 98, line is 5
-in getVarName cur ch is b
-result var name is b, its len is 1
-
-
-i is 78, curCH is 93, line is 5
-found ), end of params
-
-
-i is 79, curCH is 116, line is 5
-found tatto
-
-
-i is 84, curCH is 13, line is 5
-found \r 
-
-
-i is 85, curCH is 10, line is 5
-found new line
-
-
-i is 86, curCH is 110, line is 6
-found note
-cur ch is n
+i is 74, curCH is 99, line is 5
 in getVarName cur ch is c
 result var name is c, its len is 1
 
 
-i is 91, curCH is 61, line is 6
+i is 75, curCH is 62, line is 5
 got 1 signed operator
 
 
-i is 92, curCH is 48, line is 6
+i is 76, curCH is 49, line is 5
 found val
-res val is 0.000000
+res val is 1.000000
 
 
-i is 93, curCH is 116, line is 6
-found tatto
+i is 77, curCH is 34, line is 5
+found end of condition
 
 
-i is 98, curCH is 13, line is 6
+i is 78, curCH is 13, line is 5
 found \r 
 
 
-i is 99, curCH is 10, line is 6
+i is 79, curCH is 10, line is 5
 found new line
 
 
-i is 100, curCH is 108, line is 7
-found IN
-
-
-i is 111, curCH is 99, line is 7
+i is 80, curCH is 99, line is 6
 in getVarName cur ch is c
 result var name is c, its len is 1
 
 
-i is 112, curCH is 93, line is 7
-found ), end of params
-
-
-i is 113, curCH is 116, line is 7
-found tatto
-
-
-i is 118, curCH is 13, line is 7
-found \r 
-
-
-i is 119, curCH is 10, line is 7
-found new line
-
-
-i is 120, curCH is 13, line is 8
-found \r 
-
-
-i is 121, curCH is 10, line is 8
-found new line
-
-
-i is 122, curCH is 99, line is 9
-found IF
-
-i is 136, curCH is 97, line is 9
-in getVarName cur ch is a
-result var name is a, its len is 1
-
-
-i is 137, curCH is 61, line is 9
-got 2 signed operator
-
-
-i is 139, curCH is 48, line is 9
-found val
-res val is 0.000000
-
-
-i is 140, curCH is 34, line is 9
-found end of condition
-
-
-i is 141, curCH is 13, line is 9
-found \r 
-
-
-i is 142, curCH is 10, line is 9
-found new line
-
-
-i is 143, curCH is 97, line is 10
-in getVarName cur ch is a
-result var name is a, its len is 1
-
-
-i is 144, curCH is 61, line is 10
+i is 81, curCH is 61, line is 6
 got 1 signed operator
 
 
-i is 145, curCH is 68, line is 10
-found CALL func
-cur ch is f
-in getFuncName cur ch is f
-result func name is firstNull, its len is 9
-got call func firstNull
-
-
-i is 165, curCH is 98, line is 10
-in getVarName cur ch is b
-result var name is b, its len is 1
-
-
-i is 166, curCH is 44, line is 10
-
-
-i is 167, curCH is 99, line is 10
+i is 82, curCH is 99, line is 6
 in getVarName cur ch is c
 result var name is c, its len is 1
 
 
-i is 168, curCH is 93, line is 10
-found ), end of params
-
-
-i is 169, curCH is 116, line is 10
-found tatto
-
-
-i is 174, curCH is 13, line is 10
-found \r 
-
-
-i is 175, curCH is 10, line is 10
-found new line
-
-
-i is 176, curCH is 100, line is 11
-found ELSE
-
-
-i is 184, curCH is 13, line is 11
-found \r 
-
-
-i is 185, curCH is 10, line is 11
-found new line
-
-
-i is 186, curCH is 97, line is 12
-in getVarName cur ch is a
-result var name is a, its len is 1
-
-
-i is 187, curCH is 61, line is 12
+i is 83, curCH is 45, line is 6
 got 1 signed operator
 
 
-i is 188, curCH is 68, line is 12
-found CALL func
-cur ch is f
-in getFuncName cur ch is f
-result func name is full, its len is 4
-got call func full
+i is 84, curCH is 49, line is 6
+found val
+res val is 1.000000
 
 
-i is 203, curCH is 97, line is 12
+i is 85, curCH is 116, line is 6
+found tatto
+
+
+i is 90, curCH is 13, line is 6
+found \r 
+
+
+i is 91, curCH is 10, line is 6
+found new line
+
+
+i is 92, curCH is 97, line is 7
 in getVarName cur ch is a
 result var name is a, its len is 1
 
 
-i is 204, curCH is 44, line is 12
+i is 93, curCH is 61, line is 7
+got 1 signed operator
 
 
-i is 205, curCH is 98, line is 12
-in getVarName cur ch is b
-result var name is b, its len is 1
+i is 94, curCH is 97, line is 7
+in getVarName cur ch is a
+result var name is a, its len is 1
 
 
-i is 206, curCH is 44, line is 12
+i is 95, curCH is 42, line is 7
+got 1 signed operator
 
 
-i is 207, curCH is 99, line is 12
+i is 96, curCH is 99, line is 7
 in getVarName cur ch is c
 result var name is c, its len is 1
 
 
-i is 208, curCH is 93, line is 12
-found ), end of params
-
-
-i is 209, curCH is 116, line is 12
+i is 97, curCH is 116, line is 7
 found tatto
 
 
-i is 214, curCH is 13, line is 12
+i is 102, curCH is 13, line is 7
 found \r 
 
 
-i is 215, curCH is 10, line is 12
+i is 103, curCH is 10, line is 7
 found new line
 
 
-i is 216, curCH is 100, line is 13
+i is 104, curCH is 100, line is 8
 found ENDIF
 
 
-i is 220, curCH is 13, line is 13
+i is 108, curCH is 13, line is 8
 found \r 
 
 
-i is 221, curCH is 10, line is 13
+i is 109, curCH is 10, line is 8
 found new line
 
 
-i is 222, curCH is 125, line is 14
+i is 110, curCH is 112, line is 9
+found OUT
+
+
+i is 115, curCH is 97, line is 9
+in getVarName cur ch is a
+result var name is a, its len is 1
+
+
+i is 116, curCH is 93, line is 9
+found ), end of params
+
+
+i is 117, curCH is 13, line is 9
+found \r 
+
+
+i is 118, curCH is 10, line is 9
+found new line
+
+
+i is 119, curCH is 125, line is 10
 found }, end of function
 
 
-i is 223, curCH is 13, line is 14
+i is 120, curCH is 13, line is 10
 found \r 
 
 
-i is 224, curCH is 10, line is 14
+i is 121, curCH is 10, line is 10
 found new line
 
 
-i is 225, curCH is 13, line is 15
+i is 122, curCH is 13, line is 11
 found \r 
 
 
-i is 226, curCH is 10, line is 15
+i is 123, curCH is 10, line is 11
 found new line
 
 
-i is 227, curCH is 98, line is 16
-found bassKey
-cur ch is f
-in getFuncName cur ch is f
-result func name is firstNull, its len is 9
-after func ch is [
-
-
-i is 244, curCH is 110, line is 16
-found note
-cur ch is n
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 250, curCH is 44, line is 16
-
-
-i is 251, curCH is 110, line is 16
-found note
-cur ch is n
-in getVarName cur ch is c
-result var name is c#, its len is 2
-
-
-i is 257, curCH is 93, line is 16
-found ), end of params
-
-
-i is 258, curCH is 123, line is 16
-found {, start of function
-
-
-i is 259, curCH is 13, line is 16
-found \r 
-
-
-i is 260, curCH is 10, line is 16
-found new line
-
-
-i is 261, curCH is 99, line is 17
-found IF
-
-i is 275, curCH is 98, line is 17
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 277, curCH is 61, line is 17
-got 2 signed operator
-
-
-i is 279, curCH is 48, line is 17
-found val
-res val is 0.000000
-
-
-i is 280, curCH is 34, line is 17
-found end of condition
-
-
-i is 281, curCH is 13, line is 17
-found \r 
-
-
-i is 282, curCH is 10, line is 17
-found new line
-
-
-i is 283, curCH is 98, line is 18
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 285, curCH is 61, line is 18
-got 1 signed operator
-
-
-i is 286, curCH is 68, line is 18
-found CALL func
-cur ch is s
-in getFuncName cur ch is s
-result func name is secondNull, its len is 10
-got call func secondNull
-
-
-i is 307, curCH is 99, line is 18
-in getVarName cur ch is c
-result var name is c#, its len is 2
-
-
-i is 309, curCH is 93, line is 18
-found ), end of params
-
-
-i is 310, curCH is 116, line is 18
-found tatto
-
-
-i is 315, curCH is 13, line is 18
-found \r 
-
-
-i is 316, curCH is 10, line is 18
-found new line
-
-
-i is 317, curCH is 99, line is 19
-found coda
-
-
-i is 321, curCH is 48, line is 19
-found val
-res val is 0.000000
-
-
-i is 322, curCH is 13, line is 19
-found \r 
-
-
-i is 323, curCH is 10, line is 19
-found new line
-
-
-i is 324, curCH is 100, line is 20
-found ELSE
-
-
-i is 332, curCH is 13, line is 20
-found \r 
-
-
-i is 333, curCH is 10, line is 20
-found new line
-
-
-i is 334, curCH is 99, line is 21
-in getVarName cur ch is c
-result var name is c#, its len is 2
-
-
-i is 336, curCH is 61, line is 21
-got 1 signed operator
-
-
-i is 337, curCH is 99, line is 21
-in getVarName cur ch is c
-result var name is c#, its len is 2
-
-
-i is 339, curCH is 42, line is 21
-got 1 signed operator
-
-
-i is 340, curCH is 110, line is 21
-
-
-i is 343, curCH is 116, line is 21
-found tatto
-
-
-i is 348, curCH is 13, line is 21
-found \r 
-
-
-i is 349, curCH is 10, line is 21
-found new line
-
-
-i is 350, curCH is 98, line is 22
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 352, curCH is 61, line is 22
-got 1 signed operator
-
-
-i is 353, curCH is 99, line is 22
-in getVarName cur ch is c
-result var name is c#, its len is 2
-
-
-i is 355, curCH is 47, line is 22
-got 1 signed operator
-
-
-i is 356, curCH is 98, line is 22
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 358, curCH is 116, line is 22
-found tatto
-
-
-i is 363, curCH is 13, line is 22
-found \r 
-
-
-i is 364, curCH is 10, line is 22
-found new line
-
-
-i is 365, curCH is 100, line is 23
-found ENDIF
-
-
-i is 369, curCH is 13, line is 23
-found \r 
-
-
-i is 370, curCH is 10, line is 23
-found new line
-
-
-i is 371, curCH is 112, line is 24
-found OUT
-
-
-i is 376, curCH is 98, line is 24
-in getVarName cur ch is b
-result var name is b#, its len is 2
-
-
-i is 378, curCH is 93, line is 24
-found ), end of params
-
-
-i is 379, curCH is 13, line is 24
-found \r 
-
-
-i is 380, curCH is 10, line is 24
-found new line
-
-
-i is 381, curCH is 99, line is 25
-found coda
-
-
-i is 385, curCH is 48, line is 25
-found val
-res val is 0.000000
-
-
-i is 386, curCH is 13, line is 25
-found \r 
-
-
-i is 387, curCH is 10, line is 25
-found new line
-
-
-i is 388, curCH is 125, line is 26
-found }, end of function
-
-
-i is 389, curCH is 13, line is 26
-found \r 
-
-
-i is 390, curCH is 10, line is 26
-found new line
-
-
-i is 391, curCH is 13, line is 27
-found \r 
-
-
-i is 392, curCH is 10, line is 27
-found new line
-
-
-i is 393, curCH is 98, line is 28
-found bassKey
-cur ch is s
-in getFuncName cur ch is s
-result func name is secondNull, its len is 10
-after func ch is [
-
-
-i is 411, curCH is 110, line is 28
-found note
-cur ch is n
-in getVarName cur ch is c
-result var name is c#b, its len is 3
-
-
-i is 418, curCH is 93, line is 28
-found ), end of params
-
-
-i is 419, curCH is 123, line is 28
-found {, start of function
-
-
-i is 420, curCH is 13, line is 28
-found \r 
-
-
-i is 421, curCH is 10, line is 28
-found new line
-
-
-i is 422, curCH is 99, line is 29
-found IF
-
-i is 436, curCH is 99, line is 29
-in getVarName cur ch is c
-result var name is c#b, its len is 3
-
-
-i is 439, curCH is 61, line is 29
-got 2 signed operator
-
-
-i is 441, curCH is 48, line is 29
-found val
-res val is 0.000000
-
-
-i is 442, curCH is 34, line is 29
-found end of condition
-
-
-i is 443, curCH is 13, line is 29
-found \r 
-
-
-i is 444, curCH is 10, line is 29
-found new line
-
-
-i is 445, curCH is 112, line is 30
-found OUT
-
-
-i is 450, curCH is 54, line is 30
-found val
-res val is 6969.000000
-
-
-i is 454, curCH is 93, line is 30
-found ), end of params
-
-
-i is 455, curCH is 13, line is 30
-found \r 
-
-
-i is 456, curCH is 10, line is 30
-found new line
-
-
-i is 457, curCH is 100, line is 31
-found ELSE
-
-
-i is 465, curCH is 13, line is 31
-found \r 
-
-
-i is 466, curCH is 10, line is 31
-found new line
-
-
-i is 467, curCH is 112, line is 32
-found OUT
-
-
-i is 472, curCH is 50, line is 32
-found val
-res val is 228.000000
-
-
-i is 475, curCH is 93, line is 32
-found ), end of params
-
-
-i is 476, curCH is 13, line is 32
-found \r 
-
-
-i is 477, curCH is 10, line is 32
-found new line
-
-
-i is 478, curCH is 100, line is 33
-found ENDIF
-
-
-i is 482, curCH is 13, line is 33
-found \r 
-
-
-i is 483, curCH is 10, line is 33
-found new line
-
-
-i is 484, curCH is 99, line is 34
-found coda
-
-
-i is 488, curCH is 48, line is 34
-found val
-res val is 0.000000
-
-
-i is 489, curCH is 13, line is 34
-found \r 
-
-
-i is 490, curCH is 10, line is 34
-found new line
-
-
-i is 491, curCH is 125, line is 35
-found }, end of function
-
-
-i is 492, curCH is 13, line is 35
-found \r 
-
-
-i is 493, curCH is 10, line is 35
-found new line
-
-
-i is 494, curCH is 13, line is 36
-found \r 
-
-
-i is 495, curCH is 10, line is 36
-found new line
-
-
-i is 496, curCH is 98, line is 37
-found bassKey
-cur ch is f
-in getFuncName cur ch is f
-result func name is full, its len is 4
-after func ch is [
-
-
-i is 508, curCH is 110, line is 37
-found note
-cur ch is n
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 514, curCH is 44, line is 37
-
-
-i is 515, curCH is 110, line is 37
-found note
-cur ch is n
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 521, curCH is 44, line is 37
-
-
-i is 522, curCH is 110, line is 37
-found note
-cur ch is n
-in getVarName cur ch is c
-result var name is c?, its len is 2
-
-
-i is 528, curCH is 93, line is 37
-found ), end of params
-
-
-i is 529, curCH is 123, line is 37
-found {, start of function
-
-
-i is 530, curCH is 13, line is 37
-found \r 
-
-
-i is 531, curCH is 10, line is 37
-found new line
-
-
-i is 532, curCH is 110, line is 38
-found note
-cur ch is n
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 537, curCH is 61, line is 38
-got 1 signed operator
-
-
-i is 538, curCH is 98, line is 38
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 540, curCH is 42, line is 38
-got 1 signed operator
-
-
-i is 541, curCH is 98, line is 38
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 543, curCH is 45, line is 38
-got 1 signed operator
-
-
-i is 544, curCH is 52, line is 38
-found val
-res val is 4.000000
-
-
-i is 545, curCH is 42, line is 38
-got 1 signed operator
-
-
-i is 546, curCH is 97, line is 38
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 548, curCH is 42, line is 38
-got 1 signed operator
-
-
-i is 549, curCH is 99, line is 38
-in getVarName cur ch is c
-result var name is c?, its len is 2
-
-
-i is 551, curCH is 116, line is 38
-found tatto
-
-
-i is 556, curCH is 13, line is 38
-found \r 
-
-
-i is 557, curCH is 10, line is 38
-found new line
-
-
-i is 558, curCH is 99, line is 39
-found IF
-
-i is 572, curCH is 100, line is 39
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 573, curCH is 60, line is 39
-got 1 signed operator
-
-
-i is 574, curCH is 48, line is 39
-found val
-res val is 0.000000
-
-
-i is 575, curCH is 34, line is 39
-found end of condition
-
-
-i is 576, curCH is 13, line is 39
-found \r 
-
-
-i is 577, curCH is 10, line is 39
-found new line
-
-
-i is 578, curCH is 112, line is 40
-found OUT
-
-
-i is 583, curCH is 50, line is 40
-found val
-res val is 228.000000
-
-
-i is 586, curCH is 93, line is 40
-found ), end of params
-
-
-i is 587, curCH is 116, line is 40
-found tatto
-
-
-i is 592, curCH is 13, line is 40
-found \r 
-
-
-i is 593, curCH is 10, line is 40
-found new line
-
-
-i is 594, curCH is 100, line is 41
-found ELSE
-
-
-i is 602, curCH is 13, line is 41
-found \r 
-
-
-i is 603, curCH is 10, line is 41
-found new line
-
-
-i is 604, curCH is 100, line is 42
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 605, curCH is 61, line is 42
-got 1 signed operator
-
-
-i is 606, curCH is 115, line is 42
-
-
-i is 610, curCH is 40, line is 42
-got 1 signed operator
-
-
-i is 611, curCH is 100, line is 42
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 612, curCH is 41, line is 42
-got 1 signed operator
-
-
-i is 613, curCH is 116, line is 42
-found tatto
-
-
-i is 618, curCH is 13, line is 42
-found \r 
-
-
-i is 619, curCH is 10, line is 42
-found new line
-
-
-i is 620, curCH is 98, line is 43
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 622, curCH is 61, line is 43
-got 1 signed operator
-
-
-i is 623, curCH is 110, line is 43
-
-
-i is 626, curCH is 42, line is 43
-got 1 signed operator
-
-
-i is 627, curCH is 98, line is 43
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 629, curCH is 116, line is 43
-found tatto
-
-
-i is 634, curCH is 13, line is 43
-found \r 
-
-
-i is 635, curCH is 10, line is 43
-found new line
-
-
-i is 636, curCH is 97, line is 44
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 638, curCH is 61, line is 44
-got 1 signed operator
-
-
-i is 639, curCH is 50, line is 44
-found val
-res val is 2.000000
-
-
-i is 640, curCH is 42, line is 44
-got 1 signed operator
-
-
-i is 641, curCH is 97, line is 44
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 643, curCH is 116, line is 44
-found tatto
-
-
-i is 648, curCH is 13, line is 44
-found \r 
-
-
-i is 649, curCH is 10, line is 44
-found new line
-
-
-i is 650, curCH is 110, line is 45
-found note
-cur ch is n
-in getVarName cur ch is f
-result var name is f, its len is 1
-
-
-i is 655, curCH is 61, line is 45
-got 1 signed operator
-
-
-i is 656, curCH is 40, line is 45
-got 1 signed operator
-
-
-i is 657, curCH is 98, line is 45
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 659, curCH is 45, line is 45
-got 1 signed operator
-
-
-i is 660, curCH is 100, line is 45
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 661, curCH is 41, line is 45
-got 1 signed operator
-
-
-i is 662, curCH is 47, line is 45
-got 1 signed operator
-
-
-i is 663, curCH is 97, line is 45
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 665, curCH is 116, line is 45
-found tatto
-
-
-i is 670, curCH is 13, line is 45
-found \r 
-
-
-i is 671, curCH is 10, line is 45
-found new line
-
-
-i is 672, curCH is 110, line is 46
-found note
-cur ch is n
-in getVarName cur ch is f
-result var name is f#, its len is 2
-
-
-i is 678, curCH is 61, line is 46
-got 1 signed operator
-
-
-i is 679, curCH is 40, line is 46
-got 1 signed operator
-
-
-i is 680, curCH is 98, line is 46
-in getVarName cur ch is b
-result var name is b?, its len is 2
-
-
-i is 682, curCH is 43, line is 46
-got 1 signed operator
-
-
-i is 683, curCH is 100, line is 46
-in getVarName cur ch is d
-result var name is d, its len is 1
-
-
-i is 684, curCH is 41, line is 46
-got 1 signed operator
-
-
-i is 685, curCH is 47, line is 46
-got 1 signed operator
-
-
-i is 686, curCH is 97, line is 46
-in getVarName cur ch is a
-result var name is a?, its len is 2
-
-
-i is 688, curCH is 116, line is 46
-found tatto
-
-
-i is 693, curCH is 13, line is 46
-found \r 
-
-
-i is 694, curCH is 10, line is 46
-found new line
-
-
-i is 695, curCH is 112, line is 47
-found OUT
-
-
-i is 700, curCH is 102, line is 47
-in getVarName cur ch is f
-result var name is f, its len is 1
-
-
-i is 701, curCH is 93, line is 47
-found ), end of params
-
-
-i is 702, curCH is 116, line is 47
-found tatto
-
-
-i is 707, curCH is 13, line is 47
-found \r 
-
-
-i is 708, curCH is 10, line is 47
-found new line
-
-
-i is 709, curCH is 112, line is 48
-found OUT
-
-
-i is 714, curCH is 102, line is 48
-in getVarName cur ch is f
-result var name is f#, its len is 2
-
-
-i is 716, curCH is 93, line is 48
-found ), end of params
-
-
-i is 717, curCH is 116, line is 48
-found tatto
-
-
-i is 722, curCH is 13, line is 48
-found \r 
-
-
-i is 723, curCH is 10, line is 48
-found new line
-
-
-i is 724, curCH is 100, line is 49
-found ENDIF
-
-
-i is 728, curCH is 13, line is 49
-found \r 
-
-
-i is 729, curCH is 10, line is 49
-found new line
-
-
-i is 730, curCH is 99, line is 50
-found coda
-
-
-i is 734, curCH is 48, line is 50
-found val
-res val is 0.000000
-
-
-i is 735, curCH is 13, line is 50
-found \r 
-
-
-i is 736, curCH is 10, line is 50
-found new line
-
-
-i is 737, curCH is 125, line is 51
-found }, end of function
-
-
-i is 738, curCH is 13, line is 51
-found \r 
-
-
-i is 739, curCH is 10, line is 51
-found new line
-
-
-i is 740, curCH is 0, line is 52
+i is 124, curCH is 0, line is 12
 trying to tokenDump
 0
 tokenDump done
-END OF IMPUT ON LINE 52
+END OF IMPUT ON LINE 12
 in GetGrammar
 in GetGrammar langType is 25
 case FUNC
@@ -1439,86 +370,12 @@ got expression
 got VAR
 
 
-current token is 16
+current token is 23
 
 continue
 
 in GetGrammar
-in GetGrammar langType is 16
-case IN
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-
-
-current token is 22
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 22
-case VAR
-trying to get expression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got expression
-got VAR
-
-
-current token is 16
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 16
-case IN
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-
-
-current token is 19
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 19
+in GetGrammar langType is 23
 in GetExpression
 in GetG
 in GetE
@@ -1550,662 +407,6 @@ out GetExpression
 in GetGrammar
 in GetExpression
 in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-oh shit, this is CALL func
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-oh shit, this is CALL func
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-case IF
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetFunc
-got FUNC
-
-
-current token is 26
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 26
-case FUNC
-in GetFunc
-found no EQ
-found no EQ
-found EndOfParams
-in GetGrammar
-in GetGrammar langType is 19
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-oh shit, this is CALL func
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-
-
-current token is 29
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 29
-RET TIME!!
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got RET
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-
-
-current token is 968074816
-
-continue
-
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-case IF
-
-
-current token is 17
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 17
-case OUT
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-
-
-current token is 29
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 29
-RET TIME!!
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got RET
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-out GetGrammar
-out GetFunc
-got FUNC
-
-
-current token is 26
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 26
-case FUNC
-in GetFunc
-found no EQ
-found EndOfParams
-in GetGrammar
-in GetGrammar langType is 19
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetGrammar
-in GetGrammar langType is 17
-case OUT
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-in GetGrammar
-in GetGrammar langType is 17
-case OUT
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-case IF
-
-
-current token is 29
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 29
-RET TIME!!
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got RET
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-out GetFunc
-got FUNC
-
-
-current token is 26
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 26
-case FUNC
-in GetFunc
-found no EQ
-found no EQ
-found no EQ
-found EndOfParams
-in GetGrammar
-in GetGrammar langType is 22
-case VAR
-trying to get expression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-found ADD or SUB
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got expression
-got VAR
-
-
-current token is 19
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 19
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-in GetGrammar
-in GetGrammar langType is 17
-case OUT
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-found EndOfParams
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetE
-in GetT
-in GetD
-in GetP
-got OPEN BRACKET
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-got CLOSE BRACKET
-out GetP
-out GetD
-out GetT
-out GetE
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-
-
-current token is 968080432
-
-continue
-
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-
-
-current token is 968080848
-
-continue
-
-in GetGrammar
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-
-
-current token is 22
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 22
-case VAR
-trying to get expression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-got OPEN BRACKET
 in GetE
 in GetT
 in GetD
@@ -2225,81 +426,15 @@ out GetP
 out GetD
 out GetT
 out GetE
-got CLOSE BRACKET
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
 out GetG
 out GetExpression
-got expression
-got VAR
 
 
-current token is 22
+current token is 460014896
 
 continue
 
 in GetGrammar
-in GetGrammar langType is 22
-case VAR
-trying to get expression
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-got OPEN BRACKET
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-found ADD or SUB
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-got CLOSE BRACKET
-out GetP
-out GetD
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got expression
-got VAR
-
-
-current token is 17
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 17
-case OUT
 in GetExpression
 in GetG
 in GetE
@@ -2310,11 +445,20 @@ in GetN
 out GetN
 out GetP
 out GetD
+in GetD
+in GetP
+in GetN
+out GetN
+out GetP
+out GetD
 out GetT
 out GetE
 out GetG
 out GetExpression
-found EndOfParams
+TERMINATIONAL TOKEN OR EoFOO
+out GetGrammar
+out GetGrammar
+case WHILE
 
 
 current token is 17
@@ -2345,43 +489,9 @@ out GetGrammar
 out GetGrammar
 out GetGrammar
 out GetGrammar
-out GetGrammar
-out GetGrammar
-case IF
-
-
-current token is 29
-
-continue
-
-in GetGrammar
-in GetGrammar langType is 29
-RET TIME!!
-in GetExpression
-in GetG
-in GetE
-in GetT
-in GetD
-in GetP
-in GetN
-out GetN
-out GetP
-out GetD
-out GetT
-out GetE
-out GetG
-out GetExpression
-got RET
-TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-out GetGrammar
 out GetFunc
 got FUNC
 TERMINATIONAL TOKEN OR EoFOO
-out GetGrammar
-out GetGrammar
-out GetGrammar
 out GetGrammar
 in ast dump
 0
@@ -2471,54 +581,31 @@ has child
 got langop 22
 spec node created
 start reading tree
-1st scan is "b"
+1st scan is "c"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is b
+var is c
 start reading tree
-1st scan is 0.0
+1st scan is "a"
 got langop 0
 ch_count before val = 2
-ch_count in val = 3
+ch_count in val = 0
+var is a
 start reading tree
 1st scan is ST
 has child
 got langop 18
 spec node created
 start reading tree
-1st scan is IN
+1st scan is WHILE
 has child
-got langop 16
+got langop 23
 spec node created
 start reading tree
-1st scan is PARAM
+1st scan is IS_GT
 has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "b"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
+got langop 13
 spec node created
 start reading tree
 1st scan is "c"
@@ -2527,7 +614,7 @@ ch_count before val = 2
 ch_count in val = 0
 var is c
 start reading tree
-1st scan is 0.0
+1st scan is 1.0
 got langop 0
 ch_count before val = 2
 ch_count in val = 3
@@ -2537,14 +624,9 @@ has child
 got langop 18
 spec node created
 start reading tree
-1st scan is IN
+1st scan is EQ
 has child
-got langop 16
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
+got langop 9
 spec node created
 start reading tree
 1st scan is "c"
@@ -2552,859 +634,22 @@ got langop 0
 ch_count before val = 2
 ch_count in val = 0
 var is c
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is IF
-has child
-got langop 19
-spec node created
-start reading tree
-1st scan is IS_EE
-has child
-got langop 10
-spec node created
-start reading tree
-1st scan is "a"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is ELSE
-has child
-got langop 20
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "a"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a
-start reading tree
-1st scan is CALL
-has child
-got langop 30
-spec node created
-start reading tree
-1st scan is "firstNull"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is firstNull
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "b"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "c"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "a"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a
-start reading tree
-1st scan is CALL
-has child
-got langop 30
-spec node created
-start reading tree
-1st scan is "full"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is full
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "a"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "b"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "c"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is FUNC
-has child
-got langop 24
-spec node created
-start reading tree
-1st scan is "firstNull"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is firstNull
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "c#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is VOID
-got langop 28
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is IF
-has child
-got langop 19
-spec node created
-start reading tree
-1st scan is IS_EE
-has child
-got langop 10
-spec node created
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is ELSE
-has child
-got langop 20
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is CALL
-has child
-got langop 30
-spec node created
-start reading tree
-1st scan is "secondNull"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is secondNull
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "c#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is RET
-has child
-got langop 29
-spec node created
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "c#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#
-start reading tree
-1st scan is MUL
-has child
-got langop 4
-spec node created
-start reading tree
-1st scan is "c#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#
-start reading tree
-1st scan is -1.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 4
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is DIV
-has child
-got langop 3
-spec node created
-start reading tree
-1st scan is "c#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is OUT
-has child
-got langop 17
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "b#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b#
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is RET
-has child
-got langop 29
-spec node created
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is FUNC
-has child
-got langop 24
-spec node created
-start reading tree
-1st scan is "secondNull"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is secondNull
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "c#b"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#b
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is VOID
-got langop 28
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is IF
-has child
-got langop 19
-spec node created
-start reading tree
-1st scan is IS_EE
-has child
-got langop 10
-spec node created
-start reading tree
-1st scan is "c#b"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c#b
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is ELSE
-has child
-got langop 20
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is OUT
-has child
-got langop 17
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is 6969.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 6
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is OUT
-has child
-got langop 17
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is 228.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 5
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is RET
-has child
-got langop 29
-spec node created
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is FUNC
-has child
-got langop 24
-spec node created
-start reading tree
-1st scan is "full"
-has child
-got langop 0
-ch_count before val = 0
-ch_count in val = 0
-var is full
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "a?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a?
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "b?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b?
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "c?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c?
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is VOID
-got langop 28
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "d"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is d
 start reading tree
 1st scan is SUB
 has child
 got langop 2
 spec node created
 start reading tree
-1st scan is MUL
-has child
-got langop 4
-spec node created
-start reading tree
-1st scan is "b?"
+1st scan is "c"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is b?
+var is c
 start reading tree
-1st scan is "b?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b?
-start reading tree
-1st scan is MUL
-has child
-got langop 4
-spec node created
-start reading tree
-1st scan is MUL
-has child
-got langop 4
-spec node created
-start reading tree
-1st scan is 4.0
+1st scan is 1.0
 got langop 0
 ch_count before val = 2
 ch_count in val = 3
-start reading tree
-1st scan is "a?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a?
-start reading tree
-1st scan is "c?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is c?
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is IF
-has child
-got langop 19
-spec node created
-start reading tree
-1st scan is IS_BT
-has child
-got langop 14
-spec node created
-start reading tree
-1st scan is "d"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is d
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is ELSE
-has child
-got langop 20
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is OUT
-has child
-got langop 17
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is 228.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 5
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
 start reading tree
 1st scan is ST
 has child
@@ -3416,203 +661,28 @@ has child
 got langop 9
 spec node created
 start reading tree
-1st scan is "d"
+1st scan is "a"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is d
-start reading tree
-1st scan is SQRT
-has child
-got langop 5
-spec node created
-start reading tree
-1st scan is "d"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is d
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "b?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b?
+var is a
 start reading tree
 1st scan is MUL
 has child
 got langop 4
 spec node created
 start reading tree
-1st scan is -1.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 4
-start reading tree
-1st scan is "b?"
+1st scan is "a"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is b?
+var is a
 start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is EQ
-has child
-got langop 9
-spec node created
-start reading tree
-1st scan is "a?"
+1st scan is "c"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is a?
-start reading tree
-1st scan is MUL
-has child
-got langop 4
-spec node created
-start reading tree
-1st scan is 2.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
-start reading tree
-1st scan is "a?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a?
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "f"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is f
-start reading tree
-1st scan is DIV
-has child
-got langop 3
-spec node created
-start reading tree
-1st scan is SUB
-has child
-got langop 2
-spec node created
-start reading tree
-1st scan is "b?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b?
-start reading tree
-1st scan is "d"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is d
-start reading tree
-1st scan is "a?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a?
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is VAR
-has child
-got langop 22
-spec node created
-start reading tree
-1st scan is "f#"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is f#
-start reading tree
-1st scan is DIV
-has child
-got langop 3
-spec node created
-start reading tree
-1st scan is ADD
-has child
-got langop 1
-spec node created
-start reading tree
-1st scan is "b?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is b?
-start reading tree
-1st scan is "d"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is d
-start reading tree
-1st scan is "a?"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is a?
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is OUT
-has child
-got langop 17
-spec node created
-start reading tree
-1st scan is PARAM
-has child
-got langop 31
-spec node created
-start reading tree
-1st scan is "f"
-got langop 0
-ch_count before val = 2
-ch_count in val = 0
-var is f
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
+var is c
 start reading tree
 1st scan is NIL
 got langop 21
@@ -3633,38 +703,15 @@ has child
 got langop 31
 spec node created
 start reading tree
-1st scan is "f#"
+1st scan is "a"
 got langop 0
 ch_count before val = 2
 ch_count in val = 0
-var is f#
+var is a
 start reading tree
 1st scan is NIL
 got langop 21
 spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is NIL
-got langop 21
-spec node created
-start reading tree
-1st scan is ST
-has child
-got langop 18
-spec node created
-start reading tree
-1st scan is RET
-has child
-got langop 29
-spec node created
-start reading tree
-1st scan is 0.0
-got langop 0
-ch_count before val = 2
-ch_count in val = 3
 start reading tree
 1st scan is NIL
 got langop 21
@@ -3688,25 +735,11 @@ found var type
 first assignation done
 found var type
 first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
-found var type
-first assignation done
 setVarArr done
+
+
+IN WHILE
+
 
 
 log file is closed

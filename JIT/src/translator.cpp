@@ -314,7 +314,6 @@ void TranslateCondJump(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE) {
     size_t curIndex = IR_HEAD->currentIndex;
     int nativeNum = IR_HEAD->ir_StructArr[curIndex].nativeNum;
     int32_t addrDiff = IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.addrDiff;
-
     u_int64_t jmpMask = IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.jumpMask;
 
     EMIT(POP_REG | RAX, GET_X86_SIZE(POP_REG));
@@ -415,7 +414,8 @@ void IntScanfWrap(int* num) {
 }
 
 void DoublePrintfWrap(double num) {
-    //printf("OUTPUT: %.3lf\n", num / 1000);
+    printf("OUTPUT: %.3lf\n", num / 1000);
+    num *= 2;
 }
 
 void TranslateOut(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE) {
@@ -428,8 +428,13 @@ void TranslateOut(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE) {
     size_t curIndex = IR_HEAD->currentIndex;
     size_t x86RelAddr = IR_HEAD->ir_StructArr[curIndex].SpecArg.x86RelAddr;
     size_t cmdSize = IR_HEAD->ir_StructArr[curIndex].x86_Size;
-    size_t AdrToContinue = x86RelAddr + cmdSize - GET_X86_SIZE(MOV_RSP_RBP) - GET_X86_SIZE(POPA) - GET_X86_SIZE(ADD_RSP_8) + GET_X86_SIZE(MOV_R_REG_IMMED) + sizeof(u_int64_t);
-    int32_t relAddr = (u_int64_t) DoublePrintfWrap - (u_int64_t)(X86_CODE->BinaryCode + AdrToContinue);
+    size_t AdrToContinue = x86RelAddr + cmdSize - GET_X86_SIZE(MOV_RSP_RBP)     - 
+                                                  GET_X86_SIZE(POPA)            - 
+                                                  GET_X86_SIZE(ADD_RSP_8)       + 
+                                                  GET_X86_SIZE(MOV_R_REG_IMMED) +
+                                                  sizeof(u_int64_t);
+
+    int32_t addrDiff = (u_int64_t) DoublePrintfWrap - (u_int64_t)(X86_CODE->BinaryCode + AdrToContinue);
 
     EMIT(CVTSI2SD_XMM0_RSP, GET_X86_SIZE(CVTSI2SD_XMM0_RSP));
     EMIT(PUSHA, GET_X86_SIZE(PUSHA));
@@ -437,7 +442,7 @@ void TranslateOut(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE) {
     EMIT(ALIGN_STACK, GET_X86_SIZE(ALIGN_STACK));
 
     EMIT(x86_CALL, GET_X86_SIZE(x86_CALL));
-    WriteImmed32(X86_CODE, relAddr);
+    WriteImmed32(X86_CODE, addrDiff);
 
     EMIT(MOV_RSP_RBP, GET_X86_SIZE(MOV_RSP_RBP));
     EMIT(POPA, GET_X86_SIZE(POPA));

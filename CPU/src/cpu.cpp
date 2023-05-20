@@ -20,13 +20,18 @@ int main() {
 
     clock_t meanTime = 0;
 
-    clock_t start = clock();
-    for (int i = 0; i < 10000; i++) {
-        Compile(&cpu, cmd_ct);
-    }
-    clock_t end = clock();
+    for (int j = 0; j < 10; j++) {
 
-    printf("\ntime is %lf\n", (double)(end - start) * 1000/ (double) CLOCKS_PER_SEC);
+        clock_t start = clock();
+        for (int i = 0; i < 10000; i++) {
+            Compile(&cpu, cmd_ct);
+        }
+        clock_t end = clock();
+
+        meanTime += (end - start);
+    }
+
+    printf("\ntime is %lf\n", (double)(meanTime) * 1000/ (10 * (double) CLOCKS_PER_SEC));
 
     printf("ok, im done here\n");
 

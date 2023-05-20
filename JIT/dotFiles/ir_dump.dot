@@ -2,434 +2,86 @@ digraph {
 rankdir=LR;
 node [ shape=record ];
 struct0 [
-label = "<index> index: 0|<name>name: PUSH|<nativeIp>ip: 0 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 0|<name>name: PUSH|<nativeIp>ip: 0 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 11 | argType: IMMED", style = "filled", fillcolor = "green" 
 ];
 struct1 [
-label = "<index> index: 1|<name>name: POP|<nativeIp>ip: 2 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 1|<name>name: POP|<nativeIp>ip: 2 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct0 -> struct1 [weight=100];
 struct2 [
-label = "<index> index: 2|<name>name: PUSH|<nativeIp>ip: 4 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 2|<name>name: PUSH|<nativeIp>ip: 4 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 11 | argType: IMMED", style = "filled", fillcolor = "green" 
 ];
 struct1 -> struct2 [weight=100];
 struct3 [
-label = "<index> index: 3|<name>name: POP|<nativeIp>ip: 6 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 3|<name>name: POP|<nativeIp>ip: 6 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct2 -> struct3 [weight=100];
 struct4 [
-label = "<index> index: 4|<name>name: PUSH|<nativeIp>ip: 8 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 4|<name>name: PUSH|<nativeIp>ip: 8 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct3 -> struct4 [weight=100];
 struct5 [
-label = "<index> index: 5|<name>name: POP|<nativeIp>ip: 10 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 5|<name>name: POP|<nativeIp>ip: 10 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct4 -> struct5 [weight=100];
 struct6 [
-label = "<index> index: 6|<name>name: PUSH|<nativeIp>ip: 12 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 6|<name>name: PUSH|<nativeIp>ip: 12 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct5 -> struct6 [weight=100];
 struct7 [
-label = "<index> index: 7|<name>name: POP|<nativeIp>ip: 14 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 7|<name>name: PUSH|<nativeIp>ip: 14 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 11 | argType: IMMED", style = "filled", fillcolor = "green" 
 ];
 struct6 -> struct7 [weight=100];
 struct8 [
-label = "<index> index: 8|<name>name: PUSH|<nativeIp>ip: 16 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 8|<name>name: JAE|<nativeIp>ip: 16 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 11 |  next ip: 34", style = "filled", fillcolor = "cyan" 
 ];
 struct7 -> struct8 [weight=100];
 struct9 [
-label = "<index> index: 9|<name>name: POP|<nativeIp>ip: 18 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 9|<name>name: PUSH|<nativeIp>ip: 18 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 11 | argType: IMMED", style = "filled", fillcolor = "green" 
 ];
 struct8 -> struct9 [weight=100];
 struct10 [
-label = "<index> index: 10|<name>name: PUSH|<nativeIp>ip: 20 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 10|<name>name: PUSH|<nativeIp>ip: 20 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct9 -> struct10 [weight=100];
 struct11 [
-label = "<index> index: 11|<name>name: POP|<nativeIp>ip: 22 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 11|<name>name: SUB|<nativeIp>ip: 22 | <sizeP> size(byteCode) : 1 | <sizeN> size(native): 6 | ", style = "filled", fillcolor = "gray" 
 ];
 struct10 -> struct11 [weight=100];
 struct12 [
-label = "<index> index: 12|<name>name: PUSH|<nativeIp>ip: 24 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 12|<name>name: POP|<nativeIp>ip: 23 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct11 -> struct12 [weight=100];
 struct13 [
-label = "<index> index: 13|<name>name: PUSH|<nativeIp>ip: 26 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 13|<name>name: PUSH|<nativeIp>ip: 25 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct12 -> struct13 [weight=100];
 struct14 [
-label = "<index> index: 14|<name>name: JNE|<nativeIp>ip: 28 | <size> size(native): 2 | next ip: 40", style = "filled", fillcolor = "cyan" 
+label = "<index> index: 14|<name>name: PUSH|<nativeIp>ip: 27 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct13 -> struct14 [weight=100];
 struct15 [
-label = "<index> index: 15|<name>name: PUSH|<nativeIp>ip: 30 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 15|<name>name: MUL|<nativeIp>ip: 29 | <sizeP> size(byteCode) : 1 | <sizeN> size(native): 52 | ", style = "filled", fillcolor = "gray" 
 ];
 struct14 -> struct15 [weight=100];
 struct16 [
-label = "<index> index: 16|<name>name: PUSH|<nativeIp>ip: 32 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 16|<name>name: POP|<nativeIp>ip: 30 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct15 -> struct16 [weight=100];
 struct17 [
-label = "<index> index: 17|<name>name: CALL|<nativeIp>ip: 34 | <size> size(native): 2 | next ip: 51", style = "filled", fillcolor = "cyan" 
+label = "<index> index: 17|<name>name: JUMP|<nativeIp>ip: 32 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 5 |  next ip: 12", style = "filled", fillcolor = "cyan" 
 ];
 struct16 -> struct17 [weight=100];
 struct18 [
-label = "<index> index: 18|<name>name: POP|<nativeIp>ip: 36 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 18|<name>name: PUSH|<nativeIp>ip: 34 | <sizeP> size(byteCode): 2 | <sizeN> size(native): 7 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
 ];
 struct17 -> struct18 [weight=100];
 struct19 [
-label = "<index> index: 19|<name>name: JUMP|<nativeIp>ip: 38 | <size> size(native): 2 | next ip: 50", style = "filled", fillcolor = "cyan" 
+label = "<index> index: 19|<name>name: OUT|<nativeIp>ip: 36 | <sizeP> size(byteCode) : 1 | <sizeN> size(native): 36 | ", style = "filled", fillcolor = "gray" 
 ];
 struct18 -> struct19 [weight=100];
 struct20 [
-label = "<index> index: 20|<name>name: PUSH|<nativeIp>ip: 40 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
+label = "<index> index: 20|<name>name: HLT|<nativeIp>ip: 37 | <sizeP> size(byteCode) : 1 | <sizeN> size(native): 1 | ", style = "filled", fillcolor = "gray" 
 ];
 struct19 -> struct20 [weight=100];
-struct21 [
-label = "<index> index: 21|<name>name: PUSH|<nativeIp>ip: 42 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct20 -> struct21 [weight=100];
-struct22 [
-label = "<index> index: 22|<name>name: PUSH|<nativeIp>ip: 44 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct21 -> struct22 [weight=100];
-struct23 [
-label = "<index> index: 23|<name>name: CALL|<nativeIp>ip: 46 | <size> size(native): 2 | next ip: 111", style = "filled", fillcolor = "cyan" 
-];
-struct22 -> struct23 [weight=100];
-struct24 [
-label = "<index> index: 24|<name>name: POP|<nativeIp>ip: 48 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct23 -> struct24 [weight=100];
-struct25 [
-label = "<index> index: 25|<name>name: HLT|<nativeIp>ip: 50 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct24 -> struct25 [weight=100];
-struct26 [
-label = "<index> index: 26|<name>name: POP|<nativeIp>ip: 51 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct25 -> struct26 [weight=100];
-struct27 [
-label = "<index> index: 27|<name>name: POP|<nativeIp>ip: 53 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct26 -> struct27 [weight=100];
-struct28 [
-label = "<index> index: 28|<name>name: PUSH|<nativeIp>ip: 55 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct27 -> struct28 [weight=100];
-struct29 [
-label = "<index> index: 29|<name>name: PUSH|<nativeIp>ip: 57 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct28 -> struct29 [weight=100];
-struct30 [
-label = "<index> index: 30|<name>name: JNE|<nativeIp>ip: 59 | <size> size(native): 2 | next ip: 72", style = "filled", fillcolor = "cyan" 
-];
-struct29 -> struct30 [weight=100];
-struct31 [
-label = "<index> index: 31|<name>name: PUSH|<nativeIp>ip: 61 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct30 -> struct31 [weight=100];
-struct32 [
-label = "<index> index: 32|<name>name: CALL|<nativeIp>ip: 63 | <size> size(native): 2 | next ip: 92", style = "filled", fillcolor = "cyan" 
-];
-struct31 -> struct32 [weight=100];
-struct33 [
-label = "<index> index: 33|<name>name: POP|<nativeIp>ip: 65 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct32 -> struct33 [weight=100];
-struct34 [
-label = "<index> index: 34|<name>name: PUSH|<nativeIp>ip: 67 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct33 -> struct34 [weight=100];
-struct35 [
-label = "<index> index: 35|<name>name: RET|<nativeIp>ip: 69 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct34 -> struct35 [weight=100];
-struct36 [
-label = "<index> index: 36|<name>name: JUMP|<nativeIp>ip: 70 | <size> size(native): 2 | next ip: 86", style = "filled", fillcolor = "cyan" 
-];
-struct35 -> struct36 [weight=100];
-struct37 [
-label = "<index> index: 37|<name>name: PUSH|<nativeIp>ip: 72 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct36 -> struct37 [weight=100];
-struct38 [
-label = "<index> index: 38|<name>name: PUSH|<nativeIp>ip: 74 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct37 -> struct38 [weight=100];
-struct39 [
-label = "<index> index: 39|<name>name: MUL|<nativeIp>ip: 76 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct38 -> struct39 [weight=100];
-struct40 [
-label = "<index> index: 40|<name>name: POP|<nativeIp>ip: 77 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct39 -> struct40 [weight=100];
-struct41 [
-label = "<index> index: 41|<name>name: PUSH|<nativeIp>ip: 79 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct40 -> struct41 [weight=100];
-struct42 [
-label = "<index> index: 42|<name>name: PUSH|<nativeIp>ip: 81 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct41 -> struct42 [weight=100];
-struct43 [
-label = "<index> index: 43|<name>name: DIV|<nativeIp>ip: 83 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct42 -> struct43 [weight=100];
-struct44 [
-label = "<index> index: 44|<name>name: POP|<nativeIp>ip: 84 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct43 -> struct44 [weight=100];
-struct45 [
-label = "<index> index: 45|<name>name: PUSH|<nativeIp>ip: 86 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct44 -> struct45 [weight=100];
-struct46 [
-label = "<index> index: 46|<name>name: OUT|<nativeIp>ip: 88 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct45 -> struct46 [weight=100];
-struct47 [
-label = "<index> index: 47|<name>name: PUSH|<nativeIp>ip: 89 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct46 -> struct47 [weight=100];
-struct48 [
-label = "<index> index: 48|<name>name: RET|<nativeIp>ip: 91 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct47 -> struct48 [weight=100];
-struct49 [
-label = "<index> index: 49|<name>name: POP|<nativeIp>ip: 92 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct48 -> struct49 [weight=100];
-struct50 [
-label = "<index> index: 50|<name>name: PUSH|<nativeIp>ip: 94 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct49 -> struct50 [weight=100];
-struct51 [
-label = "<index> index: 51|<name>name: PUSH|<nativeIp>ip: 96 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct50 -> struct51 [weight=100];
-struct52 [
-label = "<index> index: 52|<name>name: JNE|<nativeIp>ip: 98 | <size> size(native): 2 | next ip: 105", style = "filled", fillcolor = "cyan" 
-];
-struct51 -> struct52 [weight=100];
-struct53 [
-label = "<index> index: 53|<name>name: PUSH|<nativeIp>ip: 100 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct52 -> struct53 [weight=100];
-struct54 [
-label = "<index> index: 54|<name>name: OUT|<nativeIp>ip: 102 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct53 -> struct54 [weight=100];
-struct55 [
-label = "<index> index: 55|<name>name: JUMP|<nativeIp>ip: 103 | <size> size(native): 2 | next ip: 108", style = "filled", fillcolor = "cyan" 
-];
-struct54 -> struct55 [weight=100];
-struct56 [
-label = "<index> index: 56|<name>name: PUSH|<nativeIp>ip: 105 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct55 -> struct56 [weight=100];
-struct57 [
-label = "<index> index: 57|<name>name: OUT|<nativeIp>ip: 107 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct56 -> struct57 [weight=100];
-struct58 [
-label = "<index> index: 58|<name>name: PUSH|<nativeIp>ip: 108 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct57 -> struct58 [weight=100];
-struct59 [
-label = "<index> index: 59|<name>name: RET|<nativeIp>ip: 110 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct58 -> struct59 [weight=100];
-struct60 [
-label = "<index> index: 60|<name>name: POP|<nativeIp>ip: 111 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct59 -> struct60 [weight=100];
-struct61 [
-label = "<index> index: 61|<name>name: POP|<nativeIp>ip: 113 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct60 -> struct61 [weight=100];
-struct62 [
-label = "<index> index: 62|<name>name: POP|<nativeIp>ip: 115 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct61 -> struct62 [weight=100];
-struct63 [
-label = "<index> index: 63|<name>name: PUSH|<nativeIp>ip: 117 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct62 -> struct63 [weight=100];
-struct64 [
-label = "<index> index: 64|<name>name: PUSH|<nativeIp>ip: 119 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct63 -> struct64 [weight=100];
-struct65 [
-label = "<index> index: 65|<name>name: MUL|<nativeIp>ip: 121 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct64 -> struct65 [weight=100];
-struct66 [
-label = "<index> index: 66|<name>name: PUSH|<nativeIp>ip: 122 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct65 -> struct66 [weight=100];
-struct67 [
-label = "<index> index: 67|<name>name: MUL|<nativeIp>ip: 124 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct66 -> struct67 [weight=100];
-struct68 [
-label = "<index> index: 68|<name>name: PUSH|<nativeIp>ip: 125 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct67 -> struct68 [weight=100];
-struct69 [
-label = "<index> index: 69|<name>name: PUSH|<nativeIp>ip: 127 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct68 -> struct69 [weight=100];
-struct70 [
-label = "<index> index: 70|<name>name: MUL|<nativeIp>ip: 129 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct69 -> struct70 [weight=100];
-struct71 [
-label = "<index> index: 71|<name>name: SUB|<nativeIp>ip: 130 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct70 -> struct71 [weight=100];
-struct72 [
-label = "<index> index: 72|<name>name: POP|<nativeIp>ip: 131 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct71 -> struct72 [weight=100];
-struct73 [
-label = "<index> index: 73|<name>name: PUSH|<nativeIp>ip: 133 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct72 -> struct73 [weight=100];
-struct74 [
-label = "<index> index: 74|<name>name: PUSH|<nativeIp>ip: 135 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct73 -> struct74 [weight=100];
-struct75 [
-label = "<index> index: 75|<name>name: JBE|<nativeIp>ip: 137 | <size> size(native): 2 | next ip: 144", style = "filled", fillcolor = "cyan" 
-];
-struct74 -> struct75 [weight=100];
-struct76 [
-label = "<index> index: 76|<name>name: PUSH|<nativeIp>ip: 139 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct75 -> struct76 [weight=100];
-struct77 [
-label = "<index> index: 77|<name>name: OUT|<nativeIp>ip: 141 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct76 -> struct77 [weight=100];
-struct78 [
-label = "<index> index: 78|<name>name: JUMP|<nativeIp>ip: 142 | <size> size(native): 2 | next ip: 189", style = "filled", fillcolor = "cyan" 
-];
-struct77 -> struct78 [weight=100];
-struct79 [
-label = "<index> index: 79|<name>name: PUSH|<nativeIp>ip: 144 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct78 -> struct79 [weight=100];
-struct80 [
-label = "<index> index: 80|<name>name: SQRT|<nativeIp>ip: 146 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct79 -> struct80 [weight=100];
-struct81 [
-label = "<index> index: 81|<name>name: POP|<nativeIp>ip: 147 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct80 -> struct81 [weight=100];
-struct82 [
-label = "<index> index: 82|<name>name: PUSH|<nativeIp>ip: 149 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct81 -> struct82 [weight=100];
-struct83 [
-label = "<index> index: 83|<name>name: PUSH|<nativeIp>ip: 151 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct82 -> struct83 [weight=100];
-struct84 [
-label = "<index> index: 84|<name>name: MUL|<nativeIp>ip: 153 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct83 -> struct84 [weight=100];
-struct85 [
-label = "<index> index: 85|<name>name: POP|<nativeIp>ip: 154 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct84 -> struct85 [weight=100];
-struct86 [
-label = "<index> index: 86|<name>name: PUSH|<nativeIp>ip: 156 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct85 -> struct86 [weight=100];
-struct87 [
-label = "<index> index: 87|<name>name: PUSH|<nativeIp>ip: 158 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct86 -> struct87 [weight=100];
-struct88 [
-label = "<index> index: 88|<name>name: MUL|<nativeIp>ip: 160 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct87 -> struct88 [weight=100];
-struct89 [
-label = "<index> index: 89|<name>name: POP|<nativeIp>ip: 161 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct88 -> struct89 [weight=100];
-struct90 [
-label = "<index> index: 90|<name>name: PUSH|<nativeIp>ip: 163 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct89 -> struct90 [weight=100];
-struct91 [
-label = "<index> index: 91|<name>name: PUSH|<nativeIp>ip: 165 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct90 -> struct91 [weight=100];
-struct92 [
-label = "<index> index: 92|<name>name: PUSH|<nativeIp>ip: 167 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct91 -> struct92 [weight=100];
-struct93 [
-label = "<index> index: 93|<name>name: SUB|<nativeIp>ip: 169 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct92 -> struct93 [weight=100];
-struct94 [
-label = "<index> index: 94|<name>name: DIV|<nativeIp>ip: 170 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct93 -> struct94 [weight=100];
-struct95 [
-label = "<index> index: 95|<name>name: POP|<nativeIp>ip: 171 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct94 -> struct95 [weight=100];
-struct96 [
-label = "<index> index: 96|<name>name: PUSH|<nativeIp>ip: 173 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct95 -> struct96 [weight=100];
-struct97 [
-label = "<index> index: 97|<name>name: PUSH|<nativeIp>ip: 175 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct96 -> struct97 [weight=100];
-struct98 [
-label = "<index> index: 98|<name>name: PUSH|<nativeIp>ip: 177 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct97 -> struct98 [weight=100];
-struct99 [
-label = "<index> index: 99|<name>name: ADD|<nativeIp>ip: 179 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct98 -> struct99 [weight=100];
-struct100 [
-label = "<index> index: 100|<name>name: DIV|<nativeIp>ip: 180 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct99 -> struct100 [weight=100];
-struct101 [
-label = "<index> index: 101|<name>name: POP|<nativeIp>ip: 181 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct100 -> struct101 [weight=100];
-struct102 [
-label = "<index> index: 102|<name>name: PUSH|<nativeIp>ip: 183 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct101 -> struct102 [weight=100];
-struct103 [
-label = "<index> index: 103|<name>name: OUT|<nativeIp>ip: 185 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct102 -> struct103 [weight=100];
-struct104 [
-label = "<index> index: 104|<name>name: PUSH|<nativeIp>ip: 186 | <size> size(native): 2 | argType: RAM_IMMED", style = "filled", fillcolor = "green" 
-];
-struct103 -> struct104 [weight=100];
-struct105 [
-label = "<index> index: 105|<name>name: OUT|<nativeIp>ip: 188 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct104 -> struct105 [weight=100];
-struct106 [
-label = "<index> index: 106|<name>name: PUSH|<nativeIp>ip: 189 | <size> size(native): 2 | argType: IMMED", style = "filled", fillcolor = "green" 
-];
-struct105 -> struct106 [weight=100];
-struct107 [
-label = "<index> index: 107|<name>name: RET|<nativeIp>ip: 191 | <size> size(native): 1 ", style = "filled", fillcolor = "gray" 
-];
-struct106 -> struct107 [weight=100];
 }

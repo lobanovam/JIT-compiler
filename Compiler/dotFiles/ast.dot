@@ -1,1031 +1,183 @@
 digraph {
 graph [dpi = 100]rankdir = TB;
 node [ shape=record ];
-struct0x55ea39b42810 [
-label = "{Spec: ST |parent: (nil)| left: 0x55ea39b42860| right: 0x55ea39b47d30 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b5c90 [
+label = "{Spec: ST |parent: (nil)| left: 0x55691b6b5ce0| right: 0x55691b6b6bd0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b42860 [
-label = "{Spec: FUNC |parent: 0x55ea39b42810| left: 0x55ea39b428d0| right: 0x55ea39b429c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42810 -> struct0x55ea39b42860 [weight=900 constraint=true color=red];
-struct0x55ea39b428d0 [
-label = "{name: main |parent: 0x55ea39b42860| left: 0x55ea39b42920| right: 0x55ea39b42970 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b42860 -> struct0x55ea39b428d0 [weight=900 constraint=true color=red];
-struct0x55ea39b42920 [
-label = "{Spec: NIL |parent: 0x55ea39b428d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b428d0 -> struct0x55ea39b42920 [weight=900 constraint=true color=red];
-struct0x55ea39b42970 [
-label = "{Spec: TYPE |parent: 0x55ea39b428d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b428d0 -> struct0x55ea39b42970 [weight=900 constraint=true color=red];
-struct0x55ea39b429c0 [
-label = "{Spec: ST |parent: 0x55ea39b42860| left: 0x55ea39b42a10| right: 0x55ea39b42b20 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42860 -> struct0x55ea39b429c0 [weight=900 constraint=true color=red];
-struct0x55ea39b42a10 [
-label = "{Spec: VAR |parent: 0x55ea39b429c0| left: 0x55ea39b42a80| right: 0x55ea39b42ad0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b429c0 -> struct0x55ea39b42a10 [weight=900 constraint=true color=red];
-struct0x55ea39b42a80 [
-label = "{var: a |parent: 0x55ea39b42a10| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b42a10 -> struct0x55ea39b42a80 [weight=900 constraint=true color=red];
-struct0x55ea39b42ad0 [
-label = "{value: 0.000000 |parent: 0x55ea39b42a10| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b42a10 -> struct0x55ea39b42ad0 [weight=900 constraint=true color=red];
-struct0x55ea39b42b20 [
-label = "{Spec: ST |parent: 0x55ea39b429c0| left: 0x55ea39b42b70| right: 0x55ea39b42d20 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b429c0 -> struct0x55ea39b42b20 [weight=900 constraint=true color=red];
-struct0x55ea39b42b70 [
-label = "{Spec: IN |parent: 0x55ea39b42b20| left: 0x55ea39b42bc0| right: 0x55ea39b42cd0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42b20 -> struct0x55ea39b42b70 [weight=900 constraint=true color=red];
-struct0x55ea39b42bc0 [
-label = "{Spec: PARAM |parent: 0x55ea39b42b70| left: 0x55ea39b42c30| right: 0x55ea39b42c80 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42b70 -> struct0x55ea39b42bc0 [weight=900 constraint=true color=red];
-struct0x55ea39b42c30 [
-label = "{var: a |parent: 0x55ea39b42bc0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b42bc0 -> struct0x55ea39b42c30 [weight=900 constraint=true color=red];
-struct0x55ea39b42c80 [
-label = "{Spec: NIL |parent: 0x55ea39b42bc0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42bc0 -> struct0x55ea39b42c80 [weight=900 constraint=true color=red];
-struct0x55ea39b42cd0 [
-label = "{Spec: NIL |parent: 0x55ea39b42b70| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42b70 -> struct0x55ea39b42cd0 [weight=900 constraint=true color=red];
-struct0x55ea39b42d20 [
-label = "{Spec: ST |parent: 0x55ea39b42b20| left: 0x55ea39b42d70| right: 0x55ea39b42e80 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42b20 -> struct0x55ea39b42d20 [weight=900 constraint=true color=red];
-struct0x55ea39b42d70 [
-label = "{Spec: VAR |parent: 0x55ea39b42d20| left: 0x55ea39b42de0| right: 0x55ea39b42e30 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42d20 -> struct0x55ea39b42d70 [weight=900 constraint=true color=red];
-struct0x55ea39b42de0 [
-label = "{var: b |parent: 0x55ea39b42d70| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b42d70 -> struct0x55ea39b42de0 [weight=900 constraint=true color=red];
-struct0x55ea39b42e30 [
-label = "{value: 0.000000 |parent: 0x55ea39b42d70| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b42d70 -> struct0x55ea39b42e30 [weight=900 constraint=true color=red];
-struct0x55ea39b42e80 [
-label = "{Spec: ST |parent: 0x55ea39b42d20| left: 0x55ea39b42ed0| right: 0x55ea39b43080 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42d20 -> struct0x55ea39b42e80 [weight=900 constraint=true color=red];
-struct0x55ea39b42ed0 [
-label = "{Spec: IN |parent: 0x55ea39b42e80| left: 0x55ea39b42f20| right: 0x55ea39b43030 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42e80 -> struct0x55ea39b42ed0 [weight=900 constraint=true color=red];
-struct0x55ea39b42f20 [
-label = "{Spec: PARAM |parent: 0x55ea39b42ed0| left: 0x55ea39b42f90| right: 0x55ea39b42fe0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42ed0 -> struct0x55ea39b42f20 [weight=900 constraint=true color=red];
-struct0x55ea39b42f90 [
-label = "{var: b |parent: 0x55ea39b42f20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b42f20 -> struct0x55ea39b42f90 [weight=900 constraint=true color=red];
-struct0x55ea39b42fe0 [
-label = "{Spec: NIL |parent: 0x55ea39b42f20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42f20 -> struct0x55ea39b42fe0 [weight=900 constraint=true color=red];
-struct0x55ea39b43030 [
-label = "{Spec: NIL |parent: 0x55ea39b42ed0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42ed0 -> struct0x55ea39b43030 [weight=900 constraint=true color=red];
-struct0x55ea39b43080 [
-label = "{Spec: ST |parent: 0x55ea39b42e80| left: 0x55ea39b430d0| right: 0x55ea39b431e0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42e80 -> struct0x55ea39b43080 [weight=900 constraint=true color=red];
-struct0x55ea39b430d0 [
-label = "{Spec: VAR |parent: 0x55ea39b43080| left: 0x55ea39b43140| right: 0x55ea39b43190 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43080 -> struct0x55ea39b430d0 [weight=900 constraint=true color=red];
-struct0x55ea39b43140 [
-label = "{var: c |parent: 0x55ea39b430d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b430d0 -> struct0x55ea39b43140 [weight=900 constraint=true color=red];
-struct0x55ea39b43190 [
-label = "{value: 0.000000 |parent: 0x55ea39b430d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b430d0 -> struct0x55ea39b43190 [weight=900 constraint=true color=red];
-struct0x55ea39b431e0 [
-label = "{Spec: ST |parent: 0x55ea39b43080| left: 0x55ea39b43230| right: 0x55ea39b433e0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43080 -> struct0x55ea39b431e0 [weight=900 constraint=true color=red];
-struct0x55ea39b43230 [
-label = "{Spec: IN |parent: 0x55ea39b431e0| left: 0x55ea39b43280| right: 0x55ea39b43390 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b431e0 -> struct0x55ea39b43230 [weight=900 constraint=true color=red];
-struct0x55ea39b43280 [
-label = "{Spec: PARAM |parent: 0x55ea39b43230| left: 0x55ea39b432f0| right: 0x55ea39b43340 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43230 -> struct0x55ea39b43280 [weight=900 constraint=true color=red];
-struct0x55ea39b432f0 [
-label = "{var: c |parent: 0x55ea39b43280| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b43280 -> struct0x55ea39b432f0 [weight=900 constraint=true color=red];
-struct0x55ea39b43340 [
-label = "{Spec: NIL |parent: 0x55ea39b43280| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43280 -> struct0x55ea39b43340 [weight=900 constraint=true color=red];
-struct0x55ea39b43390 [
-label = "{Spec: NIL |parent: 0x55ea39b43230| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43230 -> struct0x55ea39b43390 [weight=900 constraint=true color=red];
-struct0x55ea39b433e0 [
-label = "{Spec: ST |parent: 0x55ea39b431e0| left: 0x55ea39b43430| right: 0x55ea39b47ce0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b431e0 -> struct0x55ea39b433e0 [weight=900 constraint=true color=red];
-struct0x55ea39b43430 [
-label = "{Spec: IF |parent: 0x55ea39b433e0| left: 0x55ea39b43480| right: 0x55ea39b43590 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b433e0 -> struct0x55ea39b43430 [weight=900 constraint=true color=red];
-struct0x55ea39b43480 [
-label = "{Spec: IS_EE |parent: 0x55ea39b43430| left: 0x55ea39b434f0| right: 0x55ea39b43540 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43430 -> struct0x55ea39b43480 [weight=900 constraint=true color=red];
-struct0x55ea39b434f0 [
-label = "{var: a |parent: 0x55ea39b43480| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b43480 -> struct0x55ea39b434f0 [weight=900 constraint=true color=red];
-struct0x55ea39b43540 [
-label = "{value: 0.000000 |parent: 0x55ea39b43480| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b43480 -> struct0x55ea39b43540 [weight=900 constraint=true color=red];
-struct0x55ea39b43590 [
-label = "{Spec: ELSE |parent: 0x55ea39b43430| left: 0x55ea39b435e0| right: 0x55ea39b47790 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43430 -> struct0x55ea39b43590 [weight=900 constraint=true color=red];
-struct0x55ea39b435e0 [
-label = "{Spec: ST |parent: 0x55ea39b43590| left: 0x55ea39b43630| right: 0x55ea39b47740 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43590 -> struct0x55ea39b435e0 [weight=900 constraint=true color=red];
-struct0x55ea39b43630 [
-label = "{Spec: EQ |parent: 0x55ea39b435e0| left: 0x55ea39b436a0| right: 0x55ea39b436f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b435e0 -> struct0x55ea39b43630 [weight=900 constraint=true color=red];
-struct0x55ea39b436a0 [
-label = "{var: a |parent: 0x55ea39b43630| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b43630 -> struct0x55ea39b436a0 [weight=900 constraint=true color=red];
-struct0x55ea39b436f0 [
-label = "{Spec: CALL |parent: 0x55ea39b43630| left: 0x55ea39b43760| right: 0x55ea39b476f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43630 -> struct0x55ea39b436f0 [weight=900 constraint=true color=red];
-struct0x55ea39b43760 [
-label = "{name: firstNull |parent: 0x55ea39b436f0| left: 0x55ea39b437b0| right: 0x55ea39b476a0 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b436f0 -> struct0x55ea39b43760 [weight=900 constraint=true color=red];
-struct0x55ea39b437b0 [
-label = "{Spec: PARAM |parent: 0x55ea39b43760| left: 0x55ea39b47540| right: 0x55ea39b47590 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43760 -> struct0x55ea39b437b0 [weight=900 constraint=true color=red];
-struct0x55ea39b47540 [
-label = "{var: b |parent: 0x55ea39b437b0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b437b0 -> struct0x55ea39b47540 [weight=900 constraint=true color=red];
-struct0x55ea39b47590 [
-label = "{Spec: PARAM |parent: 0x55ea39b437b0| left: 0x55ea39b47600| right: 0x55ea39b47650 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b437b0 -> struct0x55ea39b47590 [weight=900 constraint=true color=red];
-struct0x55ea39b47600 [
-label = "{var: c |parent: 0x55ea39b47590| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47590 -> struct0x55ea39b47600 [weight=900 constraint=true color=red];
-struct0x55ea39b47650 [
-label = "{Spec: NIL |parent: 0x55ea39b47590| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47590 -> struct0x55ea39b47650 [weight=900 constraint=true color=red];
-struct0x55ea39b476a0 [
-label = "{Spec: NIL |parent: 0x55ea39b43760| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43760 -> struct0x55ea39b476a0 [weight=900 constraint=true color=red];
-struct0x55ea39b476f0 [
-label = "{Spec: NIL |parent: 0x55ea39b436f0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b436f0 -> struct0x55ea39b476f0 [weight=900 constraint=true color=red];
-struct0x55ea39b47740 [
-label = "{Spec: NIL |parent: 0x55ea39b435e0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b435e0 -> struct0x55ea39b47740 [weight=900 constraint=true color=red];
-struct0x55ea39b47790 [
-label = "{Spec: ST |parent: 0x55ea39b43590| left: 0x55ea39b477e0| right: 0x55ea39b47c90 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b43590 -> struct0x55ea39b47790 [weight=900 constraint=true color=red];
-struct0x55ea39b477e0 [
-label = "{Spec: EQ |parent: 0x55ea39b47790| left: 0x55ea39b47850| right: 0x55ea39b478a0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47790 -> struct0x55ea39b477e0 [weight=900 constraint=true color=red];
-struct0x55ea39b47850 [
-label = "{var: a |parent: 0x55ea39b477e0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b477e0 -> struct0x55ea39b47850 [weight=900 constraint=true color=red];
-struct0x55ea39b478a0 [
-label = "{Spec: CALL |parent: 0x55ea39b477e0| left: 0x55ea39b47910| right: 0x55ea39b47c40 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b477e0 -> struct0x55ea39b478a0 [weight=900 constraint=true color=red];
-struct0x55ea39b47910 [
-label = "{name: full |parent: 0x55ea39b478a0| left: 0x55ea39b47960| right: 0x55ea39b47bf0 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b478a0 -> struct0x55ea39b47910 [weight=900 constraint=true color=red];
-struct0x55ea39b47960 [
-label = "{Spec: PARAM |parent: 0x55ea39b47910| left: 0x55ea39b479d0| right: 0x55ea39b47a20 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47910 -> struct0x55ea39b47960 [weight=900 constraint=true color=red];
-struct0x55ea39b479d0 [
-label = "{var: a |parent: 0x55ea39b47960| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47960 -> struct0x55ea39b479d0 [weight=900 constraint=true color=red];
-struct0x55ea39b47a20 [
-label = "{Spec: PARAM |parent: 0x55ea39b47960| left: 0x55ea39b47a90| right: 0x55ea39b47ae0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47960 -> struct0x55ea39b47a20 [weight=900 constraint=true color=red];
-struct0x55ea39b47a90 [
-label = "{var: b |parent: 0x55ea39b47a20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47a20 -> struct0x55ea39b47a90 [weight=900 constraint=true color=red];
-struct0x55ea39b47ae0 [
-label = "{Spec: PARAM |parent: 0x55ea39b47a20| left: 0x55ea39b47b50| right: 0x55ea39b47ba0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47a20 -> struct0x55ea39b47ae0 [weight=900 constraint=true color=red];
-struct0x55ea39b47b50 [
-label = "{var: c |parent: 0x55ea39b47ae0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47ae0 -> struct0x55ea39b47b50 [weight=900 constraint=true color=red];
-struct0x55ea39b47ba0 [
-label = "{Spec: NIL |parent: 0x55ea39b47ae0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47ae0 -> struct0x55ea39b47ba0 [weight=900 constraint=true color=red];
-struct0x55ea39b47bf0 [
-label = "{Spec: NIL |parent: 0x55ea39b47910| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47910 -> struct0x55ea39b47bf0 [weight=900 constraint=true color=red];
-struct0x55ea39b47c40 [
-label = "{Spec: NIL |parent: 0x55ea39b478a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b478a0 -> struct0x55ea39b47c40 [weight=900 constraint=true color=red];
-struct0x55ea39b47c90 [
-label = "{Spec: NIL |parent: 0x55ea39b47790| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47790 -> struct0x55ea39b47c90 [weight=900 constraint=true color=red];
-struct0x55ea39b47ce0 [
-label = "{Spec: NIL |parent: 0x55ea39b433e0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b433e0 -> struct0x55ea39b47ce0 [weight=900 constraint=true color=red];
-struct0x55ea39b47d30 [
-label = "{Spec: ST |parent: 0x55ea39b42810| left: 0x55ea39b47d80| right: 0x55ea39b490f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b42810 -> struct0x55ea39b47d30 [weight=900 constraint=true color=red];
-struct0x55ea39b47d80 [
-label = "{Spec: FUNC |parent: 0x55ea39b47d30| left: 0x55ea39b47df0| right: 0x55ea39b481a0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47d30 -> struct0x55ea39b47d80 [weight=900 constraint=true color=red];
-struct0x55ea39b47df0 [
-label = "{name: firstNull |parent: 0x55ea39b47d80| left: 0x55ea39b47e40| right: 0x55ea39b48150 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47d80 -> struct0x55ea39b47df0 [weight=900 constraint=true color=red];
-struct0x55ea39b47e40 [
-label = "{Spec: PARAM |parent: 0x55ea39b47df0| left: 0x55ea39b47e90| right: 0x55ea39b47fa0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47df0 -> struct0x55ea39b47e40 [weight=900 constraint=true color=red];
-struct0x55ea39b47e90 [
-label = "{Spec: VAR |parent: 0x55ea39b47e40| left: 0x55ea39b47f00| right: 0x55ea39b47f50 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47e40 -> struct0x55ea39b47e90 [weight=900 constraint=true color=red];
-struct0x55ea39b47f00 [
-label = "{var: b# |parent: 0x55ea39b47e90| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47e90 -> struct0x55ea39b47f00 [weight=900 constraint=true color=red];
-struct0x55ea39b47f50 [
-label = "{Spec: NIL |parent: 0x55ea39b47e90| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47e90 -> struct0x55ea39b47f50 [weight=900 constraint=true color=red];
-struct0x55ea39b47fa0 [
-label = "{Spec: PARAM |parent: 0x55ea39b47e40| left: 0x55ea39b47ff0| right: 0x55ea39b48100 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47e40 -> struct0x55ea39b47fa0 [weight=900 constraint=true color=red];
-struct0x55ea39b47ff0 [
-label = "{Spec: VAR |parent: 0x55ea39b47fa0| left: 0x55ea39b48060| right: 0x55ea39b480b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47fa0 -> struct0x55ea39b47ff0 [weight=900 constraint=true color=red];
-struct0x55ea39b48060 [
-label = "{var: c# |parent: 0x55ea39b47ff0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b47ff0 -> struct0x55ea39b48060 [weight=900 constraint=true color=red];
-struct0x55ea39b480b0 [
-label = "{Spec: NIL |parent: 0x55ea39b47ff0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47ff0 -> struct0x55ea39b480b0 [weight=900 constraint=true color=red];
-struct0x55ea39b48100 [
-label = "{Spec: NIL |parent: 0x55ea39b47fa0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47fa0 -> struct0x55ea39b48100 [weight=900 constraint=true color=red];
-struct0x55ea39b48150 [
-label = "{Spec: VOID |parent: 0x55ea39b47df0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47df0 -> struct0x55ea39b48150 [weight=900 constraint=true color=red];
-struct0x55ea39b481a0 [
-label = "{Spec: ST |parent: 0x55ea39b47d80| left: 0x55ea39b481f0| right: 0x55ea39b48d60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47d80 -> struct0x55ea39b481a0 [weight=900 constraint=true color=red];
-struct0x55ea39b481f0 [
-label = "{Spec: IF |parent: 0x55ea39b481a0| left: 0x55ea39b48240| right: 0x55ea39b48350 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b481a0 -> struct0x55ea39b481f0 [weight=900 constraint=true color=red];
-struct0x55ea39b48240 [
-label = "{Spec: IS_EE |parent: 0x55ea39b481f0| left: 0x55ea39b482b0| right: 0x55ea39b48300 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b481f0 -> struct0x55ea39b48240 [weight=900 constraint=true color=red];
-struct0x55ea39b482b0 [
-label = "{var: b# |parent: 0x55ea39b48240| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48240 -> struct0x55ea39b482b0 [weight=900 constraint=true color=red];
-struct0x55ea39b48300 [
-label = "{value: 0.000000 |parent: 0x55ea39b48240| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b48240 -> struct0x55ea39b48300 [weight=900 constraint=true color=red];
-struct0x55ea39b48350 [
-label = "{Spec: ELSE |parent: 0x55ea39b481f0| left: 0x55ea39b483a0| right: 0x55ea39b488b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b481f0 -> struct0x55ea39b48350 [weight=900 constraint=true color=red];
-struct0x55ea39b483a0 [
-label = "{Spec: ST |parent: 0x55ea39b48350| left: 0x55ea39b483f0| right: 0x55ea39b48720 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48350 -> struct0x55ea39b483a0 [weight=900 constraint=true color=red];
-struct0x55ea39b483f0 [
-label = "{Spec: EQ |parent: 0x55ea39b483a0| left: 0x55ea39b48460| right: 0x55ea39b484b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b483a0 -> struct0x55ea39b483f0 [weight=900 constraint=true color=red];
-struct0x55ea39b48460 [
-label = "{var: b# |parent: 0x55ea39b483f0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b483f0 -> struct0x55ea39b48460 [weight=900 constraint=true color=red];
-struct0x55ea39b484b0 [
-label = "{Spec: CALL |parent: 0x55ea39b483f0| left: 0x55ea39b48520| right: 0x55ea39b486d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b483f0 -> struct0x55ea39b484b0 [weight=900 constraint=true color=red];
-struct0x55ea39b48520 [
-label = "{name: secondNull |parent: 0x55ea39b484b0| left: 0x55ea39b48570| right: 0x55ea39b48680 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b484b0 -> struct0x55ea39b48520 [weight=900 constraint=true color=red];
-struct0x55ea39b48570 [
-label = "{Spec: PARAM |parent: 0x55ea39b48520| left: 0x55ea39b485e0| right: 0x55ea39b48630 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48520 -> struct0x55ea39b48570 [weight=900 constraint=true color=red];
-struct0x55ea39b485e0 [
-label = "{var: c# |parent: 0x55ea39b48570| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48570 -> struct0x55ea39b485e0 [weight=900 constraint=true color=red];
-struct0x55ea39b48630 [
-label = "{Spec: NIL |parent: 0x55ea39b48570| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48570 -> struct0x55ea39b48630 [weight=900 constraint=true color=red];
-struct0x55ea39b48680 [
-label = "{Spec: NIL |parent: 0x55ea39b48520| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48520 -> struct0x55ea39b48680 [weight=900 constraint=true color=red];
-struct0x55ea39b486d0 [
-label = "{Spec: NIL |parent: 0x55ea39b484b0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b484b0 -> struct0x55ea39b486d0 [weight=900 constraint=true color=red];
-struct0x55ea39b48720 [
-label = "{Spec: ST |parent: 0x55ea39b483a0| left: 0x55ea39b48770| right: 0x55ea39b48860 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b483a0 -> struct0x55ea39b48720 [weight=900 constraint=true color=red];
-struct0x55ea39b48770 [
-label = "{Spec: RET |parent: 0x55ea39b48720| left: 0x55ea39b487c0| right: 0x55ea39b48810 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48720 -> struct0x55ea39b48770 [weight=900 constraint=true color=red];
-struct0x55ea39b487c0 [
-label = "{value: 0.000000 |parent: 0x55ea39b48770| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b48770 -> struct0x55ea39b487c0 [weight=900 constraint=true color=red];
-struct0x55ea39b48810 [
-label = "{Spec: NIL |parent: 0x55ea39b48770| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48770 -> struct0x55ea39b48810 [weight=900 constraint=true color=red];
-struct0x55ea39b48860 [
-label = "{Spec: NIL |parent: 0x55ea39b48720| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48720 -> struct0x55ea39b48860 [weight=900 constraint=true color=red];
-struct0x55ea39b488b0 [
-label = "{Spec: ST |parent: 0x55ea39b48350| left: 0x55ea39b48900| right: 0x55ea39b48ad0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48350 -> struct0x55ea39b488b0 [weight=900 constraint=true color=red];
-struct0x55ea39b48900 [
-label = "{Spec: EQ |parent: 0x55ea39b488b0| left: 0x55ea39b48970| right: 0x55ea39b489c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b488b0 -> struct0x55ea39b48900 [weight=900 constraint=true color=red];
-struct0x55ea39b48970 [
-label = "{var: c# |parent: 0x55ea39b48900| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48900 -> struct0x55ea39b48970 [weight=900 constraint=true color=red];
-struct0x55ea39b489c0 [
-label = "{Spec: MUL |parent: 0x55ea39b48900| left: 0x55ea39b48a30| right: 0x55ea39b48a80 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48900 -> struct0x55ea39b489c0 [weight=900 constraint=true color=red];
-struct0x55ea39b48a30 [
-label = "{var: c# |parent: 0x55ea39b489c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b489c0 -> struct0x55ea39b48a30 [weight=900 constraint=true color=red];
-struct0x55ea39b48a80 [
-label = "{value: -1.000000 |parent: 0x55ea39b489c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b489c0 -> struct0x55ea39b48a80 [weight=900 constraint=true color=red];
-struct0x55ea39b48ad0 [
-label = "{Spec: ST |parent: 0x55ea39b488b0| left: 0x55ea39b48b20| right: 0x55ea39b48d10 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b488b0 -> struct0x55ea39b48ad0 [weight=900 constraint=true color=red];
-struct0x55ea39b48b20 [
-label = "{Spec: EQ |parent: 0x55ea39b48ad0| left: 0x55ea39b48b90| right: 0x55ea39b48be0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48ad0 -> struct0x55ea39b48b20 [weight=900 constraint=true color=red];
-struct0x55ea39b48b90 [
-label = "{var: b# |parent: 0x55ea39b48b20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48b20 -> struct0x55ea39b48b90 [weight=900 constraint=true color=red];
-struct0x55ea39b48be0 [
-label = "{Spec: DIV |parent: 0x55ea39b48b20| left: 0x55ea39b48c50| right: 0x55ea39b48cc0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48b20 -> struct0x55ea39b48be0 [weight=900 constraint=true color=red];
-struct0x55ea39b48c50 [
-label = "{var: c# |parent: 0x55ea39b48be0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48be0 -> struct0x55ea39b48c50 [weight=900 constraint=true color=red];
-struct0x55ea39b48cc0 [
-label = "{var: b# |parent: 0x55ea39b48be0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48be0 -> struct0x55ea39b48cc0 [weight=900 constraint=true color=red];
-struct0x55ea39b48d10 [
-label = "{Spec: NIL |parent: 0x55ea39b48ad0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48ad0 -> struct0x55ea39b48d10 [weight=900 constraint=true color=red];
-struct0x55ea39b48d60 [
-label = "{Spec: ST |parent: 0x55ea39b481a0| left: 0x55ea39b48db0| right: 0x55ea39b48f60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b481a0 -> struct0x55ea39b48d60 [weight=900 constraint=true color=red];
-struct0x55ea39b48db0 [
-label = "{Spec: OUT |parent: 0x55ea39b48d60| left: 0x55ea39b48e00| right: 0x55ea39b48f10 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48d60 -> struct0x55ea39b48db0 [weight=900 constraint=true color=red];
-struct0x55ea39b48e00 [
-label = "{Spec: PARAM |parent: 0x55ea39b48db0| left: 0x55ea39b48e70| right: 0x55ea39b48ec0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48db0 -> struct0x55ea39b48e00 [weight=900 constraint=true color=red];
-struct0x55ea39b48e70 [
-label = "{var: b# |parent: 0x55ea39b48e00| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b48e00 -> struct0x55ea39b48e70 [weight=900 constraint=true color=red];
-struct0x55ea39b48ec0 [
-label = "{Spec: NIL |parent: 0x55ea39b48e00| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48e00 -> struct0x55ea39b48ec0 [weight=900 constraint=true color=red];
-struct0x55ea39b48f10 [
-label = "{Spec: NIL |parent: 0x55ea39b48db0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48db0 -> struct0x55ea39b48f10 [weight=900 constraint=true color=red];
-struct0x55ea39b48f60 [
-label = "{Spec: ST |parent: 0x55ea39b48d60| left: 0x55ea39b48fb0| right: 0x55ea39b490a0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48d60 -> struct0x55ea39b48f60 [weight=900 constraint=true color=red];
-struct0x55ea39b48fb0 [
-label = "{Spec: RET |parent: 0x55ea39b48f60| left: 0x55ea39b49000| right: 0x55ea39b49050 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48f60 -> struct0x55ea39b48fb0 [weight=900 constraint=true color=red];
-struct0x55ea39b49000 [
-label = "{value: 0.000000 |parent: 0x55ea39b48fb0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b48fb0 -> struct0x55ea39b49000 [weight=900 constraint=true color=red];
-struct0x55ea39b49050 [
-label = "{Spec: NIL |parent: 0x55ea39b48fb0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48fb0 -> struct0x55ea39b49050 [weight=900 constraint=true color=red];
-struct0x55ea39b490a0 [
-label = "{Spec: NIL |parent: 0x55ea39b48f60| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b48f60 -> struct0x55ea39b490a0 [weight=900 constraint=true color=red];
-struct0x55ea39b490f0 [
-label = "{Spec: ST |parent: 0x55ea39b47d30| left: 0x55ea39b49140| right: 0x55ea39b49bf0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b47d30 -> struct0x55ea39b490f0 [weight=900 constraint=true color=red];
-struct0x55ea39b49140 [
-label = "{Spec: FUNC |parent: 0x55ea39b490f0| left: 0x55ea39b491b0| right: 0x55ea39b49400 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b490f0 -> struct0x55ea39b49140 [weight=900 constraint=true color=red];
-struct0x55ea39b491b0 [
-label = "{name: secondNull |parent: 0x55ea39b49140| left: 0x55ea39b49200| right: 0x55ea39b493b0 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b49140 -> struct0x55ea39b491b0 [weight=900 constraint=true color=red];
-struct0x55ea39b49200 [
-label = "{Spec: PARAM |parent: 0x55ea39b491b0| left: 0x55ea39b49250| right: 0x55ea39b49360 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b491b0 -> struct0x55ea39b49200 [weight=900 constraint=true color=red];
-struct0x55ea39b49250 [
-label = "{Spec: VAR |parent: 0x55ea39b49200| left: 0x55ea39b492c0| right: 0x55ea39b49310 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49200 -> struct0x55ea39b49250 [weight=900 constraint=true color=red];
-struct0x55ea39b492c0 [
-label = "{var: c#b |parent: 0x55ea39b49250| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b49250 -> struct0x55ea39b492c0 [weight=900 constraint=true color=red];
-struct0x55ea39b49310 [
-label = "{Spec: NIL |parent: 0x55ea39b49250| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49250 -> struct0x55ea39b49310 [weight=900 constraint=true color=red];
-struct0x55ea39b49360 [
-label = "{Spec: NIL |parent: 0x55ea39b49200| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49200 -> struct0x55ea39b49360 [weight=900 constraint=true color=red];
-struct0x55ea39b493b0 [
-label = "{Spec: VOID |parent: 0x55ea39b491b0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b491b0 -> struct0x55ea39b493b0 [weight=900 constraint=true color=red];
-struct0x55ea39b49400 [
-label = "{Spec: ST |parent: 0x55ea39b49140| left: 0x55ea39b49450| right: 0x55ea39b49a60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49140 -> struct0x55ea39b49400 [weight=900 constraint=true color=red];
-struct0x55ea39b49450 [
-label = "{Spec: IF |parent: 0x55ea39b49400| left: 0x55ea39b494a0| right: 0x55ea39b495b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49400 -> struct0x55ea39b49450 [weight=900 constraint=true color=red];
-struct0x55ea39b494a0 [
-label = "{Spec: IS_EE |parent: 0x55ea39b49450| left: 0x55ea39b49510| right: 0x55ea39b49560 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49450 -> struct0x55ea39b494a0 [weight=900 constraint=true color=red];
-struct0x55ea39b49510 [
-label = "{var: c#b |parent: 0x55ea39b494a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b494a0 -> struct0x55ea39b49510 [weight=900 constraint=true color=red];
-struct0x55ea39b49560 [
-label = "{value: 0.000000 |parent: 0x55ea39b494a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b494a0 -> struct0x55ea39b49560 [weight=900 constraint=true color=red];
-struct0x55ea39b495b0 [
-label = "{Spec: ELSE |parent: 0x55ea39b49450| left: 0x55ea39b49600| right: 0x55ea39b49830 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49450 -> struct0x55ea39b495b0 [weight=900 constraint=true color=red];
-struct0x55ea39b49600 [
-label = "{Spec: ST |parent: 0x55ea39b495b0| left: 0x55ea39b49650| right: 0x55ea39b497e0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b495b0 -> struct0x55ea39b49600 [weight=900 constraint=true color=red];
-struct0x55ea39b49650 [
-label = "{Spec: OUT |parent: 0x55ea39b49600| left: 0x55ea39b496a0| right: 0x55ea39b49790 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49600 -> struct0x55ea39b49650 [weight=900 constraint=true color=red];
-struct0x55ea39b496a0 [
-label = "{Spec: PARAM |parent: 0x55ea39b49650| left: 0x55ea39b496f0| right: 0x55ea39b49740 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49650 -> struct0x55ea39b496a0 [weight=900 constraint=true color=red];
-struct0x55ea39b496f0 [
-label = "{value: 6969.000000 |parent: 0x55ea39b496a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b496a0 -> struct0x55ea39b496f0 [weight=900 constraint=true color=red];
-struct0x55ea39b49740 [
-label = "{Spec: NIL |parent: 0x55ea39b496a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b496a0 -> struct0x55ea39b49740 [weight=900 constraint=true color=red];
-struct0x55ea39b49790 [
-label = "{Spec: NIL |parent: 0x55ea39b49650| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49650 -> struct0x55ea39b49790 [weight=900 constraint=true color=red];
-struct0x55ea39b497e0 [
-label = "{Spec: NIL |parent: 0x55ea39b49600| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49600 -> struct0x55ea39b497e0 [weight=900 constraint=true color=red];
-struct0x55ea39b49830 [
-label = "{Spec: ST |parent: 0x55ea39b495b0| left: 0x55ea39b49880| right: 0x55ea39b49a10 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b495b0 -> struct0x55ea39b49830 [weight=900 constraint=true color=red];
-struct0x55ea39b49880 [
-label = "{Spec: OUT |parent: 0x55ea39b49830| left: 0x55ea39b498d0| right: 0x55ea39b499c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49830 -> struct0x55ea39b49880 [weight=900 constraint=true color=red];
-struct0x55ea39b498d0 [
-label = "{Spec: PARAM |parent: 0x55ea39b49880| left: 0x55ea39b49920| right: 0x55ea39b49970 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49880 -> struct0x55ea39b498d0 [weight=900 constraint=true color=red];
-struct0x55ea39b49920 [
-label = "{value: 228.000000 |parent: 0x55ea39b498d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b498d0 -> struct0x55ea39b49920 [weight=900 constraint=true color=red];
-struct0x55ea39b49970 [
-label = "{Spec: NIL |parent: 0x55ea39b498d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b498d0 -> struct0x55ea39b49970 [weight=900 constraint=true color=red];
-struct0x55ea39b499c0 [
-label = "{Spec: NIL |parent: 0x55ea39b49880| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49880 -> struct0x55ea39b499c0 [weight=900 constraint=true color=red];
-struct0x55ea39b49a10 [
-label = "{Spec: NIL |parent: 0x55ea39b49830| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49830 -> struct0x55ea39b49a10 [weight=900 constraint=true color=red];
-struct0x55ea39b49a60 [
-label = "{Spec: ST |parent: 0x55ea39b49400| left: 0x55ea39b49ab0| right: 0x55ea39b49ba0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49400 -> struct0x55ea39b49a60 [weight=900 constraint=true color=red];
-struct0x55ea39b49ab0 [
-label = "{Spec: RET |parent: 0x55ea39b49a60| left: 0x55ea39b49b00| right: 0x55ea39b49b50 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49a60 -> struct0x55ea39b49ab0 [weight=900 constraint=true color=red];
-struct0x55ea39b49b00 [
-label = "{value: 0.000000 |parent: 0x55ea39b49ab0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b49ab0 -> struct0x55ea39b49b00 [weight=900 constraint=true color=red];
-struct0x55ea39b49b50 [
-label = "{Spec: NIL |parent: 0x55ea39b49ab0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49ab0 -> struct0x55ea39b49b50 [weight=900 constraint=true color=red];
-struct0x55ea39b49ba0 [
-label = "{Spec: NIL |parent: 0x55ea39b49a60| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49a60 -> struct0x55ea39b49ba0 [weight=900 constraint=true color=red];
-struct0x55ea39b49bf0 [
-label = "{Spec: ST |parent: 0x55ea39b490f0| left: 0x55ea39b49c40| right: 0x55ea39b4bc90 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b490f0 -> struct0x55ea39b49bf0 [weight=900 constraint=true color=red];
-struct0x55ea39b49c40 [
-label = "{Spec: FUNC |parent: 0x55ea39b49bf0| left: 0x55ea39b49cb0| right: 0x55ea39b4a1c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49bf0 -> struct0x55ea39b49c40 [weight=900 constraint=true color=red];
-struct0x55ea39b49cb0 [
-label = "{name: full |parent: 0x55ea39b49c40| left: 0x55ea39b49d00| right: 0x55ea39b4a170 }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b49c40 -> struct0x55ea39b49cb0 [weight=900 constraint=true color=red];
-struct0x55ea39b49d00 [
-label = "{Spec: PARAM |parent: 0x55ea39b49cb0| left: 0x55ea39b49d50| right: 0x55ea39b49e60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49cb0 -> struct0x55ea39b49d00 [weight=900 constraint=true color=red];
-struct0x55ea39b49d50 [
-label = "{Spec: VAR |parent: 0x55ea39b49d00| left: 0x55ea39b49dc0| right: 0x55ea39b49e10 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49d00 -> struct0x55ea39b49d50 [weight=900 constraint=true color=red];
-struct0x55ea39b49dc0 [
-label = "{var: a? |parent: 0x55ea39b49d50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b49d50 -> struct0x55ea39b49dc0 [weight=900 constraint=true color=red];
-struct0x55ea39b49e10 [
-label = "{Spec: NIL |parent: 0x55ea39b49d50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49d50 -> struct0x55ea39b49e10 [weight=900 constraint=true color=red];
-struct0x55ea39b49e60 [
-label = "{Spec: PARAM |parent: 0x55ea39b49d00| left: 0x55ea39b49eb0| right: 0x55ea39b49fc0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49d00 -> struct0x55ea39b49e60 [weight=900 constraint=true color=red];
-struct0x55ea39b49eb0 [
-label = "{Spec: VAR |parent: 0x55ea39b49e60| left: 0x55ea39b49f20| right: 0x55ea39b49f70 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49e60 -> struct0x55ea39b49eb0 [weight=900 constraint=true color=red];
-struct0x55ea39b49f20 [
-label = "{var: b? |parent: 0x55ea39b49eb0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b49eb0 -> struct0x55ea39b49f20 [weight=900 constraint=true color=red];
-struct0x55ea39b49f70 [
-label = "{Spec: NIL |parent: 0x55ea39b49eb0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49eb0 -> struct0x55ea39b49f70 [weight=900 constraint=true color=red];
-struct0x55ea39b49fc0 [
-label = "{Spec: PARAM |parent: 0x55ea39b49e60| left: 0x55ea39b4a010| right: 0x55ea39b4a120 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49e60 -> struct0x55ea39b49fc0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a010 [
-label = "{Spec: VAR |parent: 0x55ea39b49fc0| left: 0x55ea39b4a080| right: 0x55ea39b4a0d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49fc0 -> struct0x55ea39b4a010 [weight=900 constraint=true color=red];
-struct0x55ea39b4a080 [
-label = "{var: c? |parent: 0x55ea39b4a010| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a010 -> struct0x55ea39b4a080 [weight=900 constraint=true color=red];
-struct0x55ea39b4a0d0 [
-label = "{Spec: NIL |parent: 0x55ea39b4a010| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a010 -> struct0x55ea39b4a0d0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a120 [
-label = "{Spec: NIL |parent: 0x55ea39b49fc0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49fc0 -> struct0x55ea39b4a120 [weight=900 constraint=true color=red];
-struct0x55ea39b4a170 [
-label = "{Spec: VOID |parent: 0x55ea39b49cb0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49cb0 -> struct0x55ea39b4a170 [weight=900 constraint=true color=red];
-struct0x55ea39b4a1c0 [
-label = "{Spec: ST |parent: 0x55ea39b49c40| left: 0x55ea39b4a210| right: 0x55ea39b4a620 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b49c40 -> struct0x55ea39b4a1c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a210 [
-label = "{Spec: VAR |parent: 0x55ea39b4a1c0| left: 0x55ea39b4a280| right: 0x55ea39b4a2d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a1c0 -> struct0x55ea39b4a210 [weight=900 constraint=true color=red];
-struct0x55ea39b4a280 [
-label = "{var: d |parent: 0x55ea39b4a210| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a210 -> struct0x55ea39b4a280 [weight=900 constraint=true color=red];
-struct0x55ea39b4a2d0 [
-label = "{Spec: SUB |parent: 0x55ea39b4a210| left: 0x55ea39b4a320| right: 0x55ea39b4a450 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a210 -> struct0x55ea39b4a2d0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a320 [
-label = "{Spec: MUL |parent: 0x55ea39b4a2d0| left: 0x55ea39b4a390| right: 0x55ea39b4a400 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a2d0 -> struct0x55ea39b4a320 [weight=900 constraint=true color=red];
-struct0x55ea39b4a390 [
-label = "{var: b? |parent: 0x55ea39b4a320| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a320 -> struct0x55ea39b4a390 [weight=900 constraint=true color=red];
-struct0x55ea39b4a400 [
-label = "{var: b? |parent: 0x55ea39b4a320| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a320 -> struct0x55ea39b4a400 [weight=900 constraint=true color=red];
-struct0x55ea39b4a450 [
-label = "{Spec: MUL |parent: 0x55ea39b4a2d0| left: 0x55ea39b4a4a0| right: 0x55ea39b4a5d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a2d0 -> struct0x55ea39b4a450 [weight=900 constraint=true color=red];
-struct0x55ea39b4a4a0 [
-label = "{Spec: MUL |parent: 0x55ea39b4a450| left: 0x55ea39b4a4f0| right: 0x55ea39b4a560 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a450 -> struct0x55ea39b4a4a0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a4f0 [
-label = "{value: 4.000000 |parent: 0x55ea39b4a4a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b4a4a0 -> struct0x55ea39b4a4f0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a560 [
-label = "{var: a? |parent: 0x55ea39b4a4a0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a4a0 -> struct0x55ea39b4a560 [weight=900 constraint=true color=red];
-struct0x55ea39b4a5d0 [
-label = "{var: c? |parent: 0x55ea39b4a450| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a450 -> struct0x55ea39b4a5d0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a620 [
-label = "{Spec: ST |parent: 0x55ea39b4a1c0| left: 0x55ea39b4a670| right: 0x55ea39b4bb00 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a1c0 -> struct0x55ea39b4a620 [weight=900 constraint=true color=red];
-struct0x55ea39b4a670 [
-label = "{Spec: IF |parent: 0x55ea39b4a620| left: 0x55ea39b4a6c0| right: 0x55ea39b4a7d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a620 -> struct0x55ea39b4a670 [weight=900 constraint=true color=red];
-struct0x55ea39b4a6c0 [
-label = "{Spec: IS_BT |parent: 0x55ea39b4a670| left: 0x55ea39b4a730| right: 0x55ea39b4a780 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a670 -> struct0x55ea39b4a6c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a730 [
-label = "{var: d |parent: 0x55ea39b4a6c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4a6c0 -> struct0x55ea39b4a730 [weight=900 constraint=true color=red];
-struct0x55ea39b4a780 [
-label = "{value: 0.000000 |parent: 0x55ea39b4a6c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b4a6c0 -> struct0x55ea39b4a780 [weight=900 constraint=true color=red];
-struct0x55ea39b4a7d0 [
-label = "{Spec: ELSE |parent: 0x55ea39b4a670| left: 0x55ea39b4a820| right: 0x55ea39b4aa50 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a670 -> struct0x55ea39b4a7d0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a820 [
-label = "{Spec: ST |parent: 0x55ea39b4a7d0| left: 0x55ea39b4a870| right: 0x55ea39b4aa00 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a7d0 -> struct0x55ea39b4a820 [weight=900 constraint=true color=red];
-struct0x55ea39b4a870 [
-label = "{Spec: OUT |parent: 0x55ea39b4a820| left: 0x55ea39b4a8c0| right: 0x55ea39b4a9b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a820 -> struct0x55ea39b4a870 [weight=900 constraint=true color=red];
-struct0x55ea39b4a8c0 [
-label = "{Spec: PARAM |parent: 0x55ea39b4a870| left: 0x55ea39b4a910| right: 0x55ea39b4a960 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a870 -> struct0x55ea39b4a8c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4a910 [
-label = "{value: 228.000000 |parent: 0x55ea39b4a8c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b4a8c0 -> struct0x55ea39b4a910 [weight=900 constraint=true color=red];
-struct0x55ea39b4a960 [
-label = "{Spec: NIL |parent: 0x55ea39b4a8c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a8c0 -> struct0x55ea39b4a960 [weight=900 constraint=true color=red];
-struct0x55ea39b4a9b0 [
-label = "{Spec: NIL |parent: 0x55ea39b4a870| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a870 -> struct0x55ea39b4a9b0 [weight=900 constraint=true color=red];
-struct0x55ea39b4aa00 [
-label = "{Spec: NIL |parent: 0x55ea39b4a820| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a820 -> struct0x55ea39b4aa00 [weight=900 constraint=true color=red];
-struct0x55ea39b4aa50 [
-label = "{Spec: ST |parent: 0x55ea39b4a7d0| left: 0x55ea39b4aaa0| right: 0x55ea39b4ac70 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4a7d0 -> struct0x55ea39b4aa50 [weight=900 constraint=true color=red];
-struct0x55ea39b4aaa0 [
-label = "{Spec: EQ |parent: 0x55ea39b4aa50| left: 0x55ea39b4ab10| right: 0x55ea39b4ab60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4aa50 -> struct0x55ea39b4aaa0 [weight=900 constraint=true color=red];
-struct0x55ea39b4ab10 [
-label = "{var: d |parent: 0x55ea39b4aaa0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4aaa0 -> struct0x55ea39b4ab10 [weight=900 constraint=true color=red];
-struct0x55ea39b4ab60 [
-label = "{Spec: SQRT |parent: 0x55ea39b4aaa0| left: 0x55ea39b4abd0| right: 0x55ea39b4ac20 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4aaa0 -> struct0x55ea39b4ab60 [weight=900 constraint=true color=red];
-struct0x55ea39b4abd0 [
-label = "{var: d |parent: 0x55ea39b4ab60| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4ab60 -> struct0x55ea39b4abd0 [weight=900 constraint=true color=red];
-struct0x55ea39b4ac20 [
-label = "{Spec: NIL |parent: 0x55ea39b4ab60| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4ab60 -> struct0x55ea39b4ac20 [weight=900 constraint=true color=red];
-struct0x55ea39b4ac70 [
-label = "{Spec: ST |parent: 0x55ea39b4aa50| left: 0x55ea39b4acc0| right: 0x55ea39b4ae90 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4aa50 -> struct0x55ea39b4ac70 [weight=900 constraint=true color=red];
-struct0x55ea39b4acc0 [
-label = "{Spec: EQ |parent: 0x55ea39b4ac70| left: 0x55ea39b4ad30| right: 0x55ea39b4ad80 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4ac70 -> struct0x55ea39b4acc0 [weight=900 constraint=true color=red];
-struct0x55ea39b4ad30 [
-label = "{var: b? |parent: 0x55ea39b4acc0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4acc0 -> struct0x55ea39b4ad30 [weight=900 constraint=true color=red];
-struct0x55ea39b4ad80 [
-label = "{Spec: MUL |parent: 0x55ea39b4acc0| left: 0x55ea39b4add0| right: 0x55ea39b4ae40 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4acc0 -> struct0x55ea39b4ad80 [weight=900 constraint=true color=red];
-struct0x55ea39b4add0 [
-label = "{value: -1.000000 |parent: 0x55ea39b4ad80| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b4ad80 -> struct0x55ea39b4add0 [weight=900 constraint=true color=red];
-struct0x55ea39b4ae40 [
-label = "{var: b? |parent: 0x55ea39b4ad80| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4ad80 -> struct0x55ea39b4ae40 [weight=900 constraint=true color=red];
-struct0x55ea39b4ae90 [
-label = "{Spec: ST |parent: 0x55ea39b4ac70| left: 0x55ea39b4aee0| right: 0x55ea39b4b0b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4ac70 -> struct0x55ea39b4ae90 [weight=900 constraint=true color=red];
-struct0x55ea39b4aee0 [
-label = "{Spec: EQ |parent: 0x55ea39b4ae90| left: 0x55ea39b4af50| right: 0x55ea39b4afa0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4ae90 -> struct0x55ea39b4aee0 [weight=900 constraint=true color=red];
-struct0x55ea39b4af50 [
-label = "{var: a? |parent: 0x55ea39b4aee0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4aee0 -> struct0x55ea39b4af50 [weight=900 constraint=true color=red];
-struct0x55ea39b4afa0 [
-label = "{Spec: MUL |parent: 0x55ea39b4aee0| left: 0x55ea39b4aff0| right: 0x55ea39b4b060 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4aee0 -> struct0x55ea39b4afa0 [weight=900 constraint=true color=red];
-struct0x55ea39b4aff0 [
-label = "{value: 2.000000 |parent: 0x55ea39b4afa0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
-];
-struct0x55ea39b4afa0 -> struct0x55ea39b4aff0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b060 [
-label = "{var: a? |parent: 0x55ea39b4afa0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4afa0 -> struct0x55ea39b4b060 [weight=900 constraint=true color=red];
-struct0x55ea39b4b0b0 [
-label = "{Spec: ST |parent: 0x55ea39b4ae90| left: 0x55ea39b4b100| right: 0x55ea39b4b3b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4ae90 -> struct0x55ea39b4b0b0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b100 [
-label = "{Spec: VAR |parent: 0x55ea39b4b0b0| left: 0x55ea39b4b170| right: 0x55ea39b4b1c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4b0b0 -> struct0x55ea39b4b100 [weight=900 constraint=true color=red];
-struct0x55ea39b4b170 [
-label = "{var: f |parent: 0x55ea39b4b100| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4b100 -> struct0x55ea39b4b170 [weight=900 constraint=true color=red];
-struct0x55ea39b4b1c0 [
-label = "{Spec: DIV |parent: 0x55ea39b4b100| left: 0x55ea39b4b210| right: 0x55ea39b4b360 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4b100 -> struct0x55ea39b4b1c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b210 [
-label = "{Spec: SUB |parent: 0x55ea39b4b1c0| left: 0x55ea39b4b280| right: 0x55ea39b4b2f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4b1c0 -> struct0x55ea39b4b210 [weight=900 constraint=true color=red];
-struct0x55ea39b4b280 [
-label = "{var: b? |parent: 0x55ea39b4b210| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4b210 -> struct0x55ea39b4b280 [weight=900 constraint=true color=red];
-struct0x55ea39b4b2f0 [
-label = "{var: d |parent: 0x55ea39b4b210| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4b210 -> struct0x55ea39b4b2f0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b360 [
-label = "{var: a? |parent: 0x55ea39b4b1c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
-];
-struct0x55ea39b4b1c0 -> struct0x55ea39b4b360 [weight=900 constraint=true color=red];
-struct0x55ea39b4b3b0 [
-label = "{Spec: ST |parent: 0x55ea39b4b0b0| left: 0x55ea39b4b400| right: 0x55ea39b4b6b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4b0b0 -> struct0x55ea39b4b3b0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b400 [
-label = "{Spec: VAR |parent: 0x55ea39b4b3b0| left: 0x55ea39b4b470| right: 0x55ea39b4b4c0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
-];
-struct0x55ea39b4b3b0 -> struct0x55ea39b4b400 [weight=900 constraint=true color=red];
-struct0x55ea39b4b470 [
-label = "{var: f# |parent: 0x55ea39b4b400| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b5ce0 [
+label = "{Spec: FUNC |parent: 0x55691b6b5c90| left: 0x55691b6b5d50| right: 0x55691b6b5e40 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5c90 -> struct0x55691b6b5ce0 [weight=900 constraint=true color=red];
+struct0x55691b6b5d50 [
+label = "{name: main |parent: 0x55691b6b5ce0| left: 0x55691b6b5da0| right: 0x55691b6b5df0 }", style = "filled", color = "black", fillcolor = "cyan" 
+];
+struct0x55691b6b5ce0 -> struct0x55691b6b5d50 [weight=900 constraint=true color=red];
+struct0x55691b6b5da0 [
+label = "{Spec: NIL |parent: 0x55691b6b5d50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5d50 -> struct0x55691b6b5da0 [weight=900 constraint=true color=red];
+struct0x55691b6b5df0 [
+label = "{Spec: TYPE |parent: 0x55691b6b5d50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5d50 -> struct0x55691b6b5df0 [weight=900 constraint=true color=red];
+struct0x55691b6b5e40 [
+label = "{Spec: ST |parent: 0x55691b6b5ce0| left: 0x55691b6b5e90| right: 0x55691b6b5fa0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5ce0 -> struct0x55691b6b5e40 [weight=900 constraint=true color=red];
+struct0x55691b6b5e90 [
+label = "{Spec: VAR |parent: 0x55691b6b5e40| left: 0x55691b6b5f00| right: 0x55691b6b5f50 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5e40 -> struct0x55691b6b5e90 [weight=900 constraint=true color=red];
+struct0x55691b6b5f00 [
+label = "{var: a |parent: 0x55691b6b5e90| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+];
+struct0x55691b6b5e90 -> struct0x55691b6b5f00 [weight=900 constraint=true color=red];
+struct0x55691b6b5f50 [
+label = "{value: 0.000000 |parent: 0x55691b6b5e90| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
+];
+struct0x55691b6b5e90 -> struct0x55691b6b5f50 [weight=900 constraint=true color=red];
+struct0x55691b6b5fa0 [
+label = "{Spec: ST |parent: 0x55691b6b5e40| left: 0x55691b6b5ff0| right: 0x55691b6b61a0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5e40 -> struct0x55691b6b5fa0 [weight=900 constraint=true color=red];
+struct0x55691b6b5ff0 [
+label = "{Spec: IN |parent: 0x55691b6b5fa0| left: 0x55691b6b6040| right: 0x55691b6b6150 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5fa0 -> struct0x55691b6b5ff0 [weight=900 constraint=true color=red];
+struct0x55691b6b6040 [
+label = "{Spec: PARAM |parent: 0x55691b6b5ff0| left: 0x55691b6b60b0| right: 0x55691b6b6100 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5ff0 -> struct0x55691b6b6040 [weight=900 constraint=true color=red];
+struct0x55691b6b60b0 [
+label = "{var: a |parent: 0x55691b6b6040| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+];
+struct0x55691b6b6040 -> struct0x55691b6b60b0 [weight=900 constraint=true color=red];
+struct0x55691b6b6100 [
+label = "{Spec: NIL |parent: 0x55691b6b6040| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b6040 -> struct0x55691b6b6100 [weight=900 constraint=true color=red];
+struct0x55691b6b6150 [
+label = "{Spec: NIL |parent: 0x55691b6b5ff0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5ff0 -> struct0x55691b6b6150 [weight=900 constraint=true color=red];
+struct0x55691b6b61a0 [
+label = "{Spec: ST |parent: 0x55691b6b5fa0| left: 0x55691b6b61f0| right: 0x55691b6b6320 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b5fa0 -> struct0x55691b6b61a0 [weight=900 constraint=true color=red];
+struct0x55691b6b61f0 [
+label = "{Spec: VAR |parent: 0x55691b6b61a0| left: 0x55691b6b6260| right: 0x55691b6b62d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b61a0 -> struct0x55691b6b61f0 [weight=900 constraint=true color=red];
+struct0x55691b6b6260 [
+label = "{var: c |parent: 0x55691b6b61f0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+];
+struct0x55691b6b61f0 -> struct0x55691b6b6260 [weight=900 constraint=true color=red];
+struct0x55691b6b62d0 [
+label = "{var: a |parent: 0x55691b6b61f0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+];
+struct0x55691b6b61f0 -> struct0x55691b6b62d0 [weight=900 constraint=true color=red];
+struct0x55691b6b6320 [
+label = "{Spec: ST |parent: 0x55691b6b61a0| left: 0x55691b6b6370| right: 0x55691b6b6980 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+];
+struct0x55691b6b61a0 -> struct0x55691b6b6320 [weight=900 constraint=true color=red];
+struct0x55691b6b6370 [
+label = "{Spec: WHILE |parent: 0x55691b6b6320| left: 0x55691b6b63c0| right: 0x55691b6b64d0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b400 -> struct0x55ea39b4b470 [weight=900 constraint=true color=red];
-struct0x55ea39b4b4c0 [
-label = "{Spec: DIV |parent: 0x55ea39b4b400| left: 0x55ea39b4b510| right: 0x55ea39b4b660 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6320 -> struct0x55691b6b6370 [weight=900 constraint=true color=red];
+struct0x55691b6b63c0 [
+label = "{Spec: IS_GT |parent: 0x55691b6b6370| left: 0x55691b6b6430| right: 0x55691b6b6480 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b400 -> struct0x55ea39b4b4c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b510 [
-label = "{Spec: ADD |parent: 0x55ea39b4b4c0| left: 0x55ea39b4b580| right: 0x55ea39b4b5f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6370 -> struct0x55691b6b63c0 [weight=900 constraint=true color=red];
+struct0x55691b6b6430 [
+label = "{var: c |parent: 0x55691b6b63c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b4c0 -> struct0x55ea39b4b510 [weight=900 constraint=true color=red];
-struct0x55ea39b4b580 [
-label = "{var: b? |parent: 0x55ea39b4b510| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b63c0 -> struct0x55691b6b6430 [weight=900 constraint=true color=red];
+struct0x55691b6b6480 [
+label = "{value: 1.000000 |parent: 0x55691b6b63c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
 ];
-struct0x55ea39b4b510 -> struct0x55ea39b4b580 [weight=900 constraint=true color=red];
-struct0x55ea39b4b5f0 [
-label = "{var: d |parent: 0x55ea39b4b510| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b63c0 -> struct0x55691b6b6480 [weight=900 constraint=true color=red];
+struct0x55691b6b64d0 [
+label = "{Spec: ST |parent: 0x55691b6b6370| left: 0x55691b6b6520| right: 0x55691b6b66f0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b510 -> struct0x55ea39b4b5f0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b660 [
-label = "{var: a? |parent: 0x55ea39b4b4c0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b6370 -> struct0x55691b6b64d0 [weight=900 constraint=true color=red];
+struct0x55691b6b6520 [
+label = "{Spec: EQ |parent: 0x55691b6b64d0| left: 0x55691b6b6590| right: 0x55691b6b65e0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b4c0 -> struct0x55ea39b4b660 [weight=900 constraint=true color=red];
-struct0x55ea39b4b6b0 [
-label = "{Spec: ST |parent: 0x55ea39b4b3b0| left: 0x55ea39b4b700| right: 0x55ea39b4b8b0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b64d0 -> struct0x55691b6b6520 [weight=900 constraint=true color=red];
+struct0x55691b6b6590 [
+label = "{var: c |parent: 0x55691b6b6520| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b3b0 -> struct0x55ea39b4b6b0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b700 [
-label = "{Spec: OUT |parent: 0x55ea39b4b6b0| left: 0x55ea39b4b750| right: 0x55ea39b4b860 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6520 -> struct0x55691b6b6590 [weight=900 constraint=true color=red];
+struct0x55691b6b65e0 [
+label = "{Spec: SUB |parent: 0x55691b6b6520| left: 0x55691b6b6650| right: 0x55691b6b66a0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b6b0 -> struct0x55ea39b4b700 [weight=900 constraint=true color=red];
-struct0x55ea39b4b750 [
-label = "{Spec: PARAM |parent: 0x55ea39b4b700| left: 0x55ea39b4b7c0| right: 0x55ea39b4b810 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6520 -> struct0x55691b6b65e0 [weight=900 constraint=true color=red];
+struct0x55691b6b6650 [
+label = "{var: c |parent: 0x55691b6b65e0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b700 -> struct0x55ea39b4b750 [weight=900 constraint=true color=red];
-struct0x55ea39b4b7c0 [
-label = "{var: f |parent: 0x55ea39b4b750| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b65e0 -> struct0x55691b6b6650 [weight=900 constraint=true color=red];
+struct0x55691b6b66a0 [
+label = "{value: 1.000000 |parent: 0x55691b6b65e0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
 ];
-struct0x55ea39b4b750 -> struct0x55ea39b4b7c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b810 [
-label = "{Spec: NIL |parent: 0x55ea39b4b750| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b65e0 -> struct0x55691b6b66a0 [weight=900 constraint=true color=red];
+struct0x55691b6b66f0 [
+label = "{Spec: ST |parent: 0x55691b6b64d0| left: 0x55691b6b6740| right: 0x55691b6b6930 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b750 -> struct0x55ea39b4b810 [weight=900 constraint=true color=red];
-struct0x55ea39b4b860 [
-label = "{Spec: NIL |parent: 0x55ea39b4b700| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b64d0 -> struct0x55691b6b66f0 [weight=900 constraint=true color=red];
+struct0x55691b6b6740 [
+label = "{Spec: EQ |parent: 0x55691b6b66f0| left: 0x55691b6b67b0| right: 0x55691b6b6800 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b700 -> struct0x55ea39b4b860 [weight=900 constraint=true color=red];
-struct0x55ea39b4b8b0 [
-label = "{Spec: ST |parent: 0x55ea39b4b6b0| left: 0x55ea39b4b900| right: 0x55ea39b4bab0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b66f0 -> struct0x55691b6b6740 [weight=900 constraint=true color=red];
+struct0x55691b6b67b0 [
+label = "{var: a |parent: 0x55691b6b6740| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b6b0 -> struct0x55ea39b4b8b0 [weight=900 constraint=true color=red];
-struct0x55ea39b4b900 [
-label = "{Spec: OUT |parent: 0x55ea39b4b8b0| left: 0x55ea39b4b950| right: 0x55ea39b4ba60 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6740 -> struct0x55691b6b67b0 [weight=900 constraint=true color=red];
+struct0x55691b6b6800 [
+label = "{Spec: MUL |parent: 0x55691b6b6740| left: 0x55691b6b6870| right: 0x55691b6b68e0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b8b0 -> struct0x55ea39b4b900 [weight=900 constraint=true color=red];
-struct0x55ea39b4b950 [
-label = "{Spec: PARAM |parent: 0x55ea39b4b900| left: 0x55ea39b4b9c0| right: 0x55ea39b4ba10 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6740 -> struct0x55691b6b6800 [weight=900 constraint=true color=red];
+struct0x55691b6b6870 [
+label = "{var: a |parent: 0x55691b6b6800| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b900 -> struct0x55ea39b4b950 [weight=900 constraint=true color=red];
-struct0x55ea39b4b9c0 [
-label = "{var: f# |parent: 0x55ea39b4b950| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
+struct0x55691b6b6800 -> struct0x55691b6b6870 [weight=900 constraint=true color=red];
+struct0x55691b6b68e0 [
+label = "{var: c |parent: 0x55691b6b6800| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4b950 -> struct0x55ea39b4b9c0 [weight=900 constraint=true color=red];
-struct0x55ea39b4ba10 [
-label = "{Spec: NIL |parent: 0x55ea39b4b950| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6800 -> struct0x55691b6b68e0 [weight=900 constraint=true color=red];
+struct0x55691b6b6930 [
+label = "{Spec: NIL |parent: 0x55691b6b66f0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b950 -> struct0x55ea39b4ba10 [weight=900 constraint=true color=red];
-struct0x55ea39b4ba60 [
-label = "{Spec: NIL |parent: 0x55ea39b4b900| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b66f0 -> struct0x55691b6b6930 [weight=900 constraint=true color=red];
+struct0x55691b6b6980 [
+label = "{Spec: ST |parent: 0x55691b6b6320| left: 0x55691b6b69d0| right: 0x55691b6b6b80 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b900 -> struct0x55ea39b4ba60 [weight=900 constraint=true color=red];
-struct0x55ea39b4bab0 [
-label = "{Spec: NIL |parent: 0x55ea39b4b8b0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6320 -> struct0x55691b6b6980 [weight=900 constraint=true color=red];
+struct0x55691b6b69d0 [
+label = "{Spec: OUT |parent: 0x55691b6b6980| left: 0x55691b6b6a20| right: 0x55691b6b6b30 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4b8b0 -> struct0x55ea39b4bab0 [weight=900 constraint=true color=red];
-struct0x55ea39b4bb00 [
-label = "{Spec: ST |parent: 0x55ea39b4a620| left: 0x55ea39b4bb50| right: 0x55ea39b4bc40 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6980 -> struct0x55691b6b69d0 [weight=900 constraint=true color=red];
+struct0x55691b6b6a20 [
+label = "{Spec: PARAM |parent: 0x55691b6b69d0| left: 0x55691b6b6a90| right: 0x55691b6b6ae0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4a620 -> struct0x55ea39b4bb00 [weight=900 constraint=true color=red];
-struct0x55ea39b4bb50 [
-label = "{Spec: RET |parent: 0x55ea39b4bb00| left: 0x55ea39b4bba0| right: 0x55ea39b4bbf0 }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b69d0 -> struct0x55691b6b6a20 [weight=900 constraint=true color=red];
+struct0x55691b6b6a90 [
+label = "{var: a |parent: 0x55691b6b6a20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "cyan" 
 ];
-struct0x55ea39b4bb00 -> struct0x55ea39b4bb50 [weight=900 constraint=true color=red];
-struct0x55ea39b4bba0 [
-label = "{value: 0.000000 |parent: 0x55ea39b4bb50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "green" 
+struct0x55691b6b6a20 -> struct0x55691b6b6a90 [weight=900 constraint=true color=red];
+struct0x55691b6b6ae0 [
+label = "{Spec: NIL |parent: 0x55691b6b6a20| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4bb50 -> struct0x55ea39b4bba0 [weight=900 constraint=true color=red];
-struct0x55ea39b4bbf0 [
-label = "{Spec: NIL |parent: 0x55ea39b4bb50| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6a20 -> struct0x55691b6b6ae0 [weight=900 constraint=true color=red];
+struct0x55691b6b6b30 [
+label = "{Spec: NIL |parent: 0x55691b6b69d0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4bb50 -> struct0x55ea39b4bbf0 [weight=900 constraint=true color=red];
-struct0x55ea39b4bc40 [
-label = "{Spec: NIL |parent: 0x55ea39b4bb00| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b69d0 -> struct0x55691b6b6b30 [weight=900 constraint=true color=red];
+struct0x55691b6b6b80 [
+label = "{Spec: NIL |parent: 0x55691b6b6980| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b4bb00 -> struct0x55ea39b4bc40 [weight=900 constraint=true color=red];
-struct0x55ea39b4bc90 [
-label = "{Spec: NIL |parent: 0x55ea39b49bf0| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
+struct0x55691b6b6980 -> struct0x55691b6b6b80 [weight=900 constraint=true color=red];
+struct0x55691b6b6bd0 [
+label = "{Spec: NIL |parent: 0x55691b6b5c90| left: (nil)| right: (nil) }", style = "filled", color = "black", fillcolor = "lightgrey" 
 ];
-struct0x55ea39b49bf0 -> struct0x55ea39b4bc90 [weight=900 constraint=true color=red];
+struct0x55691b6b5c90 -> struct0x55691b6b6bd0 [weight=900 constraint=true color=red];
 }
