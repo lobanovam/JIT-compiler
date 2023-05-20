@@ -72,6 +72,13 @@ Where addrDiff - 32bit difference between destination address and address of the
 
 ~~~C++
 
+void TranslateCondJump(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE) {
+
+    assert(IR_HEAD != NULL);
+    assert(X86_CODE != NULL);
+
+    log("\n#in TranslateCondJump\n\n");
+
     size_t curIndex = IR_HEAD->currentIndex;
     int nativeNum = IR_HEAD->ir_StructArr[curIndex].nativeNum;
     int32_t addrDiff = IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.addrDiff;
@@ -79,10 +86,10 @@ Where addrDiff - 32bit difference between destination address and address of the
 
     EMIT(POP_REG | RAX, GET_X86_SIZE(POP_REG));
     EMIT(POP_REG | RBX, GET_X86_SIZE(POP_REG));
-    EMIT(CMP_REG_REG  | (RAX << 16) | (RBX << 19), GET_X86_SIZE( CMP_REG_REG));
-    EMIT(x86_COND_JMP | (jmpMask << 8),            GET_X86_SIZE(x86_COND_JMP));
+    EMIT(CMP_REG_REG | FIRST_G(RAX) | SECOND_G(RBX), GET_X86_SIZE( CMP_REG_REG));
+    EMIT(x86_COND_JMP| J_MASK(jmpMask),              GET_X86_SIZE(x86_COND_JMP));
     WriteImmed32(X86_CODE, addrDiff);
-
+}
 ~~~
 
 </details>
