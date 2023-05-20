@@ -87,7 +87,6 @@ CMD_CT IS 38
 #in SetIrCommand cmd[16] is JAE
 	 JAE has args
 	 #in HandleArgsCmd original cmd is 13
-	 	 found some sort of jump or call
 
 #in SetIrCommand cmd[18] is PUSH
 	 PUSH has args
@@ -126,7 +125,6 @@ CMD_CT IS 38
 #in SetIrCommand cmd[32] is JUMP
 	 JUMP has args
 	 #in HandleArgsCmd original cmd is 9
-	 	 found some sort of jump or call
 
 #in SetIrCommand cmd[34] is PUSH
 	 PUSH has args
@@ -138,7 +136,6 @@ CMD_CT IS 38
 
 #in getRelAddr
 
-195
 
 #in SetIrCommand cmd[37] is HLT
 	 HLT has no args
@@ -148,10 +145,8 @@ CMD_CT IS 38
 
 #in getRelAddr
 
-188
 #in getRelAddr
 
-50
 0
 x86CmdCt is 232
 
@@ -166,7 +161,7 @@ done mem calloc
 STARTED TRANSLATING!
 
 EMITTING MOV_R_REG_IMMED | (R15 << 8)
-	 immed64: 94664440467456
+	 immed64: 94878660612096
 
 #in TranslatePushPop
 
@@ -289,7 +284,7 @@ EMITTING PUSHA
 EMITTING MOV_RBP_RSP
 EMITTING ALIGN_STACK
 EMITTING x86_CALL
-	 immed32: 4269633324
+	 immed32: 4271169453
 EMITTING MOV_RSP_RBP
 EMITTING POPA
 EMITTING ADD_RSP_8
@@ -305,6 +300,12 @@ STARTING!!!
 
 
 DONE!!!
+
+
+#in IR_DTOR
+
+
+in X86_CODE_DTOR
 
 
 

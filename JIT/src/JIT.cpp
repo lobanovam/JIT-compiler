@@ -50,9 +50,9 @@ void SetIrCommand(IR_HEAD_T* IR_HEAD, const char* name, int hasArgs) {
     size_t curIndex = IR_HEAD->currentIndex;
     size_t nativeNum = IR_HEAD->byteCode[IR_HEAD->currentIp] & CMD_MASK;
 
-    IR_HEAD->ir_StructArr[curIndex].name = name;
-    IR_HEAD->ir_StructArr[curIndex].hasArgs = hasArgs;
-    IR_HEAD->ir_StructArr[curIndex].nativeIp = nativeIp;
+    IR_HEAD->ir_StructArr[curIndex].name      = name;
+    IR_HEAD->ir_StructArr[curIndex].hasArgs   = hasArgs;
+    IR_HEAD->ir_StructArr[curIndex].nativeIp  = nativeIp;
     IR_HEAD->ir_StructArr[curIndex].nativeNum = nativeNum;
 
     if (hasArgs) {
@@ -173,15 +173,11 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
 
     if (isPushPop(nativeNum)) {
 
-        //log("found push or pop\n");
-
         int argType = 0;
 
         argType |= IR_HEAD->byteCode[nativeIp] & ARG_IMMED;
         argType |= IR_HEAD->byteCode[nativeIp] & ARG_REG;
         argType |= IR_HEAD->byteCode[nativeIp] & ARG_RAM;
-
-        //log("argType is %d, original cmd is %d\n", argType, IR_HEAD->byteCode[nativeIp]);
 
         if (nativeNum == PUSH) {
             switch (argType) {
@@ -246,8 +242,6 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
 
     else if (isJump(nativeNum)) {
 
-        log("\t \t found some sort of jump or call\n");
-
         IR_HEAD->ir_StructArr[curIndex].nativeSize = 2; 
 
         if (nativeNum == JUMP) {
@@ -269,8 +263,8 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
                                                        GET_X86_SIZE(x86_COND_JMP)+
                                                        sizeof(u_int32_t);
         }  
-        size_t nextIp = IR_HEAD->byteCode[nativeIp + 1];
 
+        size_t nextIp = IR_HEAD->byteCode[nativeIp + 1];
         IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.nextIp = nextIp;
     }
 }
@@ -318,8 +312,7 @@ size_t getRelAddr(IR_HEAD_T* IR_HEAD, size_t nativeIp) {
 
         RelAddr += IR_HEAD->ir_StructArr[index].x86_Size;
     }
-
-    log("%zu\n", RelAddr);
+    
     return RelAddr;
 }
 
@@ -338,6 +331,20 @@ void IR_CTOR(IR_HEAD_T* IR_HEAD, size_t cmdCt) {
     IR_HEAD->byteCode = (int*) calloc(cmdCt, sizeof(int));
 
     IR_HEAD->nativeCmdCt = cmdCt;
+
+    IR_HEAD->currentIp = 0;
+    IR_HEAD->currentIndex = 0;
+    IR_HEAD->x86CmdCt = 0;
+}
+
+void IR_DTOR(IR_HEAD_T* IR_HEAD) {
+
+    assert(IR_HEAD != NULL);
+
+    log("\n#in IR_DTOR\n\n");
+
+    free(IR_HEAD->ir_StructArr);
+    free(IR_HEAD->byteCode);
 
     IR_HEAD->currentIp = 0;
     IR_HEAD->currentIndex = 0;
@@ -399,6 +406,7 @@ void IR_Dump(IR_HEAD_T* IR_HEAD) {
 
             char* argType = getArgType(IR_HEAD->ir_StructArr[i].SpecArg.argType); 
             IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <sizeP> size(byteCode): %d | <sizeN> size(native): %d | argType: %s\", style = \"filled\", fillcolor = \"green\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, IR_HEAD->ir_StructArr[i].x86_Size, argType);
+            free(argType);
         }
         else {
             IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <sizeP> size(byteCode) : %d | <sizeN> size(native): %d | \", style = \"filled\", fillcolor = \"gray\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize, IR_HEAD->ir_StructArr[i].x86_Size);

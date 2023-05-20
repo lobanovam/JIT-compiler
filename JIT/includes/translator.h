@@ -46,20 +46,6 @@ enum X86_CMD : u_int64_t {
 
     IDIV_REG = 0xf8f748,               //  "|" with shifted by 16 REG_MASK
 
-    /* sqrt: 
-            pop rax
-            cvt xmm0, rax
-
-            mov rax, 1000
-            cvt xmm1, rax
-
-            div xmm0, xmm1
-            sqrtpd(xmm0)
-            mul xmm0, xmm1
-            cvt rax, xmm0
-            push rax 
-        */
-
     CVTSI2SD_XMMF_RAX = 0xc02a0f48f2,   // mov xmmf, rax    xmmf "|" with shifted by 35 (32 + 3)
     CVTSD2SI_RAX_XMMF = 0xc02d0f48f2,   // mov rax, xmm0    xmmf "|" with shifted by 32 (32)
     
@@ -198,5 +184,7 @@ enum COND_JMPS : u_int64_t {
 
 
 void X86_CODE_CTOR(X86_CODE_T* X86_CODE, size_t totalSize);
+void X86_CODE_DTOR(X86_CODE_T* X86_CODE);
+
 void Translate(IR_HEAD_T* IR_HEAD, X86_CODE_T* X86_CODE);
 

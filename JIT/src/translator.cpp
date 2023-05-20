@@ -32,9 +32,9 @@
 
 #define GET_X86_SIZE(name)  SIZE_##name 
 
-const int PAGESIZE = 4096;
+const int PAGESIZE      = 4096;
 const int MEM_ALIGNMENT = 4096;
-const int MEM_SIZE = 4096;
+const int MEM_SIZE      = 4096;
 
 void IntScanfWrap(int* num);
 void DoublePrintfWrap(double num);
@@ -470,5 +470,20 @@ void X86_CODE_CTOR(X86_CODE_T* X86_CODE, size_t totalSize) {
 
     X86_CODE->curLen = 0;
     X86_CODE->totalSize = FullSize;
+
+}
+
+void X86_CODE_DTOR(X86_CODE_T* X86_CODE) {
+
+    assert(X86_CODE != NULL);
+
+    log("\nin X86_CODE_DTOR\n\n");
+
+    free(X86_CODE->BinaryCode);
+    free(X86_CODE->memSegment);
+
+    X86_CODE->curLen    = 0;
+    X86_CODE->totalSize = 0;
+
 
 }

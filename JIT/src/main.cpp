@@ -8,11 +8,10 @@
 #include "../includes/jit.h"
 #include "../includes/translator.h"
 
-
 const char* BYTE_CODE_FILE = "./byte_code.txt";
 
 void ExecuteJIT(X86_CODE_T* X86_CODE);
-void mprotect_change_rights (X86_CODE_T* X86_CODE, int protect_status);
+void MprotectChangeRights(X86_CODE_T* X86_CODE, int protect_status);
 
 int main() {
 
@@ -26,9 +25,11 @@ int main() {
 
     readByteCode(byteCode, &IR_HEAD);
 
+
     SetIR(&IR_HEAD);
 
     SetJumpAddr(&IR_HEAD);
+    fclose(byteCode);
 
     IR_Dump(&IR_HEAD);
 
@@ -39,6 +40,9 @@ int main() {
     Translate(&IR_HEAD, &X86_CODE);
 
     ExecuteJIT(&X86_CODE);
+
+    IR_DTOR(&IR_HEAD);
+    X86_CODE_DTOR(&X86_CODE);
     
 }
 
@@ -53,9 +57,9 @@ void ExecuteJIT(X86_CODE_T* X86_CODE) {
     if (mprotect_status == -1)
         return;
 
-    mprotect_change_rights (X86_CODE, PROT_EXEC | PROT_READ | PROT_WRITE);
+    MprotectChangeRights(X86_CODE, PROT_EXEC | PROT_READ | PROT_WRITE);
 
-    void (* OneMoreSegFault)(void) = (void (*)(void))(X86_CODE->BinaryCode);
+    void  (*OneMoreSegFault)(void) = (void (*)(void))(X86_CODE->BinaryCode);
     assert (OneMoreSegFault != nullptr);
 
     log("\nSTARTING!!!\n\n");
@@ -77,15 +81,16 @@ void ExecuteJIT(X86_CODE_T* X86_CODE) {
     
     log("\nDONE!!!\n\n");
 
-    mprotect_change_rights (X86_CODE, PROT_READ | PROT_WRITE);
+    MprotectChangeRights(X86_CODE, PROT_READ | PROT_WRITE);
 
 }
 
-void mprotect_change_rights (X86_CODE_T* X86_CODE, int protect_status)
-{
+void MprotectChangeRights(X86_CODE_T* X86_CODE, int protect_status) {
+
+    assert(X86_CODE != NULL);
+
     int mprotect_status = mprotect (X86_CODE->BinaryCode, X86_CODE->totalSize + 1, protect_status);
-    if (mprotect_status == -1)
-    {
+    if (mprotect_status == -1) {
         printf ("Mrotect error\n");
         return;
     }
