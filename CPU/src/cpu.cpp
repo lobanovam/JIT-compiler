@@ -1,5 +1,7 @@
+#include <time.h>
 #include "../includes/cpu.h"
 #include "../includes/log.h"
+
 
 int main() {
 
@@ -16,9 +18,15 @@ int main() {
 
     size_t cmd_ct = getCode(&cpu);
 
-    if (Compile(&cpu, cmd_ct)) {
-        printf("ERROR OCCURED\n");
+    clock_t meanTime = 0;
+
+    clock_t start = clock();
+    for (int i = 0; i < 10000; i++) {
+        Compile(&cpu, cmd_ct);
     }
+    clock_t end = clock();
+
+    printf("\ntime is %lf\n", (double)(end - start) * 1000/ (double) CLOCKS_PER_SEC);
 
     printf("ok, im done here\n");
 
@@ -30,6 +38,7 @@ int main() {
 int Compile(struct CPU* cpu, size_t cmd_ct) {
 
     ASSERT(cpu != NULL);
+    //cpu->ip = 0;
 
     while (cpu->ip < cmd_ct) {
         switch(cpu->code[cpu->ip] & CMD_MASK) {
@@ -49,6 +58,7 @@ int Compile(struct CPU* cpu, size_t cmd_ct) {
         }
         cpu->ip++;
     }
+    
 
     return 0;
 }

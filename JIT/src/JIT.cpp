@@ -8,14 +8,16 @@
 void IR_CTOR(IR_HEAD_T* IR_HEAD, size_t cmdCt);
 void IR_DTOR(IR_HEAD_T*);
 int GetX86cmdSize(int nativeNum);
+u_int64_t getJumpMask(int num);
 
 void SetIR(IR_HEAD_T* IR_HEAD) {
 
     assert(IR_HEAD != NULL);
 
-    log("#in SetIR\n\n");
+    log("\n#in SetIR\n\n");
 
     size_t CmdCt = IR_HEAD->nativeCmdCt;
+    log("CMD_CT IS %zu\n", CmdCt);
 
     #define DEF_CMD(name, num, arg, ...)                                 \
                 case num:                                                \
@@ -63,54 +65,96 @@ void SetIrCommand(IR_HEAD_T* IR_HEAD, const char* name, int hasArgs) {
         IR_HEAD->ir_StructArr[curIndex].x86_Size = GetX86cmdSize(nativeNum);
     }
 
+    if (nativeNum == IN || nativeNum == OUT || nativeNum == CALL) {
+        if (nativeNum == CALL)
+            log("\n getRelAddr for CALL, curIndex = %zd!\n", curIndex);
+        IR_HEAD->ir_StructArr[curIndex].SpecArg.x86RelAddr = getRelAddr(IR_HEAD, nativeIp);
+    }
+
     IR_HEAD->currentIp += IR_HEAD->ir_StructArr[curIndex].nativeSize;
     IR_HEAD->currentIndex++;
 }
 
 int GetX86cmdSize(int nativeNum) {
 
+    log("#in GetX86cmdSize\n\n");
+
     switch (nativeNum) {
 
         case HLT:
             return GET_X86_SIZE(x86_RET);
 
+        case RET:
+            return GET_X86_SIZE(PUSH_R_REG) +
+                   GET_X86_SIZE(x86_RET);
+
         case ADD:
         case SUB:
-            return GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(ADD_REG_REG)  +
+            return GET_X86_SIZE(POP_REG)         +
+                   GET_X86_SIZE(POP_REG)         +
+                   GET_X86_SIZE(ARITHM_REG_REG)  +
                    GET_X86_SIZE(PUSH_REG);
 
         case DIV:
-            return GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(IDIV_REG)     +
+            return GET_X86_SIZE(CVTSI2SD_XMM0_RSP)      +
+                   GET_X86_SIZE(CVTSI2SD_XMM1_RSP_8)    +
+                   GET_X86_SIZE(ADD_RSP_16)             +
+                   GET_X86_SIZE(DIVPD_XMMF_XMMS)        +              
+                   GET_X86_SIZE(MOV_REG_IMMED)          +
+                   sizeof(u_int64_t)                    +
+                   GET_X86_SIZE(CVTSI2SD_XMMF_RAX)      +
+                   GET_X86_SIZE(MULPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(CVTSD2SI_RAX_XMMF)      +
                    GET_X86_SIZE(PUSH_REG);
 
         case MUL:
-            return GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(POP_REG)      +
-                   GET_X86_SIZE(IMUL_REG_REG) +
+            return GET_X86_SIZE(CVTSI2SD_XMM0_RSP)      +
+                   GET_X86_SIZE(CVTSI2SD_XMM1_RSP_8)    +
+                   GET_X86_SIZE(ADD_RSP_16)             +
+                   GET_X86_SIZE(MOV_REG_IMMED)          +
+                   sizeof(u_int64_t)                    +
+                   GET_X86_SIZE(CVTSI2SD_XMMF_RAX)      +
+                   GET_X86_SIZE(DIVPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(DIVPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(MULPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(MULPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(CVTSD2SI_RAX_XMMF)      +
                    GET_X86_SIZE(PUSH_REG);
+
 
         case SQRT:
             return GET_X86_SIZE(POP_REG)                +
-                   GET_X86_SIZE(CVTSI2SD_XMM0_RAX)      +
+                   GET_X86_SIZE(CVTSI2SD_XMMF_RAX)      +
                    GET_X86_SIZE(MOV_REG_IMMED)          +
                    sizeof(u_int64_t)                    +
-                   GET_X86_SIZE(CVTSI2SD_XMM1_RAX)      +
-                   GET_X86_SIZE(DIVPD_XMM0_XMM1)        +
+                   GET_X86_SIZE(CVTSI2SD_XMMF_RAX)      +
+                   GET_X86_SIZE(DIVPD_XMMF_XMMS)        +
                    GET_X86_SIZE(SQRTPD_XMM0_XMM0)       +
-                   GET_X86_SIZE(MULPD_XMM0_XMM1)        +
-                   GET_X86_SIZE(CVTSD2SI_RAX_XMM0);
-        case RET:
-            return GET_X86_SIZE(x86_RET);
-
-        case IN:
-            return GET_X86_SIZE(MOV_REG_IMMED) +
+                   GET_X86_SIZE(MULPD_XMMF_XMMS)        +
+                   GET_X86_SIZE(CVTSD2SI_RAX_XMMF)      +
                    GET_X86_SIZE(PUSH_REG);
+        
+        case IN:
+            return GET_X86_SIZE(SUB_RSP_8)   +
+                   GET_X86_SIZE(LEA_RDI_RSP) +
+                   GET_X86_SIZE(PUSHA)       +
+                   GET_X86_SIZE(MOV_RBP_RSP) +
+                   GET_X86_SIZE(ALIGN_STACK) +
+                   GET_X86_SIZE(x86_CALL)    +
+                   sizeof(u_int32_t)         +
+                   GET_X86_SIZE(MOV_RSP_RBP) +
+                   GET_X86_SIZE(POPA);
+
         case OUT:
-            return 0;
+            return GET_X86_SIZE(CVTSI2SD_XMM0_RSP) +
+                   GET_X86_SIZE(PUSHA)             +
+                   GET_X86_SIZE(MOV_RBP_RSP)       +
+                   GET_X86_SIZE(ALIGN_STACK)       +
+                   GET_X86_SIZE(x86_CALL)          +
+                   sizeof(u_int32_t)               +
+                   GET_X86_SIZE(MOV_RSP_RBP)       +
+                   GET_X86_SIZE(POPA)              +
+                   GET_X86_SIZE(ADD_RSP_8);
         
         default:
             break;
@@ -197,7 +241,7 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
 
         }
 
-        IR_HEAD->ir_StructArr[curIndex].SpecArg.argType= argType;
+        IR_HEAD->ir_StructArr[curIndex].SpecArg.argType = argType;
     }
 
     else if (isJump(nativeNum)) {
@@ -206,19 +250,28 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
 
         IR_HEAD->ir_StructArr[curIndex].nativeSize = 2; 
 
-        if (nativeNum == JUMP || nativeNum == CALL) {
+        if (nativeNum == JUMP) {
             IR_HEAD->ir_StructArr[curIndex].x86_Size = GET_X86_SIZE(x86_JMP) +
                                                        sizeof(u_int32_t);
         }
+        else if (nativeNum == CALL) {
+            IR_HEAD->ir_StructArr[curIndex].x86_Size = GET_X86_SIZE(MOV_R_REG_IMMED) +
+                                                       sizeof(u_int64_t)             +
+                                                       GET_X86_SIZE(x86_JMP)         +
+                                                       sizeof(u_int32_t);
+        }
         else {
+            IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.jumpMask = getJumpMask(nativeNum);
+
             IR_HEAD->ir_StructArr[curIndex].x86_Size = GET_X86_SIZE(POP_REG)     +
                                                        GET_X86_SIZE(POP_REG)     +
                                                        GET_X86_SIZE(CMP_REG_REG) +
-                                                       GET_X86_SIZE(x86_COND_JMP);
+                                                       GET_X86_SIZE(x86_COND_JMP)+
+                                                       sizeof(u_int32_t);
         }  
         size_t nextIp = IR_HEAD->byteCode[nativeIp + 1];
 
-        IR_HEAD->ir_StructArr[curIndex].SpecArg.nextIp = nextIp;
+        IR_HEAD->ir_StructArr[curIndex].SpecArg.JumpInfo.nextIp = nextIp;
     }
 }
 
@@ -235,23 +288,22 @@ void SetJumpAddr(IR_HEAD_T* IR_HEAD) {
 
         if (isJump(IR_HEAD->ir_StructArr[index].nativeNum)) {
 
-            size_t nextIp = IR_HEAD->ir_StructArr[index].SpecArg.nextIp;
+            size_t nextIp = IR_HEAD->ir_StructArr[index].SpecArg.JumpInfo.nextIp;
             size_t nextRelAddr = getRelAddr(IR_HEAD, nextIp);
 
-            int32_t diff = nextRelAddr - x86RelAddr;
+            int32_t diff = nextRelAddr - (x86RelAddr + IR_HEAD->ir_StructArr[index].x86_Size); // including 4 bytes of addr  
 
-            IR_HEAD->ir_StructArr[index].SpecArg.addrDiff = diff;
+            IR_HEAD->ir_StructArr[index].SpecArg.JumpInfo.addrDiff = diff;
 
         }
 
         x86RelAddr += IR_HEAD->ir_StructArr[index].x86_Size;
-
     }
 
     IR_HEAD->x86CmdCt = x86RelAddr;
 }
 
-size_t getRelAddr(IR_HEAD_T* IR_HEAD, size_t nextIp) {
+size_t getRelAddr(IR_HEAD_T* IR_HEAD, size_t nativeIp) {
 
     assert(IR_HEAD != NULL);
     log("#in getRelAddr\n\n");
@@ -261,12 +313,13 @@ size_t getRelAddr(IR_HEAD_T* IR_HEAD, size_t nextIp) {
 
     for (size_t index = 0; index < cmdCt; index++) {
 
-        if (IR_HEAD->ir_StructArr[index].nativeIp == nextIp)
+        if (IR_HEAD->ir_StructArr[index].nativeIp == nativeIp)
             break;
 
         RelAddr += IR_HEAD->ir_StructArr[index].x86_Size;
     }
 
+    log("%zu\n", RelAddr);
     return RelAddr;
 }
 
@@ -287,9 +340,8 @@ void IR_CTOR(IR_HEAD_T* IR_HEAD, size_t cmdCt) {
     IR_HEAD->nativeCmdCt = cmdCt;
 
     IR_HEAD->currentIp = 0;
-
     IR_HEAD->currentIndex = 0;
-
+    IR_HEAD->x86CmdCt = 0;
 }
 
 size_t getCodeSize(FILE* byteCode) {
@@ -300,7 +352,7 @@ size_t getCodeSize(FILE* byteCode) {
 
     char a_sign[20] = "";
     fscanf(byteCode, "%2s", a_sign);
-    log("signature is %s\b", a_sign);
+    log("signature is %s\n", a_sign);
 
     size_t cmd_ct = 0;
     fread(&cmd_ct, sizeof(int), 1, byteCode);
@@ -341,7 +393,7 @@ void IR_Dump(IR_HEAD_T* IR_HEAD) {
         const char* name = IR_HEAD->ir_StructArr[i].name;
 
         if (isJump(IR_HEAD->ir_StructArr[i].nativeNum)) {
-            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <size> size(native): %d | next ip: %d\", style = \"filled\", fillcolor = \"cyan\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize,  IR_HEAD->ir_StructArr[i].SpecArg.nextIp);
+            IR_DUMP("struct%zu [\nlabel = \"<index> index: %zu|<name>name: %s|<nativeIp>ip: %zu | <size> size(native): %d | next ip: %d\", style = \"filled\", fillcolor = \"cyan\" \n];\n", i, i, name, IR_HEAD->ir_StructArr[i].nativeIp, IR_HEAD->ir_StructArr[i].nativeSize,  IR_HEAD->ir_StructArr[i].SpecArg.JumpInfo.nextIp);
         }
         else if (isPushPop(IR_HEAD->ir_StructArr[i].nativeNum)) {
 
@@ -353,7 +405,7 @@ void IR_Dump(IR_HEAD_T* IR_HEAD) {
         }
         if (i == 0) continue;
 
-        IR_DUMP("struct%d -> struct%d [weight=100];\n", i-1, i);
+        IR_DUMP("struct%zu -> struct%zu [weight=100];\n", i-1, i);
     }
     IR_DUMP("}\n");
 
@@ -377,6 +429,42 @@ int isPushPop(int num) {
     if (num == PUSH || num == POP)
         return 1;
     return 0;
+}
+
+u_int64_t getJumpMask(int num) {
+
+    u_int64_t jmpMask = 0;
+    switch(num) {
+
+        case JB:
+            jmpMask = JL_MASK;
+        break;
+
+        case JBE:
+            jmpMask = JLE_MASK;
+        break;
+
+        case JA:    
+            jmpMask = JG_MASK;
+        break;
+
+        case JAE:    
+            jmpMask = JGE_MASK;
+        break;
+
+        case JE:
+            jmpMask = JE_MASK;
+        break;
+
+        case JNE:
+            jmpMask = JNE_MASK;
+        break;
+
+        default:
+        break;
+    }
+
+    return jmpMask;
 }
 
 char* getArgType(int argType) {

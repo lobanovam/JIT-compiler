@@ -2,17 +2,17 @@ main:
 
 push 0
 pop [0]
-in
+push 1
 pop [0]
 
 push 0
 pop [1]
-in
+push 5
 pop [1]
 
 push 0
 pop [2]
-in
+push 6
 pop [2]
 push [0]
 push 0

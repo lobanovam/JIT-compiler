@@ -1,6 +1,7 @@
 
 DEF_CMD(HLT, 0, 0,
 {
+    cpu->ip = 0;
     logprint("in hlt\n");
     return 0;
 })
@@ -78,10 +79,10 @@ DEF_CMD(IN, 7, 0,
 
 DEF_CMD(OUT, 8, 0,
 {
-    printf("--------------------------------------\n");
+    //printf("--------------------------------------\n");
     double a = (double)StackPop(&(cpu->stk1)) / PRECISION;
-    printf("OUT PRINT IS %.3lf\n", a);
-    printf("--------------------------------------\n");
+    //printf("OUT PRINT IS %.3lf\n", a);
+    //printf("--------------------------------------\n");
 })
 
 DEF_CMD(JUMP, 9, 1,

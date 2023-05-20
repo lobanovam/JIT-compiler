@@ -4,9 +4,9 @@
 #include "../includes/middleEnd.h"
 #include "../includes/translator.h"
 
-//const char* SOURCE = "../myCodes/FactorialCode.txt";
+//const char* SOURCE = "./myCodes/FactorialCode.txt";
 const char* SOURCE = "./myCodes/SquareSolverCode.txt";
-//const char* SOURCE = "../myCodes/testCode.txt";
+//const char* SOURCE = "./myCodes/testCode.txt";
 
 int main() {
 

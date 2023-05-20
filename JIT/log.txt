@@ -3,7 +3,8 @@ log file is opened
 
 #in getCodeSize
 
-signature is CPcmd ct is 189
+signature is CP
+cmd ct is 192
 #in IR_CTOR
 
 #in readByteCode
@@ -12,193 +13,198 @@ code[ 0] =  33
 code[ 1] =   0
 code[ 2] = 162
 code[ 3] =   0
-code[ 4] =   7
-code[ 5] = 162
-code[ 6] =   0
-code[ 7] =  33
-code[ 8] =   0
-code[ 9] = 162
-code[10] =   1
-code[11] =   7
-code[12] = 162
-code[13] =   1
-code[14] =  33
-code[15] =   0
-code[16] = 162
-code[17] =   2
-code[18] =   7
-code[19] = 162
-code[20] =   2
-code[21] = 161
-code[22] =   0
-code[23] =  33
-code[24] =   0
-code[25] =  15
-code[26] =  37
-code[27] = 161
-code[28] =   2
-code[29] = 161
-code[30] =   1
-code[31] =  16
-code[32] =  48
-code[33] = 162
-code[34] =   0
-code[35] =   9
-code[36] =  47
-code[37] = 161
-code[38] =   2
-code[39] = 161
-code[40] =   1
-code[41] = 161
-code[42] =   0
-code[43] =  16
-code[44] = 108
-code[45] = 162
-code[46] =   0
-code[47] =   0
+code[ 4] =  33
+code[ 5] =   1
+code[ 6] = 162
+code[ 7] =   0
+code[ 8] =  33
+code[ 9] =   0
+code[10] = 162
+code[11] =   1
+code[12] =  33
+code[13] =   5
+code[14] = 162
+code[15] =   1
+code[16] =  33
+code[17] =   0
+code[18] = 162
+code[19] =   2
+code[20] =  33
+code[21] =   6
+code[22] = 162
+code[23] =   2
+code[24] = 161
+code[25] =   0
+code[26] =  33
+code[27] =   0
+code[28] =  15
+code[29] =  40
+code[30] = 161
+code[31] =   2
+code[32] = 161
+code[33] =   1
+code[34] =  16
+code[35] =  51
+code[36] = 162
+code[37] =   0
+code[38] =   9
+code[39] =  50
+code[40] = 161
+code[41] =   2
+code[42] = 161
+code[43] =   1
+code[44] = 161
+code[45] =   0
+code[46] =  16
+code[47] = 111
 code[48] = 162
-code[49] =   3
-code[50] = 162
-code[51] =   4
-code[52] = 161
-code[53] =   3
-code[54] =  33
-code[55] =   0
-code[56] =  15
-code[57] =  69
-code[58] = 161
-code[59] =   4
-code[60] =  16
-code[61] =  89
-code[62] = 162
-code[63] =   3
-code[64] =  33
-code[65] =   0
-code[66] =  17
-code[67] =   9
-code[68] =  83
-code[69] = 161
-code[70] =   4
-code[71] =  33
-code[72] =  -1
-code[73] =   5
-code[74] = 162
-code[75] =   4
-code[76] = 161
-code[77] =   3
-code[78] = 161
-code[79] =   4
-code[80] =   6
-code[81] = 162
-code[82] =   3
-code[83] = 161
-code[84] =   3
-code[85] =   8
-code[86] =  33
-code[87] =   0
-code[88] =  17
-code[89] = 162
-code[90] =   5
-code[91] = 161
-code[92] =   5
-code[93] =  33
-code[94] =   0
-code[95] =  15
-code[96] = 102
-code[97] =  33
-code[98] = 6969
-code[99] =   8
-code[100] =   9
-code[101] = 105
-code[102] =  33
-code[103] = 228
-code[104] =   8
+code[49] =   0
+code[50] =   0
+code[51] = 162
+code[52] =   3
+code[53] = 162
+code[54] =   4
+code[55] = 161
+code[56] =   3
+code[57] =  33
+code[58] =   0
+code[59] =  15
+code[60] =  72
+code[61] = 161
+code[62] =   4
+code[63] =  16
+code[64] =  92
+code[65] = 162
+code[66] =   3
+code[67] =  33
+code[68] =   0
+code[69] =  17
+code[70] =   9
+code[71] =  86
+code[72] = 161
+code[73] =   4
+code[74] =  33
+code[75] =  -1
+code[76] =   5
+code[77] = 162
+code[78] =   4
+code[79] = 161
+code[80] =   3
+code[81] = 161
+code[82] =   4
+code[83] =   6
+code[84] = 162
+code[85] =   3
+code[86] = 161
+code[87] =   3
+code[88] =   8
+code[89] =  33
+code[90] =   0
+code[91] =  17
+code[92] = 162
+code[93] =   5
+code[94] = 161
+code[95] =   5
+code[96] =  33
+code[97] =   0
+code[98] =  15
+code[99] = 105
+code[100] =  33
+code[101] = 6969
+code[102] =   8
+code[103] =   9
+code[104] = 108
 code[105] =  33
-code[106] =   0
-code[107] =  17
-code[108] = 162
-code[109] =   6
-code[110] = 162
-code[111] =   7
-code[112] = 162
-code[113] =   8
-code[114] =  33
-code[115] =   4
-code[116] = 161
-code[117] =   6
-code[118] =   5
+code[106] = 228
+code[107] =   8
+code[108] =  33
+code[109] =   0
+code[110] =  17
+code[111] = 162
+code[112] =   6
+code[113] = 162
+code[114] =   7
+code[115] = 162
+code[116] =   8
+code[117] =  33
+code[118] =   4
 code[119] = 161
-code[120] =   8
+code[120] =   6
 code[121] =   5
 code[122] = 161
-code[123] =   7
-code[124] = 161
-code[125] =   7
-code[126] =   5
-code[127] =   4
-code[128] = 162
-code[129] =   9
-code[130] = 161
-code[131] =   9
-code[132] =  33
-code[133] =   0
-code[134] =  11
-code[135] = 141
-code[136] =  33
-code[137] = 228
-code[138] =   8
-code[139] =   9
-code[140] = 186
-code[141] = 161
+code[123] =   8
+code[124] =   5
+code[125] = 161
+code[126] =   7
+code[127] = 161
+code[128] =   7
+code[129] =   5
+code[130] =   4
+code[131] = 162
+code[132] =   9
+code[133] = 161
+code[134] =   9
+code[135] =  33
+code[136] =   0
+code[137] =  11
+code[138] = 144
+code[139] =  33
+code[140] = 228
+code[141] =   8
 code[142] =   9
-code[143] =  18
-code[144] = 162
+code[143] = 189
+code[144] = 161
 code[145] =   9
-code[146] =  33
-code[147] =  -1
-code[148] = 161
-code[149] =   7
-code[150] =   5
-code[151] = 162
+code[146] =  18
+code[147] = 162
+code[148] =   9
+code[149] =  33
+code[150] =  -1
+code[151] = 161
 code[152] =   7
-code[153] =  33
-code[154] =   2
-code[155] = 161
-code[156] =   6
-code[157] =   5
-code[158] = 162
+code[153] =   5
+code[154] = 162
+code[155] =   7
+code[156] =  33
+code[157] =   2
+code[158] = 161
 code[159] =   6
-code[160] = 161
-code[161] =   6
-code[162] = 161
-code[163] =   9
-code[164] = 161
-code[165] =   7
-code[166] =   4
-code[167] =   6
-code[168] = 162
-code[169] =  10
-code[170] = 161
-code[171] =   6
-code[172] = 161
-code[173] =   7
-code[174] = 161
-code[175] =   9
-code[176] =   3
-code[177] =   6
-code[178] = 162
-code[179] =  11
-code[180] = 161
-code[181] =  10
-code[182] =   8
+code[160] =   5
+code[161] = 162
+code[162] =   6
+code[163] = 161
+code[164] =   6
+code[165] = 161
+code[166] =   9
+code[167] = 161
+code[168] =   7
+code[169] =   4
+code[170] =   6
+code[171] = 162
+code[172] =  10
+code[173] = 161
+code[174] =   6
+code[175] = 161
+code[176] =   7
+code[177] = 161
+code[178] =   9
+code[179] =   3
+code[180] =   6
+code[181] = 162
+code[182] =  11
 code[183] = 161
-code[184] =  11
+code[184] =  10
 code[185] =   8
-code[186] =  33
-code[187] =   0
-code[188] =  17
+code[186] = 161
+code[187] =  11
+code[188] =   8
+code[189] =  33
+code[190] =   0
+code[191] =  17
+
 #in SetIR
 
+CMD_CT IS 192
 
 #in SetIrCommand cmd[0] is PUSH
 	 PUSH has args
@@ -208,257 +214,295 @@ code[188] =  17
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[4] is IN
-	 IN has no args
-
-#in SetIrCommand cmd[5] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
-
-#in SetIrCommand cmd[7] is PUSH
+#in SetIrCommand cmd[4] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[9] is POP
+#in SetIrCommand cmd[6] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[11] is IN
-	 IN has no args
-
-#in SetIrCommand cmd[12] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
-
-#in SetIrCommand cmd[14] is PUSH
+#in SetIrCommand cmd[8] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[16] is POP
+#in SetIrCommand cmd[10] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[18] is IN
-	 IN has no args
+#in SetIrCommand cmd[12] is PUSH
+	 PUSH has args
+	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[19] is POP
+#in SetIrCommand cmd[14] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[21] is PUSH
+#in SetIrCommand cmd[16] is PUSH
+	 PUSH has args
+	 #in HandleArgsCmd original cmd is 33
+
+#in SetIrCommand cmd[18] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[20] is PUSH
+	 PUSH has args
+	 #in HandleArgsCmd original cmd is 33
+
+#in SetIrCommand cmd[22] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[24] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[23] is PUSH
+#in SetIrCommand cmd[26] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[25] is JNE
+#in SetIrCommand cmd[28] is JNE
 	 JNE has args
 	 #in HandleArgsCmd original cmd is 15
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[27] is PUSH
+#in SetIrCommand cmd[30] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[29] is PUSH
+#in SetIrCommand cmd[32] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[31] is CALL
+#in SetIrCommand cmd[34] is CALL
 	 CALL has args
 	 #in HandleArgsCmd original cmd is 16
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[33] is POP
+ getRelAddr for CALL, curIndex = 17!
+#in getRelAddr
+
+151
+
+#in SetIrCommand cmd[36] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[35] is JUMP
+#in SetIrCommand cmd[38] is JUMP
 	 JUMP has args
 	 #in HandleArgsCmd original cmd is 9
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[37] is PUSH
+#in SetIrCommand cmd[40] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[39] is PUSH
+#in SetIrCommand cmd[42] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[41] is PUSH
+#in SetIrCommand cmd[44] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[43] is CALL
+#in SetIrCommand cmd[46] is CALL
 	 CALL has args
 	 #in HandleArgsCmd original cmd is 16
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[45] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
+ getRelAddr for CALL, curIndex = 23!
+#in getRelAddr
 
-#in SetIrCommand cmd[47] is HLT
-	 HLT has no args
+199
 
 #in SetIrCommand cmd[48] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[50] is POP
+#in SetIrCommand cmd[50] is HLT
+	 HLT has no args
+#in GetX86cmdSize
+
+
+#in SetIrCommand cmd[51] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[52] is PUSH
+#in SetIrCommand cmd[53] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[55] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[54] is PUSH
+#in SetIrCommand cmd[57] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[56] is JNE
+#in SetIrCommand cmd[59] is JNE
 	 JNE has args
 	 #in HandleArgsCmd original cmd is 15
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[58] is PUSH
+#in SetIrCommand cmd[61] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[60] is CALL
+#in SetIrCommand cmd[63] is CALL
 	 CALL has args
 	 #in HandleArgsCmd original cmd is 16
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[62] is POP
+ getRelAddr for CALL, curIndex = 32!
+#in getRelAddr
+
+272
+
+#in SetIrCommand cmd[65] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[64] is PUSH
+#in SetIrCommand cmd[67] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[66] is RET
+#in SetIrCommand cmd[69] is RET
 	 RET has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[67] is JUMP
+
+#in SetIrCommand cmd[70] is JUMP
 	 JUMP has args
 	 #in HandleArgsCmd original cmd is 9
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[69] is PUSH
+#in SetIrCommand cmd[72] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[71] is PUSH
+#in SetIrCommand cmd[74] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[73] is MUL
+#in SetIrCommand cmd[76] is MUL
 	 MUL has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[74] is POP
+
+#in SetIrCommand cmd[77] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[76] is PUSH
+#in SetIrCommand cmd[79] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[78] is PUSH
+#in SetIrCommand cmd[81] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[80] is DIV
+#in SetIrCommand cmd[83] is DIV
 	 DIV has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[81] is POP
+
+#in SetIrCommand cmd[84] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-
-#in SetIrCommand cmd[83] is PUSH
-	 PUSH has args
-	 #in HandleArgsCmd original cmd is 161
-
-#in SetIrCommand cmd[85] is OUT
-	 OUT has no args
 
 #in SetIrCommand cmd[86] is PUSH
 	 PUSH has args
+	 #in HandleArgsCmd original cmd is 161
+
+#in SetIrCommand cmd[88] is OUT
+	 OUT has no args
+#in GetX86cmdSize
+
+#in getRelAddr
+
+462
+
+#in SetIrCommand cmd[89] is PUSH
+	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[88] is RET
+#in SetIrCommand cmd[91] is RET
 	 RET has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[89] is POP
+
+#in SetIrCommand cmd[92] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[91] is PUSH
+#in SetIrCommand cmd[94] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[93] is PUSH
+#in SetIrCommand cmd[96] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[95] is JNE
+#in SetIrCommand cmd[98] is JNE
 	 JNE has args
 	 #in HandleArgsCmd original cmd is 15
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[97] is PUSH
+#in SetIrCommand cmd[100] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[99] is OUT
+#in SetIrCommand cmd[102] is OUT
 	 OUT has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[100] is JUMP
+#in getRelAddr
+
+559
+
+#in SetIrCommand cmd[103] is JUMP
 	 JUMP has args
 	 #in HandleArgsCmd original cmd is 9
 	 	 found some sort of jump or call
-
-#in SetIrCommand cmd[102] is PUSH
-	 PUSH has args
-	 #in HandleArgsCmd original cmd is 33
-
-#in SetIrCommand cmd[104] is OUT
-	 OUT has no args
 
 #in SetIrCommand cmd[105] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[107] is RET
-	 RET has no args
+#in SetIrCommand cmd[107] is OUT
+	 OUT has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[108] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
+#in getRelAddr
 
-#in SetIrCommand cmd[110] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
+611
 
-#in SetIrCommand cmd[112] is POP
-	 POP has args
-	 #in HandleArgsCmd original cmd is 162
-
-#in SetIrCommand cmd[114] is PUSH
+#in SetIrCommand cmd[108] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[116] is PUSH
-	 PUSH has args
-	 #in HandleArgsCmd original cmd is 161
+#in SetIrCommand cmd[110] is RET
+	 RET has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[118] is MUL
-	 MUL has no args
+
+#in SetIrCommand cmd[111] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[113] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[115] is POP
+	 POP has args
+	 #in HandleArgsCmd original cmd is 162
+
+#in SetIrCommand cmd[117] is PUSH
+	 PUSH has args
+	 #in HandleArgsCmd original cmd is 33
 
 #in SetIrCommand cmd[119] is PUSH
 	 PUSH has args
@@ -466,141 +510,168 @@ code[188] =  17
 
 #in SetIrCommand cmd[121] is MUL
 	 MUL has no args
+#in GetX86cmdSize
+
 
 #in SetIrCommand cmd[122] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[124] is PUSH
+#in SetIrCommand cmd[124] is MUL
+	 MUL has no args
+#in GetX86cmdSize
+
+
+#in SetIrCommand cmd[125] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[126] is MUL
+#in SetIrCommand cmd[127] is PUSH
+	 PUSH has args
+	 #in HandleArgsCmd original cmd is 161
+
+#in SetIrCommand cmd[129] is MUL
 	 MUL has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[127] is SUB
+
+#in SetIrCommand cmd[130] is SUB
 	 SUB has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[128] is POP
+
+#in SetIrCommand cmd[131] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[130] is PUSH
+#in SetIrCommand cmd[133] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[132] is PUSH
+#in SetIrCommand cmd[135] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[134] is JBE
+#in SetIrCommand cmd[137] is JBE
 	 JBE has args
 	 #in HandleArgsCmd original cmd is 11
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[136] is PUSH
+#in SetIrCommand cmd[139] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[138] is OUT
+#in SetIrCommand cmd[141] is OUT
 	 OUT has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[139] is JUMP
+#in getRelAddr
+
+930
+
+#in SetIrCommand cmd[142] is JUMP
 	 JUMP has args
 	 #in HandleArgsCmd original cmd is 9
 	 	 found some sort of jump or call
 
-#in SetIrCommand cmd[141] is PUSH
+#in SetIrCommand cmd[144] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[143] is SQRT
+#in SetIrCommand cmd[146] is SQRT
 	 SQRT has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[144] is POP
+
+#in SetIrCommand cmd[147] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[146] is PUSH
+#in SetIrCommand cmd[149] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[148] is PUSH
+#in SetIrCommand cmd[151] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[150] is MUL
+#in SetIrCommand cmd[153] is MUL
 	 MUL has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[151] is POP
+
+#in SetIrCommand cmd[154] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[153] is PUSH
+#in SetIrCommand cmd[156] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[155] is PUSH
+#in SetIrCommand cmd[158] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[157] is MUL
+#in SetIrCommand cmd[160] is MUL
 	 MUL has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[158] is POP
+
+#in SetIrCommand cmd[161] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[160] is PUSH
+#in SetIrCommand cmd[163] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[162] is PUSH
+#in SetIrCommand cmd[165] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[164] is PUSH
+#in SetIrCommand cmd[167] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[166] is SUB
+#in SetIrCommand cmd[169] is SUB
 	 SUB has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[167] is DIV
+
+#in SetIrCommand cmd[170] is DIV
 	 DIV has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[168] is POP
+
+#in SetIrCommand cmd[171] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
 
-#in SetIrCommand cmd[170] is PUSH
+#in SetIrCommand cmd[173] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[172] is PUSH
+#in SetIrCommand cmd[175] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[174] is PUSH
+#in SetIrCommand cmd[177] is PUSH
 	 PUSH has args
 	 #in HandleArgsCmd original cmd is 161
 
-#in SetIrCommand cmd[176] is ADD
+#in SetIrCommand cmd[179] is ADD
 	 ADD has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[177] is DIV
+
+#in SetIrCommand cmd[180] is DIV
 	 DIV has no args
+#in GetX86cmdSize
 
-#in SetIrCommand cmd[178] is POP
+
+#in SetIrCommand cmd[181] is POP
 	 POP has args
 	 #in HandleArgsCmd original cmd is 162
-
-#in SetIrCommand cmd[180] is PUSH
-	 PUSH has args
-	 #in HandleArgsCmd original cmd is 161
-
-#in SetIrCommand cmd[182] is OUT
-	 OUT has no args
 
 #in SetIrCommand cmd[183] is PUSH
 	 PUSH has args
@@ -608,39 +679,817 @@ code[188] =  17
 
 #in SetIrCommand cmd[185] is OUT
 	 OUT has no args
+#in GetX86cmdSize
+
+#in getRelAddr
+
+1341
 
 #in SetIrCommand cmd[186] is PUSH
 	 PUSH has args
+	 #in HandleArgsCmd original cmd is 161
+
+#in SetIrCommand cmd[188] is OUT
+	 OUT has no args
+#in GetX86cmdSize
+
+#in getRelAddr
+
+1384
+
+#in SetIrCommand cmd[189] is PUSH
+	 PUSH has args
 	 #in HandleArgsCmd original cmd is 33
 
-#in SetIrCommand cmd[188] is RET
+#in SetIrCommand cmd[191] is RET
 	 RET has no args
+#in GetX86cmdSize
+
 0
 #in SetJumpAddr
 
 #in getRelAddr
 
+178
 #in getRelAddr
 
+222
 #in getRelAddr
 
+221
 #in getRelAddr
 
+661
 #in getRelAddr
 
+313
 #in getRelAddr
 
+512
 #in getRelAddr
 
+455
 #in getRelAddr
 
+600
 #in getRelAddr
 
+647
 #in getRelAddr
 
+971
 #in getRelAddr
+
+1420
+x86CmdCt is 1434
 
 #in X86_CODE_CTOR
+
+done code calloc
+done memset
+trying to calloc mem
+done mem calloc
+
+
+STARTED TRANSLATING!
+
+EMITTING MOV_R_REG_IMMED | (R15 << 8)
+	 immed64: 94422000267264
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 0
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 1000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 0
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 8
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 5000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 8
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 16
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 6000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 16
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 0
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateCondJump
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING CMP_REG_REG | (RAX << 16) | (RBX << 19)
+EMITTING x86_COND_JMP | (jmpMask << 8)
+	 immed32: 41
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 16
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 8
+
+#in TranslateCall
+
+in call cur index is 17
+in call x86RelAddr is 151
+in call cmd size is 15
+EMITTING MOV_R_REG_IMMED | (R14 << 8)
+	 immed64: 94422000263344
+EMITTING x86_JMP
+	 immed32: 56
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 0
+
+#in TranslateJump
+
+EMITTING x86_JMP
+	 immed32: 43
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 16
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 8
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 0
+
+#in TranslateCall
+
+in call cur index is 23
+in call x86RelAddr is 199
+in call cmd size is 15
+EMITTING MOV_R_REG_IMMED | (R14 << 8)
+	 immed64: 94422000263392
+EMITTING x86_JMP
+	 immed32: 447
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 0
+
+#in TranslateHlt
+
+EMITTING x86_RET
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 24
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 32
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 24
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateCondJump
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING CMP_REG_REG | (RAX << 16) | (RBX << 19)
+EMITTING x86_COND_JMP | (jmpMask << 8)
+	 immed32: 48
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 32
+
+#in TranslateCall
+
+in call cur index is 32
+in call x86RelAddr is 272
+in call cmd size is 15
+EMITTING MOV_R_REG_IMMED | (R14 << 8)
+	 immed64: 94422000263465
+EMITTING x86_JMP
+	 immed32: 225
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 24
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateRet
+
+EMITTING PUSH_R_REG | (R14 << 8)
+EMITTING x86_RET
+
+#in TranslateJump
+
+EMITTING x86_JMP
+	 immed32: 142
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 32
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 18446744073709550616
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 32
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 24
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 32
+
+#in TranslateDiv
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 24
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 24
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282711472
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateRet
+
+EMITTING PUSH_R_REG | (R14 << 8)
+EMITTING x86_RET
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 40
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 40
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateCondJump
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING CMP_REG_REG | (RAX << 16) | (RBX << 19)
+EMITTING x86_COND_JMP | (jmpMask << 8)
+	 immed32: 52
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 6969000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282711375
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslateJump
+
+EMITTING x86_JMP
+	 immed32: 47
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 228000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282711323
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateRet
+
+EMITTING PUSH_R_REG | (R14 << 8)
+EMITTING x86_RET
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 48
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 56
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 64
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 4000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 48
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 64
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 56
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 56
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslateAddSub
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING ARITHM_REG_REG | (arithmMask << 8) | (RAX << 16) | (RBX << 19)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 72
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 72
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateCondJump
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING CMP_REG_REG | (RAX << 16) | (RBX << 19)
+EMITTING x86_COND_JMP | (jmpMask << 8)
+	 immed32: 52
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 228000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282711004
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslateJump
+
+EMITTING x86_JMP
+	 immed32: 449
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 72
+
+#in TranslateSqrt
+
+EMITTING POP_REG | RAX
+EMITTING CVTSI2SD_XMMF_RAX | (XMM0 << 35)
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM1 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING SQRTPD_XMM0_XMM0
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 72
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 18446744073709550616
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 56
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 56
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 2000
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 48
+
+#in TranslateMul
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING DIVPD_XMMF_XMMS | (XMM1 << 27) | (XMM2 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 48
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 48
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 72
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 56
+
+#in TranslateAddSub
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING ARITHM_REG_REG | (arithmMask << 8) | (RAX << 16) | (RBX << 19)
+EMITTING PUSH_REG | RAX
+
+#in TranslateDiv
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 80
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 48
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 56
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 72
+
+#in TranslateAddSub
+
+EMITTING POP_REG | RAX
+EMITTING POP_REG | RBX
+EMITTING ARITHM_REG_REG | (arithmMask << 8) | (RAX << 16) | (RBX << 19)
+EMITTING PUSH_REG | RAX
+
+#in TranslateDiv
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING CVTSI2SD_XMM1_RSP_8
+EMITTING ADD_RSP_16
+EMITTING MOV_REG_IMMED
+	 immed64: 1000
+EMITTING CVTSI2SD_XMMF_RAX | (XMM2 << 35)
+EMITTING DIVPD_XMMF_XMMS | (XMM0 << 27) | (XMM1 << 24)
+EMITTING MULPD_XMMF_XMMS | (XMM0 << 27) | (XMM2 << 24)
+EMITTING CVTSD2SI_RAX_XMMF | (XMM0 << 32)
+EMITTING PUSH_REG | RAX
+
+#in TranslatePushPop
+
+EMITTING POP_R15_OFFSET
+	 immed32: 88
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 80
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282710593
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslatePushPop
+
+EMITTING PUSH_R15_OFFSET
+	 immed32: 88
+
+#in TranslateOut
+
+EMITTING CVTSI2SD_XMM0_RSP
+EMITTING PUSHA
+EMITTING MOV_RBP_RSP
+EMITTING ALIGN_STACK
+EMITTING x86_CALL
+	 immed32: 4282710550
+EMITTING MOV_RSP_RBP
+EMITTING POPA
+EMITTING ADD_RSP_8
+
+#in TranslatePushPop
+
+EMITTING MOV_REG_IMMED | (RAX << 8)
+	 immed64: 0
+EMITTING PUSH_REG | (RAX << 8)
+
+#in TranslateRet
+
+EMITTING PUSH_R_REG | (R14 << 8)
+EMITTING x86_RET
+
+#in ExecuteJIT
+
+
+STARTING!!!
+
+
+DONE!!!
 
 
 

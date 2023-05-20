@@ -18,11 +18,19 @@ enum CmdEnum {
 
 #undef DEF_CMD
 
-typedef union SpecArg_t {
+typedef struct JumpInfo_t {
+
+    int32_t addrDiff;
+    size_t nextIp;
+    u_int64_t jumpMask;
+
+} JumpInfo_t;
+
+typedef struct SpecArg_t {
         
+        int32_t x86RelAddr;
         size_t argType;
-        u_int32_t addrDiff;
-        size_t nextIp;
+        JumpInfo_t JumpInfo;
 
 } SpecArg_t;
 
@@ -37,9 +45,9 @@ typedef struct ir_command {
     int nativeSize;
     int x86_Size;
 
-    SpecArg_t SpecArg;
-                               // if cmd is push/pop - stores the arg type
-                                // if cmd is jump of any sort - stores next ip  
+    SpecArg_t SpecArg;  
+                            // if cmd is push/pop - stores the arg type
+                            // if cmd is jump of any sort - stores next ip  
 } ir_command; 
 
 typedef struct IR_HEAD_T {

@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+#define NDEBUG
+
 #ifndef NDEBUG
     #define ASSERT(condition)                                                                           \
     if(!(condition))                                                                                    \
@@ -18,9 +20,17 @@
     #define LOG_NAME "log.txt"
 #endif
 
+#ifndef NDEBUG
+
 #define logprint(str...)                                                 \
     fprintf(LogFile, str);                                               \
-    fflush(LogFile)                                                      
+    fflush(LogFile)  
+
+#else
+
+#define logprint(str...)                                                     
+
+#endif
 
 extern FILE* LogFile;
 
