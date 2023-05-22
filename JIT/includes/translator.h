@@ -7,6 +7,7 @@ typedef struct X86_CODE_T {
 
     char* BinaryCode;
     char* memSegment;
+    u_int64_t* CallStackSegment;
 
     size_t totalSize;
     size_t curLen; 
@@ -26,6 +27,9 @@ enum X86_CMD : u_int64_t {
                                       // must be followed with 32 bit offset of r15
     //mov [r15 + offset], r_x
     MOV_R15_OFFSET_REG = 0x878949,    // the same as above
+
+    //mov qword [r14], rax
+    MOV_MEM_R14_RAX = 0x068949,
 
     PUSH_REG = 0x50,                  // "|" regMask
 
@@ -54,7 +58,13 @@ enum X86_CMD : u_int64_t {
 
     ADD_RSP_16 = 0x10c48348,
     SUB_RSP_8  = 0x08ec8348,
-    ADD_RSP_8  = 0x08c48348,  
+    ADD_RSP_8  = 0x08c48348,
+
+    ADD_R14_8 = 0x08c68349,     // for callStack
+    SUB_R14_8 = 0x08ee8349,
+
+    // push [r14]
+    PUSH_MEM_R14 = 0x36ff41, 
 
     DIVPD_XMMF_XMMS = 0xc05e0f66,       // xmmF/xmmS -> xmmF     xmmF "|" with shifted by 27 (24 + 3), xmmS - by 24
 
@@ -87,7 +97,13 @@ enum X86_CMD : u_int64_t {
 };
 
 
+
 enum x86_Commands_Size {
+
+    SIZE_MOV_MEM_R14_RAX = 3,
+    SIZE_ADD_R14_8 = 4,
+    SIZE_SUB_R14_8 = 4,
+    SIZE_PUSH_MEM_R14 = 3,
 
     SIZE_PUSH_R_REG = 2,
     SIZE_MOV_R_REG_IMMED = 2, 

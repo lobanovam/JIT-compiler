@@ -85,7 +85,8 @@ int GetX86cmdSize(int nativeNum) {
             return GET_X86_SIZE(x86_RET);
 
         case RET:
-            return GET_X86_SIZE(PUSH_R_REG) +
+            return GET_X86_SIZE(SUB_R14_8)    +
+                   GET_X86_SIZE(PUSH_MEM_R14) +
                    GET_X86_SIZE(x86_RET);
 
         case ADD:
@@ -251,6 +252,8 @@ void HandleArgsCmd(IR_HEAD_T* IR_HEAD) {
         else if (nativeNum == CALL) {
             IR_HEAD->ir_StructArr[curIndex].x86_Size = GET_X86_SIZE(MOV_R_REG_IMMED) +
                                                        sizeof(u_int64_t)             +
+                                                       GET_X86_SIZE(MOV_MEM_R14_RAX) +
+                                                       GET_X86_SIZE(ADD_R14_8)       +
                                                        GET_X86_SIZE(x86_JMP)         +
                                                        sizeof(u_int32_t);
         }

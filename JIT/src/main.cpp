@@ -25,7 +25,6 @@ int main() {
 
     readByteCode(byteCode, &IR_HEAD);
 
-
     SetIR(&IR_HEAD);
 
     SetJumpAddr(&IR_HEAD);
